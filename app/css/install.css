@@ -1,18 +1,133 @@
-/*----------header----------*/
-.header {
-  position: relative;
-  overflow: hidden; }
+.menu {
+  border-bottom: 4px solid #4a5b7a;
+  padding-bottom: 4px; }
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 -7px;
+    display: flex;
+    text-align: center; }
+    .menu ul li {
+      width: 20%;
+      box-sizing: border-box;
+      padding: 0 2.5px; }
+      .menu ul li.active a {
+        text-decoration: none;
+        background: #2d4159;
+        color: #fff; }
+        .menu ul li.active a img {
+          filter: brightness(25); }
+    .menu ul a {
+      display: block;
+      width: 100%;
+      padding: 14px 10px;
+      background: #f7f7f7;
+      color: #2d4159;
+      font-size: 16px;
+      font-weight: 600; }
+      .menu ul a img {
+        vertical-align: middle;
+        padding: 0 10px 0 0; }
+      .menu ul a:hover {
+        text-decoration: none;
+        background: #2d4159;
+        color: #fff; }
+        .menu ul a:hover img {
+          filter: brightness(25); }
 
-/*----------end-header----------*/
-/*----------main----------*/
-.main {
-  position: relative;
-  overflow: hidden; }
+.panel-install {
+  box-shadow: none; }
+  .panel-install .panel-heading {
+    padding-left: 0;
+    color: #2d4159;
+    border-bottom: 1px solid #2c4159; }
 
-/*----------end main----------*/
-/*----------footer----------*/
-.footer {
-  position: relative;
-  overflow: hidden; }
+.install-accordion .panel-heading {
+  border-radius: 0;
+  border-bottom: none; }
 
-/*----------end footer----------*/
+.install-accordion .panel {
+  border-radius: 0;
+  border: none;
+  box-shadow: none; }
+
+.install-accordion__ico {
+  height: 50px;
+  width: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: -10px 10px -10px -19px;
+  font-size: 20px;
+  color: #fff; }
+  .install-accordion__ico.fb {
+    background: #3a72b9; }
+  .install-accordion__ico.mail {
+    background: #4a5b7a; }
+  .install-accordion__ico.insta {
+    background-image: linear-gradient(40deg, #f6ac58 0%, #df4e5d 27%, #c93580 65%, #5c6cb3 100%); }
+  .install-accordion__ico.gplus {
+    background: #d65544; }
+  .install-accordion__ico.sett {
+    background: #3aacb9; }
+
+.install-accordion .panel-default > .panel-heading + .panel-collapse .panel-body {
+  border-top: none; }
+
+.install-accordion__title {
+  color: #2d4159;
+  font-size: 20px;
+  font-weight: 400; }
+
+.install-accordion__plus {
+  line-height: 21px;
+  display: inline-block; }
+  .install-accordion__plus a {
+    padding: 0;
+    color: #2c4159;
+    font-weight: 300;
+    text-decoration: none !important; }
+    .install-accordion__plus a:before {
+      content: '-';
+      color: #2c4159;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 1; }
+    .install-accordion__plus a.collapsed:before {
+      content: '+'; }
+
+.install-accordion__change {
+  display: inline-block;
+  margin-right: 10px;
+  width: 53px;
+  height: 23px;
+  border-radius: 12px;
+  border: 1px solid #70a012;
+  background-color: #82b51f;
+  cursor: pointer;
+  position: relative; }
+  .install-accordion__change:before {
+    width: 21px;
+    height: 21px;
+    border: 1px solid #f1f1f1;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    float: right; }
+  .install-accordion__change .fa {
+    position: absolute;
+    top: 3px;
+    font-size: 13px;
+    left: 10px;
+    color: #fff; }
+  .install-accordion__change.disabled {
+    border: 1px solid #d6d6d6;
+    background-color: #e2e2e2; }
+    .install-accordion__change.disabled:before {
+      float: left; }
+    .install-accordion__change.disabled .fa {
+      left: auto;
+      right: 10px;
+      color: #f1f1f1;
+      font-size: 15px; }
