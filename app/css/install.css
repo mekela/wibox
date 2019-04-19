@@ -1,0 +1,18 @@
+/*----------header----------*/
+.header {
+  position: relative;
+  overflow: hidden; }
+
+/*----------end-header----------*/
+/*----------main----------*/
+.main {
+  position: relative;
+  overflow: hidden; }
+
+/*----------end main----------*/
+/*----------footer----------*/
+.footer {
+  position: relative;
+  overflow: hidden; }
+
+/*----------end footer----------*/
