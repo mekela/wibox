@@ -1,5 +1,165 @@
-// add fonts here
-
-
-//exemple of use:
-//@include font(Roboto, roboto_bold);
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?uj8u1t');
+    src:  url('../fonts/icomoon.eot?uj8u1t#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?uj8u1t') format('truetype'),
+      url('../fonts/icomoon.woff?uj8u1t') format('woff'),
+      url('../fonts/icomoon.svg?uj8u1t#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="ag-icon-"], [class*=" ag-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' ;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .ag-icon-googleplus:before {
+    content: "\e91e";
+  }
+  .ag-icon-instagram:before {
+    content: "\e91f";
+  }
+  .ag-icon-login:before {
+    content: "\e920";
+  }
+  .ag-icon-promo:before {
+    content: "\e921";
+  }
+  .ag-icon-share-link:before {
+    content: "\e922";
+  }
+  .ag-icon-share-link2:before {
+    content: "\e923";
+  }
+  .ag-icon-speed:before {
+    content: "\e924";
+  }
+  .ag-icon-wifi1:before {
+    content: "\e925";
+  }
+  .ag-icon-fb:before {
+    content: "\e926";
+  }
+  .ag-icon-link:before {
+    content: "\e927";
+  }
+  .ag-icon-pms:before {
+    content: "\e928";
+  }
+  .ag-icon-repeater:before {
+    content: "\e929";
+  }
+  .ag-icon-router:before {
+    content: "\e92a";
+  }
+  .ag-icon-tripadvisor2:before {
+    content: "\e92b";
+  }
+  .ag-icon-key:before {
+    content: "\e92c";
+  }
+  .ag-icon-arrow_desplazar1:before {
+    content: "\e92d";
+  }
+  .ag-icon-share1:before {
+    content: "\e91d";
+  }
+  .ag-icon-arrow_desplazar:before {
+    content: "\e900";
+  }
+  .ag-icon-arrow:before {
+    content: "\e901";
+  }
+  .ag-icon-base_datos:before {
+    content: "\e902";
+  }
+  .ag-icon-birthday:before {
+    content: "\e903";
+  }
+  .ag-icon-calendar:before {
+    content: "\e904";
+  }
+  .ag-icon-check:before {
+    content: "\e905";
+  }
+  .ag-icon-coins:before {
+    content: "\e906";
+  }
+  .ag-icon-clock:before {
+    content: "\e907";
+  }
+  .ag-icon-calendar2:before {
+    content: "\e908";
+  }
+  .ag-icon-facebook:before {
+    content: "\e909";
+  }
+  .ag-icon-graphic:before {
+    content: "\e90a";
+  }
+  .ag-icon-idioma:before {
+    content: "\e90b";
+  }
+  .ag-icon-info:before {
+    content: "\e90c";
+  }
+  .ag-icon-like_line:before {
+    content: "\e90d";
+  }
+  .ag-icon-like:before {
+    content: "\e90e";
+  }
+  .ag-icon-mail:before {
+    content: "\e90f";
+  }
+  .ag-icon-pencil:before {
+    content: "\e910";
+  }
+  .ag-icon-Prize:before {
+    content: "\e911";
+  }
+  .ag-icon-quote_mark:before {
+    content: "\e912";
+  }
+  .ag-icon-shake-hand:before {
+    content: "\e913";
+  }
+  .ag-icon-share_line:before {
+    content: "\e914";
+  }
+  .ag-icon-share:before {
+    content: "\e915";
+  }
+  .ag-icon-sharing:before {
+    content: "\e916";
+  }
+  .ag-icon-speaker_linea:before {
+    content: "\e917";
+  }
+  .ag-icon-speaker:before {
+    content: "\e918";
+  }
+  .ag-icon-test:before {
+    content: "\e919";
+  }
+  .ag-icon-TripAdvisor-logo:before {
+    content: "\e91a";
+  }
+  .ag-icon-whatsapp:before {
+    content: "\e91b";
+  }
+  .ag-icon-wifi:before {
+    content: "\e91c";
+  }
+  
