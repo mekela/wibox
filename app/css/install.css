@@ -196,6 +196,92 @@
         color: #fff; }
         .menu ul a:hover img {
           filter: brightness(25); }
+  @media only screen and (max-width: 992px) {
+    .menu {
+      display: none; } }
+
+@media only screen and (min-width: 993px) {
+  .menu-mobile {
+    display: none; } }
+
+.menu-mobile__trigger {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 15px; }
+  .menu-mobile__trigger span {
+    min-width: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4a5b7a;
+    color: #fff;
+    font-size: 20px; }
+
+.menu-mobile__item {
+  background: #4a5b7a;
+  border-right: 4px solid #fff;
+  flex: 1;
+  text-align: center;
+  width: 100%;
+  padding: 14px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff; }
+  .menu-mobile__item a {
+    color: #fff;
+    text-decoration: none; }
+  .menu-mobile__item img {
+    vertical-align: middle;
+    padding: 0 10px 0 0; }
+  .menu-mobile__item i {
+    font-size: 20px;
+    padding-right: 10px;
+    vertical-align: middle; }
+
+.menu-mobile.open ul {
+  display: block; }
+
+.menu-mobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 -3px;
+  text-align: center;
+  display: none; }
+  .menu-mobile ul li {
+    box-sizing: border-box;
+    padding: 0 2.5px; }
+    .menu-mobile ul li.active a {
+      text-decoration: none;
+      background: #2d4159;
+      color: #fff; }
+      .menu-mobile ul li.active a img {
+        filter: brightness(25); }
+  .menu-mobile ul a {
+    display: block;
+    width: 100%;
+    padding: 14px 10px;
+    background: #f7f7f7;
+    color: #2d4159;
+    font-size: 16px;
+    font-weight: 600; }
+    .menu-mobile ul a img {
+      vertical-align: middle;
+      padding: 0 10px 0 0; }
+    .menu-mobile ul a i {
+      font-size: 20px;
+      padding-right: 10px;
+      vertical-align: middle; }
+    .menu-mobile ul a:hover {
+      text-decoration: none;
+      background: #2d4159;
+      color: #fff; }
+      .menu-mobile ul a:hover img {
+        filter: brightness(25); }
+
+@media only screen and (max-width: 992px) {
+  .install-preview-wrap {
+    display: none; } }
 
 .panel-install {
   box-shadow: none; }
@@ -453,6 +539,10 @@
   bottom: 0;
   background: #fff;
   width: calc(100% - 275px); }
+  @media only screen and (max-width: 1279px) {
+    .install-nav {
+      width: 100%;
+      right: 0; } }
   .install-nav .btn {
     font-size: 18px;
     text-transform: uppercase;
