@@ -783,3 +783,143 @@
 		padding-right:20px;
 	}
 }
+
+.new-repeater{
+	display: flex;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	@include mq($max-width: 450px) {
+		flex-wrap: wrap;
+	}
+	&__icon{
+		background: #4d5b77;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 60px;
+		color: #fff;
+		font-size: 30px;
+		@include mq($max-width: 992px) {
+			font-size:25px;
+		}
+	}
+	&__text{
+		padding: 15px 13px;
+		font-size: 20px;
+		color: #2d4159;
+		background: #f7f7f7;
+		width: 260px;
+		@include mq($max-width: 992px) {
+			font-size:13px;
+			width: auto;
+		}
+		@include mq($max-width: 450px) {
+			flex:1;
+		}
+	}
+	&__input{
+		@include mq($max-width: 450px) {
+			width: 100%;
+			margin: 10px 0;
+		}
+		input{
+			height: 100%;
+			padding: 0 24px;
+			border: none;
+			background: #f1f1f1;
+			font-size: 20px;
+			color: #7c7c7c;
+			width: 530px;
+			box-sizing: border-box;
+			@include mq($max-width: 992px) {
+				font-size:13px;
+				width: auto;
+			}
+			@include mq($max-width: 450px) {
+			width: 100%;
+			padding: 15px;
+			}
+		}
+	}
+	&__button{
+		display: flex;
+		button{
+			display: inline-block;
+			height: 100%;
+			border-radius: 0;
+			font-size: 20px;
+			border: none;
+			&:hover{
+				opacity: .9;
+			}
+			@include mq($max-width: 992px) {
+				font-size:13px;
+				width: auto;
+			}
+		}
+		.btn-primary{
+			background: #4d5b77;
+			border: none;
+			margin-right: 10px;
+			padding-left: 40px;
+			padding-right: 40px;
+			@include mq($max-width: 992px) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+		.btn-success{
+				padding-left: 20px;
+				padding-right: 20px;
+				@include mq($max-width: 992px) {
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+		}
+	}
+}
+.repeaters-table{
+	overflow-x: auto;
+	table{
+		width: 100%;
+		td, th{
+			border: 1px solid #4a5b7a;
+			color: #2d4159;
+			font-size: 20px;
+			padding: 15px;
+			@include mq($max-width: 992px) {
+				font-size:13px;
+				padding: 5px;
+			}
+			a{
+				color: #4a5b7a;
+			}
+			&.green{
+				background: #5cb85c;
+				color: #fff;
+			}
+			&.red{
+				color: #fff;
+				background: #d9534f;
+			}
+			&.red-color{
+				color: #d9534f;
+			}
+		}
+		tr{
+			&:nth-child(even){
+				td{
+					background: #f9f9f9;
+					&.green{
+						background: #5cb85c;
+						color: #fff;
+					}
+					&.red{
+						color: #fff;
+						background: #d9534f;
+					}
+				}
+			}
+		}
+	}
+}
