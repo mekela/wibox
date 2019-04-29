@@ -302,9 +302,38 @@
   .panel-install .panel-body .install-accordion__change {
     vertical-align: middle; }
   .panel-install__2col {
-    margin-right: -15px; }
+    display: flex; }
     .panel-install__2col .row {
       background: none; }
+    .panel-install__2col .install-accordion__subtitle {
+      min-width: 15%; }
+      @media only screen and (max-width: 992px) {
+        .panel-install__2col .install-accordion__subtitle {
+          min-width: 24%; } }
+  .panel-install__2col-right {
+    display: flex;
+    width: 100%; }
+    .panel-install__2col-right .flex-row {
+      min-width: calc(50% + -5px);
+      width: 49%;
+      margin-right: 10px; }
+      @media only screen and (max-width: 992px) {
+        .panel-install__2col-right .flex-row {
+          width: 100%;
+          min-width: 100%;
+          margin-right: 0; } }
+    @media only screen and (max-width: 992px) {
+      .panel-install__2col-right {
+        display: block; } }
+  @media only screen and (max-width: 992px) {
+    .panel-install .panel-title {
+      font-size: 18px; } }
+
+.install-row {
+  display: flex;
+  justify-content: space-between; }
+  .install-row a {
+    text-decoration: none; }
 
 .install-accordion .panel-heading {
   border-radius: 0;
@@ -317,14 +346,17 @@
   overflow: visible; }
 
 .install-accordion__ico {
-  height: 50px;
+  height: calc(100% + 24px);
   width: 50px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: -10px 10px -10px -19px;
+  margin: -12px 10px 0px -19px;
   font-size: 20px;
   color: #fff; }
+  @media only screen and (max-width: 992px) {
+    .install-accordion__ico {
+      width: 40px; } }
   .install-accordion__ico.fb {
     background: #3a72b9; }
   .install-accordion__ico.mail {
@@ -343,6 +375,12 @@
   color: #2d4159;
   font-size: 20px;
   font-weight: 400; }
+  @media only screen and (max-width: 992px) {
+    .install-accordion__title {
+      font-size: 15px; } }
+  @media only screen and (max-width: 450px) {
+    .install-accordion__title {
+      font-size: 11px; } }
 
 .install-accordion__plus {
   line-height: 21px;
@@ -358,13 +396,20 @@
       font-size: 30px;
       font-weight: 300;
       line-height: 1; }
+      @media only screen and (max-width: 992px) {
+        .install-accordion__plus a:before {
+          font-size: 23px; } }
+      @media only screen and (max-width: 450px) {
+        .install-accordion__plus a:before {
+          font-size: 18px; } }
     .install-accordion__plus a.collapsed:before {
       content: '+'; }
 
 .install-accordion__change {
   display: inline-block;
   margin-right: 10px;
-  position: relative; }
+  position: relative;
+  margin-bottom: 0; }
   .install-accordion__change input {
     position: absolute;
     top: 0;
@@ -446,12 +491,21 @@
     background: #f1f1f1; }
   .install-accordion .panel-body .install-accordion__change {
     vertical-align: middle; }
+  @media only screen and (max-width: 992px) {
+    .install-accordion .panel-body {
+      padding-left: 25px; } }
 
 .install-accordion__subtitle {
   font-size: 20px;
   color: #2d4159;
   position: relative;
   padding: 13px 0; }
+  @media only screen and (max-width: 992px) {
+    .install-accordion__subtitle {
+      font-size: 14px; } }
+  @media only screen and (max-width: 450px) {
+    .install-accordion__subtitle {
+      font-size: 10px; } }
 
 .install-accordion__section {
   font-size: 20px;
@@ -461,6 +515,13 @@
   height: 100%;
   padding-right: 30px;
   position: relative; }
+  @media only screen and (max-width: 992px) {
+    .install-accordion__section {
+      font-size: 13px;
+      padding-right: 0; } }
+  @media only screen and (max-width: 450px) {
+    .install-accordion__section {
+      font-size: 11px; } }
   .install-accordion__section input {
     width: 100%;
     color: #7c7c7c;
@@ -468,6 +529,12 @@
     background: none;
     border: none;
     padding: 0 5px; }
+    @media only screen and (max-width: 992px) {
+      .install-accordion__section input {
+        font-size: 13px; } }
+    @media only screen and (max-width: 450px) {
+      .install-accordion__section input {
+        font-size: 10px; } }
 
 .install-accordion__info {
   position: absolute;
@@ -549,6 +616,16 @@
     border-radius: 0;
     padding: 15px 70px;
     border: none; }
+    @media only screen and (max-width: 992px) {
+      .install-nav .btn {
+        padding: 9px 20px;
+        font-size: 13px; } }
+    @media only screen and (max-width: 450px) {
+      .install-nav .btn {
+        font-size: 10px; } }
+  @media only screen and (max-width: 992px) {
+    .install-nav {
+      border-width: 3px; } }
   .install-nav .btn-empty {
     color: #4a5b7a; }
   .install-nav .btn-primary {
@@ -681,6 +758,15 @@ option.avatar {
   font-family: 'Open Sans';
   min-height: 45px;
   padding-left: 50px; }
+  @media only screen and (max-width: 992px) {
+    .ui-menu-item-wrapper {
+      font-size: 13px;
+      padding: 5px 0;
+      min-height: 30px;
+      padding-left: 25px; } }
+  @media only screen and (max-width: 450px) {
+    .ui-menu-item-wrapper {
+      font-size: 10px; } }
 
 .ui-menu .ui-icon {
   background: none;
@@ -692,6 +778,12 @@ option.avatar {
   font-size: 28px;
   color: #2d4159;
   transform: translateY(-50%); }
+  @media only screen and (max-width: 992px) {
+    .ui-menu .ui-icon {
+      font-size: 16px; } }
+  @media only screen and (max-width: 450px) {
+    .ui-menu .ui-icon {
+      font-size: 14px; } }
 
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
   border: none;
@@ -705,9 +797,18 @@ option.avatar {
   cursor: pointer; }
   .ui-menu .ui-menu-item:first-child {
     border-top: none; }
+  @media only screen and (max-width: 992px) {
+    .ui-menu .ui-menu-item {
+      margin: 0 10px; } }
 
 .ui-widget-content {
   max-width: 544px; }
+  @media only screen and (max-width: 992px) {
+    .ui-widget-content {
+      max-width: 300px; } }
+  @media only screen and (max-width: 500px) {
+    .ui-widget-content {
+      max-width: 200px; } }
 
 .ui-selectmenu-menu {
   display: none; }
@@ -732,8 +833,25 @@ option.avatar {
   border-style: solid;
   border-width: 14px 8px 0 8px;
   border-color: #4a5b7a transparent transparent transparent; }
+  @media only screen and (max-width: 992px) {
+    .ui-selectmenu-icon {
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 9px 5px 0 5px;
+      border-color: #4a5b7a transparent transparent transparent; } }
 
 .ui-selectmenu-text {
   color: #2d4159;
   font-size: 18px;
   font-family: 'Open Sans'; }
+  @media only screen and (max-width: 992px) {
+    .ui-selectmenu-text {
+      font-size: 13px; } }
+  @media only screen and (max-width: 450px) {
+    .ui-selectmenu-text {
+      font-size: 10px; } }
+
+@media only screen and (max-width: 992px) {
+  .acc-info-wrap {
+    padding-right: 20px; } }
