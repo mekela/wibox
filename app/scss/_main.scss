@@ -25,7 +25,7 @@
 		a{
 			display: block;
 			width: 100%;
-			padding: 14px 10px;
+			padding: 12px 10px;
 			background: #f7f7f7;
 			color: #2d4159;
 			font-size: 16px;
@@ -230,6 +230,8 @@
 	.panel-heading{
 		border-radius: 0;
 		border-bottom: none;
+		padding-top: 7px;
+		padding-bottom: 7px;
 	}
 	.panel{
 		border-radius: 0;
@@ -238,12 +240,12 @@
 		overflow: visible;
 	}
 	&__ico{
-		height: calc(100% + 24px);
+		height: calc(100% + 20px);
 		width: 50px;
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
-		margin: -12px 10px 0px -19px;
+		margin: -10px 10px 0px -19px;
 		font-size: 20px;
 		color: #fff;
 		@include mq($max-width: 992px) {
