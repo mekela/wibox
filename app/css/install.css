@@ -795,6 +795,7 @@ option.avatar {
 
 .ui-menu .ui-menu-item {
   margin: 0 25px;
+  width: auto;
   border-top: 1px solid #fff;
   cursor: pointer; }
   .ui-menu .ui-menu-item:first-child {
@@ -804,13 +805,14 @@ option.avatar {
       margin: 0 10px; } }
 
 .ui-widget-content {
-  max-width: 544px; }
+  max-width: 33vw;
+  overflow: hidden; }
   @media only screen and (max-width: 992px) {
     .ui-widget-content {
-      max-width: 300px; } }
+      max-width: 55vw; } }
   @media only screen and (max-width: 500px) {
     .ui-widget-content {
-      max-width: 200px; } }
+      max-width: 54vw; } }
 
 .ui-selectmenu-menu {
   display: none; }
