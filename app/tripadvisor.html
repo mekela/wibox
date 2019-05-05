@@ -319,10 +319,10 @@
                      <nav class="menu">
                         <ul>
                            <li><a href="#"><i class="fa fa-user"></i>Cliente</a></li>
-                           <li class="active"><a href="#"><i class="ag-icon-key"></i>Accesos</a></li>
+                           <li><a href="access.html"><i class="ag-icon-key"></i>Accesos</a></li>
                            <li><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i>Personalizar</a></li>
                            <li><a href="#"><i class="ag-icon-link"></i>Conexiones</a></li>
-                           <li><a href="tripadvisor.html"><i class="ag-icon-TripAdvisor-logo"></i>Tripadvisor</a></li>
+                           <li class="active"><a href="#"><i class="ag-icon-TripAdvisor-logo"></i>Tripadvisor</a></li>
                            <li><a href="repetidores.html"><i class="ag-icon-repeater"></i>Repetidores</a></li>
                            <li><a href="#"><i class="ag-icon-router"></i>Routers</a></li>
                         </ul>
@@ -333,11 +333,11 @@
                            <span><i class="fa fa-list" aria-hidden="true"></i></span>
                         </div>
                         <ul>
-                           <li><a href="#"><i class="fa fa-user"></i>Cliente</a></li>
-                           <li class="active"><a href="#"><i class="ag-icon-key"></i>Accesos</a></li>
+                           <li class="active"><a href="#"><i class="fa fa-user"></i>Cliente</a></li>
+                           <li ><a href="#"><i class="ag-icon-key"></i>Accesos</a></li>
                            <li><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i>Personalizar</a></li>
                            <li><a href="#"><i class="ag-icon-link"></i>Conexiones</a></li>
-                           <li><a href="tripadvisor.html"><i class="ag-icon-TripAdvisor-logo"></i>Tripadvisor</a></li>
+                           <li><a href="#"><i class="ag-icon-TripAdvisor-logo"></i>Tripadvisor</a></li>
                            <li><a href="repetidores.html"><i class="ag-icon-repeater"></i>Repetidores</a></li>
                            <li><a href="#"><i class="ag-icon-router"></i>Routers</a></li>
                         </ul>
@@ -346,20 +346,18 @@
                </div>
                <div class="install-content">
                   <div class="row">
-                     <div class="col-md-8">
-                        <div class="panel panel-install">
-                           <div class="panel-heading"><div class="panel-title">Identificación de Usuarios</div></div>
-                        </div>
+                     <div class="col-lg-8">
+                        <div class="pt15">
                         <div class="panel-group install-accordion" id="accordion">
                            <div class="panel panel-default">
-                              <div class="panel-heading install-accordion__head">
+                              <div class="panel-heading install-accordion__head collapsed-disabled">
                                  <div class="install-row">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
-                                       <span class="install-accordion__ico fb">
-                                          <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <a data-toggle="collapse" class="collapsed">
+                                       <span class="install-accordion__ico tripadvisor">
+                                          <i class="ag-icon-TripAdvisor-logo" aria-hidden="true"></i>
                                        </span>
                                        <span class="install-accordion__title">
-                                       Acceso con Facebook
+                                             Activar TripAdvisor Review Express  
                                        </span>
                                     </a>
                                     <div class="pull-right">
@@ -372,378 +370,159 @@
                                     </div>
                                  </div>
                               </div>
-                              <div id="collapseOne" class="panel-collapse collapse">
+                              <div id="collapseOne" class="panel-collapse collapse in">
                                  <div class="panel-body">
-                                    <div class="flex-row ">
-                                       <div class="col-4">
-                                          <div class="install-accordion__subtitle">
-                                             Tipo de Acceso:
-                                          </div>
-                                       </div>
-                                       <div class="col-8">
-                                             <div class="selectpicker-wrap">
-                                                <select  class="selectpicker" title="Choose one of the following...">     
-                                                   <option   value="sel" >Seleccionar</option>        
-                                                   <option class="selectpicker_icon ag-icon-login" value="sel2" >Sólo Login</option>        
-                                                   <option  class="selectpicker_icon ag-icon-share-link" data-class="seleccionar" value="sel3" >Compartir</option>        
-                                                   <option  class="selectpicker_icon ag-icon-share-link2" value="sel4" >Compartir opcional</option>        
-                                                   <option  class="selectpicker_icon ag-icon-promo"  value="sel5" >Compartir con Promoción</option>        
-                                                </select>   
-                                             </div>
-                                       </div>
-                                    </div>
-                                    <div class="flex-row ">
-                                       <div class="col-4">
-                                          <div class="install-accordion__subtitle">
-                                             Que te gustaría compartir?
-                                          </div>
-                                       </div>
-                                       <div class="col-8">
-                                              <div class="selectpicker-wrap">
-                                                <select  class="selectpicker" title="Choose one of the following...">     
-                                                   <option   value="se" >Una URL específica</option>        
-                                                   <option   value="se2" >Una URL específica</option>               
-                                                </select>   
-                                             </div> 
-                                       </div>
-                                    </div>
                                     <div class="flex-row align-center">
-                                       <div class="col-4">
+                                       <div class="col">
                                           <div class="install-accordion__subtitle">
                                              URL:
                                           </div>
                                        </div>
-                                       <div class="col-8">
+                                       <div class="col-12 pad-r0">
                                           <div class="install-accordion__section">
-                                             <input type="text" placeholder="wwww.url.com                                             ">
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="flex-row align-center">
-                                       <div class="col-4">
-                                          <div class="install-accordion__subtitle">
-                                             Dias entre compartir
-                                          </div>
-                                       </div>
-                                       <div class="col-8">
-                                          <div class="install-accordion__section  acc-info-wrap">
-                                             1
-                                             <div class="install-accordion__info"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+                                             <input type="text" placeholder="www.tripadvisor.com/hotel                                             ">
                                           </div>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                            </div>
-                           <div class="panel panel-default">
-                              <div class="panel-heading  install-accordion__head">
-                                 <div class="install-row">
-                                       <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"  class="collapsed">
-                                          <span class="install-accordion__ico mail">
-                                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                          </span>
-                                          <span class="install-accordion__title">
-                                                Acceso con eMail
-                                          </span>
-                                       </a>
-                                       <div class="pull-right">
-                                          <label class="install-accordion__change">
-                                             <input type="checkbox" checked >
-                                             <div class="install-accordion__change-inner">
-                                             <i class="fa" aria-hidden="true"></i> 
-                                             </div>
-                                          </label>
-                                       </div>
-                                 </div>
-                              </div>
-                              <div id="collapseTwo" class="panel-collapse collapse">
-                                 <div class="panel-body">
-                                    <div class="flex-row align-center">
-                                       <div class="col-12">
-                                          <div class="install-accordion__subtitle  acc-info-wrap">
-                                             Email + Contraseña
-                                             <div class="install-accordion__info"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
-                                             <div class="pull-right">
-                                                <label class="install-accordion__change">
-                                                   <input type="checkbox" checked>
-                                                   <div class="install-accordion__change-inner">
-                                                   <i class="fa" aria-hidden="true"></i>
-                                                   </div>
-                                                </label>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="flex-row align-center">
-                                       <div class="col-12">
-                                          <div class="install-accordion__subtitle acc-info-wrap">
-                                                Botón Grande
-                                                <div class="pull-right">
-                                                      <label class="install-accordion__change">
-                                                         <input type="checkbox" checked>
-                                                         <div class="install-accordion__change-inner">
-                                                         <i class="fa" aria-hidden="true"></i>
-                                                         </div>
-                                                      </label>
-                                                   </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="panel panel-default">
-                              <div class="panel-heading  install-accordion__head">
-                                 <div class="install-row">
-                                       <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">
-                                          <span class="install-accordion__ico insta">
-                                             <i class="fa fa-instagram" aria-hidden="true"></i>
-                                          </span>
-                                          <span class="install-accordion__title">
-                                                Acceso con Instagram
-                                          </span>
-                                       </a>
-
-                                       <div class="pull-right">
-                                          <label class="install-accordion__change">
-                                             <input type="checkbox">
-                                             <div class="install-accordion__change-inner">
-                                             <i class="fa" aria-hidden="true"></i> 
-                                             </div>
-                                          </label>
-                                       </div>
-                                 </div>
-                              </div>
-                              <div id="collapse3" class="panel-collapse collapse">
-                                 <div class="panel-body">
-                                    <div class="flex-row align-center">
-                                       <div class="col-4">
-                                          <div class="install-accordion__subtitle">
-                                                URL Perfil Instagram
-                                          </div>
-                                       </div>
-                                       <div class="col-8">
-                                          <div class="install-accordion__section"><input type="text" placeholder="https//:examplelandingpage.com"></div>
-                                       </div>
-                                    </div>
-                                    <div class="flex-row align-center">
-                                       <div class="col-4">
-                                          <div class="install-accordion__subtitle">
-                                                URL Perfil Instagram
-                                          </div>
-                                       </div>
-                                       <div class="col-8">
-                                          <div class="install-accordion__section text-right  acc-info-wrap">
-                                             <div class="install-accordion__info"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
-                                             <label class="install-accordion__change">
-                                             <input type="checkbox">
-                                             <div class="install-accordion__change-inner">
-                                             <i class="fa" aria-hidden="true"></i> 
-                                             </div>
-                                          </label>
-                                          </div>   
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="panel panel-default">
-                              <div class="panel-heading  install-accordion__head">
-                                 <div class="install-row">
-                                       <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="collapsed">
-                                          <span class="install-accordion__ico gplus">
-                                             <i class="fa fa-google-plus" aria-hidden="true"></i>
-                                          </span>
-                                          <span class="install-accordion__title">
-                                                Acceso con Google+
-                                          </span>
-                                       </a>
-                                       <div class="pull-right">
-                                          <label class="install-accordion__change">
-                                             <input type="checkbox">
-                                             <div class="install-accordion__change-inner">
-                                             <i class="fa" aria-hidden="true"></i> 
-                                             </div>
-                                          </label>
-                                       </div>
-                                 </div>
-                              </div>
-                              <div id="collapse4" class="panel-collapse collapse">
-                                 <div class="panel-body">
-                                    <div class="flex-row align-center">
-                                       <div class="col-4">
-                                          <div class="install-accordion__subtitle">
-                                                URL Perfil google
-                                          </div>
-                                       </div>
-                                       <div class="col-8">
-                                          <div class="install-accordion__section"><input type="text" placeholder="https//:examplelandingpage.com"></div>
-                                       </div>
-                                    </div>
-                                    <div class="flex-row align-center">
-                                       <div class="col-4">
-                                          <div class="install-accordion__subtitle">
-                                                URL Perfil google
-                                          </div>
-                                       </div>
-                                       <div class="col-8">
-                                          <div class="install-accordion__section text-right  acc-info-wrap">
-                                             <div class="install-accordion__info"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
-                                             <label class="install-accordion__change">
-                                             <input type="checkbox">
-                                             <div class="install-accordion__change-inner">
-                                             <i class="fa" aria-hidden="true"></i> 
-                                             </div>
-                                          </label>
-                                          </div>   
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="panel panel-default">
-                              <div class="panel-heading  install-accordion__head">
-                                 <div class="install-row">
-                                       <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="collapsed">
-                                          <span class="install-accordion__ico sett">
-                                             <i class="fa fa-desktop" aria-hidden="true"></i>
-                                          </span>
-                                          <span class="install-accordion__title">
-                                                Integraciones PMS
-                                          </span>
-                                       </a>
-                                       <div class="pull-right">
-                                          <label class="install-accordion__change">
-                                             <input type="checkbox">
-                                             <div class="install-accordion__change-inner">
-                                             <i class="fa" aria-hidden="true"></i> 
-                                             </div>
-                                          </label>
-                                          
-                                       </div>
-                                 </div>
-                              </div>
-                              <div id="collapse5" class="panel-collapse collapse">
-                                 <div class="panel-body">
-                                    <div class="flex-row align-center">
-                                       <div class="col-4">
-                                          <div class="install-accordion__subtitle">
-                                                URL Perfil Instagram
-                                          </div>
-                                       </div>
-                                       <div class="col-8">
-                                          <div class="install-accordion__section">
-                                                <input type="text" placeholder="Seleccionar">
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="panel panel-install">
-                           <div class="panel-heading"><div class="panel-title">Pagina de bienvenida</div></div>
-                        </div>
-                        <div class="panel panel-install">
-                           <div class="panel-body pt0 pad-l0 pad-r0">
-                              <div  class="flex-row align-center">
-                                 <div class="col-4">
-                                    <div class="install-accordion__subtitle">
-                                          Landing Page:
-                                    </div>
-                                 </div>
-                                 <div class="col-8">
-                                    <div class="install-accordion__section">
-                                          <input type="text" placeholder="https//:examplelandingpage.com">
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="panel panel-install">
-                           <div class="panel-heading"><div class="panel-title">SDK - Acceso Wifi con APP</div></div>
-                        </div>
-                        <div class="panel panel-install">
-                           <div class="panel-body  pad-l0 pad-r0">
-                              <div class="flex-row align-center">
-                                 <div class="col-4">
-                                    <div class="install-accordion__subtitle">
-                                          Botón Acceso APP
-                                    </div>
-                                 </div>
-                                 <div class="col-8">
-                                    <div class="install-accordion__section text-right acc-info-wrap">
-                                          <div class="install-accordion__info"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
-                                          <label class="install-accordion__change">
-                                             <input type="checkbox">
-                                             <div class="install-accordion__change-inner">
-                                             <i class="fa" aria-hidden="true"></i> 
-                                             </div>
-                                          </label>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="panel-install__2col">
-                                 <div class="install-accordion__subtitle">
-                                    IOS:
-                                 </div>
-                                 <div class="panel-install__2col-right">
-                                    <div class="flex-row align-center">
-                                       <div class="col">
-                                          <div class="install-accordion__subtitle">
-                                             ID
-                                          </div>
-                                       </div>
-                                       <div class="col flex-width pad-r0">
-                                          <div class="install-accordion__section ">
-                                             <input type="text" >
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="flex-row align-center">
-                                       <div class="col">
-                                          <div class="install-accordion__subtitle">
-                                             Nombre
-                                          </div>
-                                       </div>
-                                       <div class="col flex-width pad-r0">
-                                          <div class="install-accordion__section ">
-                                             <input type="text" >
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="panel-install__2col">
-                                 <div class="install-accordion__subtitle">
-                                    ANDROID:
-                                 </div>
-                                 <div class="panel-install__2col-right">
-                                    <div class="flex-row align-center">
-                                       <div class="col">
-                                          <div class="install-accordion__subtitle">
-                                             ID
-                                          </div>
-                                       </div>
-                                       <div class="col flex-width pad-r0">
-                                          <div class="install-accordion__section ">
-                                             <input type="text" >
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                        </div>
+                        </div>      
                         </div>
                      </div>
-                     <div class="col-md-4">
+                     <div class="col-lg-4">
                         <div class="panel panel-install install-preview-wrap">
-                           <div class="panel-heading"><div class="panel-title">Vista Previa</div></div>
                            <div class="panel-body">
-                              <div class="install-preview">
-                                 <img src="images/screenshot.jpg" alt="">
+                              <div class="tripadvisor-progress">
+                                 <div class="tripadvisor-progress__alert">
+                                    <div class="tripadvisor-progress__alert-ico"><i class="ag-icon-check"></i></div>
+                                    <div class="tripadvisor-progress__alert-text">
+                                       <strong>Conectados Correctamente con TripAdvisor</strong>
+                                    </div>
+                                 </div>
+                                 <div class="tripadvisor-progress__line">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                 </div>
                               </div>
                            </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="panel panel-install">
+                           <div class="panel-heading"><div class="panel-title">Configuración</div></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <div class="advisor-list">
+                           <div class="row">
+                              <div class="col-lg-12">
+                                 <div class="new-repeater">
+                                    <span class="install-accordion__ico tripadvisor">
+                                          <i class="fa fa-plane" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="new-repeater__text">
+                                       Nuevo Repetidor
+                                    </div>
+                                    <div class="new-repeater__section">
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-lg-12">
+                                 <div class="new-repeater">
+                                    <span class="install-accordion__ico tripadvisor">
+                                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="new-repeater__text">
+                                          Días a esperar para enviar el correo <em>(Mínimo 2 Dias - Máximo 30 Dias)</em>
+                                    </div>
+                                    <div class="new-repeater__section">
+                                        <div class="selectpicker-wrap">
+                                          <select  class="selectpicker" >     
+                                             <option   value="sel" >2</option>        
+                                             <option  value="sel2" >6</option>        
+                                             <option   value="sel3" >7</option>        
+                                             <option  value="sel4" >8</option>        
+                                             <option value="sel5" >9</option>        
+                                          </select>   
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-lg-12">
+                                 <div class="new-repeater">
+                                    <span class="install-accordion__ico tripadvisor">
+                                          <i class="fa fa-user" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="new-repeater__text">
+                                          Enviar a
+                                    </div>
+                                    <div class="new-repeater__section">
+                                       <div class="selectpicker-wrap">
+                                          <select  class="selectpicker" title="Choose one of the following...">     
+                                             <option   value="sel" >Avanzado</option>        
+                                             <option  value="sel2" >6</option>        
+                                             <option   data-class="seleccionar" value="sel3" >7</option>        
+                                             <option  value="sel4" >8</option>        
+                                             <option value="sel5" >9</option>        
+                                          </select>   
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-lg-12">
+                                 <div class="advisor-list__right">
+                                    <span>
+                                     Número de Visitas
+                                    </span>
+                                    <span>Entre:</span>
+                                    <select class="select-double-arrows">
+                                       <option>1</option>
+                                       <option>2</option>
+                                       <option>3</option>
+                                    </select>
+                                    <span>y</span>
+                                    <select class="select-double-arrows">
+                                       <option>5</option>
+                                       <option>4</option>
+                                       <option>3</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="tags-list">
+                              <div class="panel-heading"><div class="panel-title">Idiomas</div></div>
+                              <div class="panel-body">
+                                 <ul class="tags-list__section">
+                                    <li>Catalán <i class="fa fa-times" aria-hidden="true"></i></li>
+                                    <li>Alemán <i class="fa fa-times" aria-hidden="true"></i></li>
+                                    <li>Inglés <i class="fa fa-times" aria-hidden="true"></i></li>
+                                    <li>Español <i class="fa fa-times" aria-hidden="true"></i></li>
+                                    <li>Catalán <i class="fa fa-times" aria-hidden="true"></i></li>
+                                    <li>Alemán <i class="fa fa-times" aria-hidden="true"></i></li>
+                                    <li>Inglés <i class="fa fa-times" aria-hidden="true"></i></li>
+                                    <li>Español <i class="fa fa-times" aria-hidden="true"></i></li>
+                                    <li>Catalán <i class="fa fa-times" aria-hidden="true"></i></li>
+                                    <li>Alemán <i class="fa fa-times" aria-hidden="true"></i></li>
+                                    <li>Inglés <i class="fa fa-times" aria-hidden="true"></i></li>
+                                    <li class="tags-list__plus">+</li>
+                                 </ul>
+                              </div>
                         </div>
                      </div>
                   </div>

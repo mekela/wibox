@@ -22,6 +22,7 @@ String.prototype.repeat = function(num) {
     $("select[name='large']").selectpicker({style: 'btn-lg btn-danger'});
     $("select[name='info']").selectpicker({style: 'btn-info'});
     $("select[name='small']").selectpicker({style: 'btn-sm btn-warning'});
+    $(".selectpicker").selectpicker();
 
     // Tabs
     $(".nav-tabs a").on('click', function (e) {
