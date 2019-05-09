@@ -382,12 +382,11 @@
                                        </div>
                                        <div class="col-8">
                                              <div class="selectpicker-wrap">
-                                                <select  class="selectpicker" title="Choose one of the following...">     
-                                                   <option   value="sel" >Seleccionar</option>        
-                                                   <option class="selectpicker_icon ag-icon-login" value="sel2" >Sólo Login</option>        
-                                                   <option  class="selectpicker_icon ag-icon-share-link" data-class="seleccionar" value="sel3" >Compartir</option>        
-                                                   <option  class="selectpicker_icon ag-icon-share-link2" value="sel4" >Compartir opcional</option>        
-                                                   <option  class="selectpicker_icon ag-icon-promo"  value="sel5" >Compartir con Promoción</option>        
+                                                <select  class="selectpicker" multiple title="Seleccionar">        
+                                                   <option  data-icon="ag-icon-login" class="selectpicker_icon multiple-option" value="sel2" >Sólo Login</option>        
+                                                   <option  data-icon="ag-icon-share-link" class="selectpicker_icon multiple-option" data-class="seleccionar" value="sel3" >Compartir</option>        
+                                                   <option  data-icon="ag-icon-share-link2" class="selectpicker_icon multiple-option" value="sel4" >Compartir opcional</option>        
+                                                   <option  data-icon=" ag-icon-promo" class="selectpicker_icon multiple-option"  value="sel5" >Compartir con Promoción</option>        
                                                 </select>   
                                              </div>
                                        </div>
@@ -400,7 +399,7 @@
                                        </div>
                                        <div class="col-8">
                                               <div class="selectpicker-wrap">
-                                                <select  class="selectpicker" title="Choose one of the following...">     
+                                                <select  class="selectpicker" >     
                                                    <option   value="se" >Una URL específica</option>        
                                                    <option   value="se2" >Una URL específica</option>               
                                                 </select>   
@@ -415,7 +414,7 @@
                                        </div>
                                        <div class="col-8">
                                           <div class="install-accordion__section">
-                                             <input type="text" placeholder="wwww.url.com                                             ">
+                                             <input type="text" placeholder="wwww.url.com">
                                           </div>
                                        </div>
                                     </div>
@@ -427,7 +426,7 @@
                                        </div>
                                        <div class="col-8">
                                           <div class="install-accordion__section  acc-info-wrap">
-                                             1
+                                                <input type="text" placeholder="1">
                                              <div class="install-accordion__info"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
                                           </div>
                                        </div>
@@ -459,33 +458,44 @@
                               <div id="collapseTwo" class="panel-collapse collapse">
                                  <div class="panel-body">
                                     <div class="flex-row align-center">
-                                       <div class="col-12">
-                                          <div class="install-accordion__subtitle  acc-info-wrap">
-                                             Email + Contraseña
-                                             <div class="install-accordion__info"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
-                                             <div class="pull-right">
-                                                <label class="install-accordion__change">
-                                                   <input type="checkbox" checked>
-                                                   <div class="install-accordion__change-inner">
-                                                   <i class="fa" aria-hidden="true"></i>
-                                                   </div>
-                                                </label>
-                                             </div>
+                                       <div class="col-4">
+                                          <div class="install-accordion__subtitle">
+                                                Email + Contraseña
+                                          </div>
+                                       </div>
+                                       <div class="col-8">
+                                          <div class="install-accordion__section flex  acc-info-wrap">
+                                                <input type="text" >
+                                                <div class="install-accordion__info"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
+                                                <div class="pull-right">
+                                                   <label class="install-accordion__change mar-r0">
+                                                      <input type="checkbox" checked>
+                                                      <div class="install-accordion__change-inner">
+                                                      <i class="fa" aria-hidden="true"></i>
+                                                      </div>
+                                                   </label>
+                                                </div>
                                           </div>
                                        </div>
                                     </div>
                                     <div class="flex-row align-center">
-                                       <div class="col-12">
-                                          <div class="install-accordion__subtitle acc-info-wrap">
+                                       <div class="col-4">
+                                          <div class="install-accordion__subtitle">
                                                 Botón Grande
+                                          </div>
+                                       </div>
+                                       <div class="col-8">
+                                          <div class="install-accordion__section flex  acc-info-wrap">
+                                                <input type="text" >
+                                                <div class="install-accordion__info"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
                                                 <div class="pull-right">
-                                                      <label class="install-accordion__change">
-                                                         <input type="checkbox" checked>
-                                                         <div class="install-accordion__change-inner">
-                                                         <i class="fa" aria-hidden="true"></i>
-                                                         </div>
-                                                      </label>
-                                                   </div>
+                                                   <label class="install-accordion__change mar-r0">
+                                                      <input type="checkbox" checked>
+                                                      <div class="install-accordion__change-inner">
+                                                      <i class="fa" aria-hidden="true"></i>
+                                                      </div>
+                                                   </label>
+                                                </div>
                                           </div>
                                        </div>
                                     </div>
@@ -665,13 +675,16 @@
                         </div>
                         <div class="panel panel-install">
                            <div class="panel-body  pad-l0 pad-r0">
-                              <div class="flex-row align-center">
-                                 <div class="col-4">
+                              <div class="flex-row">
+                                 <div class="col-4 col-6-mobile">
                                     <div class="install-accordion__subtitle">
+                                          <span class="install-accordion__ico mobile">
+                                             <i class="fa fa-mobile" aria-hidden="true"></i>
+                                          </span>
                                           Botón Acceso APP
                                     </div>
                                  </div>
-                                 <div class="col-8">
+                                 <div class="col-8 col-6-mobile">
                                     <div class="install-accordion__section text-right acc-info-wrap">
                                           <div class="install-accordion__info"><i class="fa fa-info-circle" aria-hidden="true"></i></div>
                                           <label class="install-accordion__change">

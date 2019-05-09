@@ -319,10 +319,10 @@
                      <nav class="menu">
                         <ul>
                            <li><a href="#"><i class="fa fa-user"></i>Cliente</a></li>
-                           <li><a href="access.html"><i class="ag-icon-key"></i>Accesos</a></li>
+                           <li ><a href="#"><i class="ag-icon-key"></i>Accesos</a></li>
                            <li><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i>Personalizar</a></li>
-                           <li><a href="#"><i class="ag-icon-link"></i>Conexiones</a></li>
-                           <li class="active"><a href="#"><i class="ag-icon-TripAdvisor-logo"></i>Tripadvisor</a></li>
+                           <li  class="active"><a href="schedule.html" ><i class="fa fa-clock-o"></i>Horarios</a></li>
+                           <li><a href="tripadvisor.html"><i class="ag-icon-TripAdvisor-logo"></i>Tripadvisor</a></li>
                            <li><a href="repetidores.html"><i class="ag-icon-repeater"></i>Repetidores</a></li>
                            <li><a href="#"><i class="ag-icon-router"></i>Routers</a></li>
                         </ul>
@@ -333,11 +333,11 @@
                            <span><i class="fa fa-list" aria-hidden="true"></i></span>
                         </div>
                         <ul>
-                           <li class="active"><a href="#"><i class="fa fa-user"></i>Cliente</a></li>
-                           <li ><a href="#"><i class="ag-icon-key"></i>Accesos</a></li>
+                           <li><a href="#"><i class="fa fa-user"></i>Cliente</a></li>
+                           <li class="active"><a href="#"><i class="ag-icon-key"></i>Accesos</a></li>
                            <li><a href="#"><i class="fa fa-tasks" aria-hidden="true"></i>Personalizar</a></li>
                            <li><a href="#"><i class="ag-icon-link"></i>Conexiones</a></li>
-                           <li><a href="#"><i class="ag-icon-TripAdvisor-logo"></i>Tripadvisor</a></li>
+                           <li><a href="tripadvisor.html"><i class="ag-icon-TripAdvisor-logo"></i>Tripadvisor</a></li>
                            <li><a href="repetidores.html"><i class="ag-icon-repeater"></i>Repetidores</a></li>
                            <li><a href="#"><i class="ag-icon-router"></i>Routers</a></li>
                         </ul>
@@ -346,183 +346,128 @@
                </div>
                <div class="install-content">
                   <div class="row">
-                     <div class="col-lg-8">
-                        <div class="pt15">
-                        <div class="panel-group install-accordion" id="accordion">
-                           <div class="panel panel-default">
-                              <div class="panel-heading install-accordion__head collapsed-disabled">
-                                 <div class="install-row">
-                                    <a data-toggle="collapse" class="collapsed">
-                                       <span class="install-accordion__ico tripadvisor">
-                                             <img src="images/tripadvisor.jpg" alt="" >
-                                       </span>
-                                       <span class="install-accordion__title">
-                                             Activar TripAdvisor Review Express  
-                                       </span>
-                                    </a>
-                                    <div class="pull-right">
-                                       <label class="install-accordion__change">
-                                          <input type="checkbox" checked>
-                                          <div class="install-accordion__change-inner">
-                                          <i class="fa" aria-hidden="true"></i>
-                                          </div>
-                                       </label>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div id="collapseOne" class="panel-collapse collapse in">
-                                 <div class="panel-body">
-                                    <div class="flex-row align-center">
-                                       <div class="col">
-                                          <div class="install-accordion__subtitle">
-                                             URL:
-                                          </div>
-                                       </div>
-                                       <div class="col-12 pad-r0">
-                                          <div class="install-accordion__section">
-                                             <input type="text" placeholder="www.tripadvisor.com/hotel                                             ">
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>      
-                        </div>
-                     </div>
-                     <div class="col-lg-4">
-                        <div class="panel panel-install install-preview-wrap">
-                           <div class="panel-body">
-                              <div class="tripadvisor-progress">
-                                 <div class="tripadvisor-progress__alert">
-                                    <div class="tripadvisor-progress__alert-ico"><i class="ag-icon-check"></i></div>
-                                    <div class="tripadvisor-progress__alert-text">
-                                       <strong>Conectados Correctamente con TripAdvisor</strong>
-                                    </div>
-                                 </div>
-                                 <div class="tripadvisor-progress__line">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row">
                      <div class="col-lg-12">
-                        <div class="panel panel-install">
-                           <div class="panel-heading"><div class="panel-title">Configuración</div></div>
+                        <div class="new-repeater">
+                           <div class="new-repeater__icon">
+                              <i class="fa fa-clock-o"></i>
+                           </div>
+                           <div class="new-repeater__text">
+                                 Huso Horario
+                           </div>
+                           <div class="new-repeater__input">
+                              <div class="selectpicker-wrap">
+                              <select  class="selectpicker">
+                                 <option>(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stock</option>
+                                 <option>(GMT+02:00) Amsterdam, Berlin, Bern, Rome, Stock</option>
+                                 <option>(GMT+03:00) Amsterdam, Berlin, Bern, Rome, Stock</option>
+                              </select>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
                   <div class="row">
                      <div class="col-lg-6">
-                        <div class="advisor-list">
-                           <div class="row">
-                              <div class="col-lg-12">
-                                 <div class="new-repeater">
-                                    <span class="install-accordion__ico tripadvisor">
-                                          <i class="fa fa-plane" aria-hidden="true"></i>
-                                    </span>
-                                    <div class="new-repeater__text">
-                                       Nuevo Repetidor
-                                    </div>
-                                    <div class="new-repeater__section">
-
-                                    </div>
-                                 </div>
+                        <div class="panel panel-install">
+                           <div class="panel-heading"><div class="panel-title"><i class="fa fa-suitcase  panel-title-icon"></i>Horario Establecimiento</div></div>
+                           <div class="panel-body">
+                              <div class="radio-list">
+                                 <label class="radio-button"><input type="radio" name="a"><span>Sincronizar con Facebook</span></label>
+                                 <label class="radio-button"><input type="radio" name="a"><span>Abierto Siempre (24h)</span></label>
+                                 <label class="radio-button"><input type="radio" name="a"><span>Abierto en horas Concretas</span></label>
                               </div>
-                           </div>
-                           <div class="row">
-                              <div class="col-lg-12">
-                                 <div class="new-repeater">
-                                    <span class="install-accordion__ico tripadvisor">
-                                          <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                                    </span>
-                                    <div class="new-repeater__text">
-                                          Días a esperar para enviar el correo <em>(Mínimo 2 Dias - Máximo 30 Dias)</em>
-                                    </div>
-                                    <div class="new-repeater__section">
-                                        <div class="selectpicker-wrap">
-                                          <select  class="selectpicker" >     
-                                             <option   value="sel" >2</option>        
-                                             <option  value="sel2" >6</option>        
-                                             <option   value="sel3" >7</option>        
-                                             <option  value="sel4" >8</option>        
-                                             <option value="sel5" >9</option>        
-                                          </select>   
-                                       </div>
-                                    </div>
-                                 </div>
+                              <div class="schedule-table">
+                                 <table>
+                                    <tr>
+                                       <th class="schedule-table__green">LUN</th>
+                                       <th class="schedule-table__green">MAR</th>
+                                       <th class="schedule-table__green">MIE</th>
+                                       <th class="schedule-table__green">JUE</th>
+                                       <th class="schedule-table__green">VIE</th>
+                                       <th class="schedule-table__green">SAB</th>
+                                       <th class="schedule-table__red">DOM</th>
+                                    </tr>
+                                    <tr>
+                                       <td><div class="schedule-table__time">9:00 am</div></td>
+                                       <td><div class="schedule-table__time">9:00 am</div></td>
+                                       <td><div class="schedule-table__time">9:00 am</div></td>
+                                       <td><div class="schedule-table__time">9:00 am</div></td>
+                                       <td><div class="schedule-table__time">9:00 am</div></td>
+                                       <td><div class="schedule-table__time">9:00 am</div></td>
+                                       <td></td>
+                                    </tr>
+                                    <tr>
+                                       <td><div class="schedule-table__to"><strong>TO</strong></div></td>
+                                       <td><div class="schedule-table__to"><strong>TO</strong></div></td>
+                                       <td><div class="schedule-table__to"><strong>TO</strong></div></td>
+                                       <td><div class="schedule-table__to"><strong>TO</strong></div></td>
+                                       <td><div class="schedule-table__to"><strong>TO</strong></div></td>
+                                       <td><div class="schedule-table__to"><strong>TO</strong></div></td>
+                                       <td></td>
+                                    </tr>
+                                    <tr>
+                                       <td><div class="schedule-table__time">19:00 am</div></td>
+                                       <td><div class="schedule-table__time">19:00 am</div></td>
+                                       <td><div class="schedule-table__time">19:00 am</div></td>
+                                       <td><div class="schedule-table__time">19:00 am</div></td>
+                                       <td><div class="schedule-table__time">19:00 am</div></td>
+                                       <td><div class="schedule-table__time">15:00 am</div></td>
+                                       <td></td>
+                                    </tr>
+                                    <tr>
+                                       <td><div class="schedule-table__plus">+</div></td>
+                                       <td><div class="schedule-table__plus">+</div></td>
+                                       <td><div class="schedule-table__plus">+</div></td>
+                                       <td><div class="schedule-table__plus">+</div></td>
+                                       <td><div class="schedule-table__plus">+</div></td>
+                                       <td><div class="schedule-table__time">19:00 am</div></td>
+                                       <td></td>
+                                    </tr>
+                                    <tr>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td><div class="schedule-table__to"><strong>TO</strong></div></td>
+                                       <td></td>
+                                    </tr>
+                                    <tr>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td><div class="schedule-table__time">23:00 am</div></td>
+                                       <td></td>
+                                    </tr>
+                                    <tr>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td><div class="schedule-table__plus">-</div></td>
+                                       <td></td>
+                                    </tr>
+                                 </table>
                               </div>
-                           </div>
-                           <div class="row">
-                              <div class="col-lg-12">
-                                 <div class="new-repeater">
-                                    <span class="install-accordion__ico tripadvisor">
-                                          <i class="fa fa-user" aria-hidden="true"></i>
-                                    </span>
-                                    <div class="new-repeater__text">
-                                          Enviar a
-                                    </div>
-                                    <div class="new-repeater__section">
-                                       <div class="selectpicker-wrap">
-                                          <select  class="selectpicker" title="Choose one of the following...">     
-                                             <option   value="sel" >Avanzado</option>        
-                                             <option  value="sel2" >6</option>        
-                                             <option   data-class="seleccionar" value="sel3" >7</option>        
-                                             <option  value="sel4" >8</option>        
-                                             <option value="sel5" >9</option>        
-                                          </select>   
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="row">
-                              <div class="col-lg-12">
-                                 <div class="advisor-list__right">
-                                    <span>
-                                     Número de Visitas
-                                    </span>
-                                    <span>Entre:</span>
-                                    <select class="select-double-arrows">
-                                       <option>1</option>
-                                       <option>2</option>
-                                       <option>3</option>
-                                    </select>
-                                    <span>y</span>
-                                    <select class="select-double-arrows">
-                                       <option>5</option>
-                                       <option>4</option>
-                                       <option>3</option>
-                                    </select>
-                                 </div>
+                              <div class="schedule-sync">
+                                 <a href="#" class="btn btn-default"><i class="fa fa-refresh" aria-hidden="true"></i>Sincronizar con Facebook</a>
                               </div>
                            </div>
                         </div>
                      </div>
                      <div class="col-lg-6">
-                        <div class="tags-list">
-                              <div class="panel-heading"><div class="panel-title">Idiomas</div></div>
-                              <div class="panel-body">
-                                 <ul class="tags-list__section">
-                                    <li>Catalán <i class="fa fa-times" aria-hidden="true"></i></li>
-                                    <li>Alemán <i class="fa fa-times" aria-hidden="true"></i></li>
-                                    <li>Inglés <i class="fa fa-times" aria-hidden="true"></i></li>
-                                    <li>Español <i class="fa fa-times" aria-hidden="true"></i></li>
-                                    <li>Catalán <i class="fa fa-times" aria-hidden="true"></i></li>
-                                    <li>Alemán <i class="fa fa-times" aria-hidden="true"></i></li>
-                                    <li>Inglés <i class="fa fa-times" aria-hidden="true"></i></li>
-                                    <li>Español <i class="fa fa-times" aria-hidden="true"></i></li>
-                                    <li>Catalán <i class="fa fa-times" aria-hidden="true"></i></li>
-                                    <li>Alemán <i class="fa fa-times" aria-hidden="true"></i></li>
-                                    <li>Inglés <i class="fa fa-times" aria-hidden="true"></i></li>
-                                    <li class="tags-list__plus">+</li>
-                                 </ul>
+                        <div class="panel panel-install">
+                           <div class="panel-heading"><div class="panel-title"><i class="ag-icon-wifi panel-title-icon"></i>Horario de Activación WiFi</div></div>
+                           <div class="panel-body">
+                              <div class="radio-list">
+                                 <label class="radio-button"><input type="radio" name="a"><span>Sincronizar con Facebook</span></label>
+                                 <label class="radio-button"><input type="radio" name="a"><span>Abierto Siempre (24h)</span></label>
+                                 <label class="radio-button"><input type="radio" name="a"><span>Abierto en horas Concretas</span></label>
                               </div>
+                           </div>
                         </div>
                      </div>
                   </div>
