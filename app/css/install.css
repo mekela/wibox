@@ -567,7 +567,10 @@
     background: none;
     border: none;
     padding: 0 5px;
-    height: 100%; }
+    height: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
     .install-accordion__section input.dark-input {
       color: #2d4159; }
       .install-accordion__section input.dark-input::-webkit-input-placeholder {
@@ -592,6 +595,19 @@
   color: #dbdbdb;
   top: 50%;
   transform: translateY(-50%); }
+
+.install-accordion__tag {
+  padding-left: 10px; }
+  .install-accordion__tag span {
+    font-size: 12px;
+    color: #ffffff;
+    background: #4a5b7a;
+    text-transform: uppercase;
+    padding: 2px 5px;
+    margin-right: 5px; }
+  @media only screen and (max-width: 550px) {
+    .install-accordion__tag {
+      display: none; } }
 
 .install-preview {
   max-width: 376px;
@@ -1385,7 +1401,8 @@ option.avatar {
     .selectpicker-wrap .dropdown-menu .multiple-option .check-mark {
       display: inline-block;
       font-size: 0.8em;
-      padding-right: 5px; }
+      padding-right: 5px;
+      display: none; }
   .selectpicker-wrap .selected a {
     background: #4a5b7a;
     color: #fff; }
@@ -1536,6 +1553,83 @@ option.avatar {
   .box-holder, .site-holder {
     min-height: 10px !important;
     padding-bottom: 20px; } }
+
+.relative {
+  position: relative; }
+
+.option-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px; }
+  @media only screen and (max-width: 550px) {
+    .option-row {
+      display: block;
+      margin-bottom: 10px; } }
+  .option-row .panel-title {
+    padding-left: 5px; }
+    @media only screen and (max-width: 550px) {
+      .option-row .panel-title {
+        font-size: 12px; } }
+  .option-row .panel-body {
+    padding-left: 4px;
+    padding-right: 4px; }
+  .option-row .tags-list__section li.tags-list__plus {
+    right: 0; }
+  .option-row .tags-list {
+    margin: 0 2px;
+    flex: 1; }
+    @media only screen and (max-width: 550px) {
+      .option-row .tags-list {
+        margin: 2px 0; } }
+
+.option-numb {
+  background: #4a5b7a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+  flex-direction: column;
+  padding: 5px; }
+  .option-numb strong {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 30px;
+    font-weight: normal; }
+    @media only screen and (max-width: 550px) {
+      .option-numb strong {
+        text-align: center; } }
+
+.option-delete {
+  background: #f7f7f7;
+  padding: 10px 5px;
+  font-size: 24px; }
+  .option-delete a {
+    color: #4a5b7a; }
+  @media only screen and (max-width: 550px) {
+    .option-delete {
+      text-align: center; } }
+
+.option-wrap {
+  margin-top: 15px; }
+
+.option-button {
+  text-align: right;
+  padding: 25px 0 40px 0; }
+
+.option-check .pull-right {
+  padding-right: 20px; }
+  .option-check .pull-right span {
+    font-size: 14px;
+    color: #2d4159;
+    padding-left: 5px; }
+    @media only screen and (max-width: 450px) {
+      .option-check .pull-right span {
+        font-size: 10px; } }
+
+.panel-install .option-check .col-8 {
+  background: none; }
 
 @media only screen and (max-width: 600px) {
   .col-6-mobile {

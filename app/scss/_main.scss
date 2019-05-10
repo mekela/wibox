@@ -484,6 +484,9 @@
 			border: none;
 			padding: 0 5px;
 			height: 100%;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
 			&.dark-input{
 				color: #2d4159;
 				&::-webkit-input-placeholder {
@@ -514,6 +517,20 @@
 		color: #dbdbdb;
 		top: 50%;
 		transform: translateY(-50%);
+	}
+	&__tag{
+		padding-left: 10px;
+		span{
+			font-size: 12px;
+			color: #ffffff;
+			background: #4a5b7a;
+			text-transform: uppercase;
+			padding: 2px 5px;
+			margin-right: 5px;
+		}
+		@include mq($max-width: 550px) {
+			display: none;
+		}
 	}
 }
 .install-preview{
@@ -1427,6 +1444,7 @@
 				display: inline-block;
 				font-size: 0.8em;
 				padding-right: 5px;
+				display: none;
 			}
 		}
 	}
@@ -1607,4 +1625,91 @@
 		min-height: 10px !important;
 		padding-bottom: 20px;
 	}
+}
+.relative{
+	position: relative;
+}
+.option-row{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4px;
+	@include mq($max-width: 550px) {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.panel-title{
+		padding-left: 5px;
+		@include mq($max-width: 550px) {
+			font-size: 12px;
+		}
+	}
+	.panel-body{
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+	.tags-list__section li.tags-list__plus{
+		right: 0;
+	}
+	.tags-list{
+		margin: 0 2px;
+		flex: 1;
+		@include mq($max-width: 550px) {
+			margin: 2px 0;
+		}
+	}
+}
+	.option-numb{
+		background: #4a5b7a;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 18px;
+		color: #fff;
+		flex-direction: column;
+		padding: 5px;
+		strong{
+			display: block;
+			width: 100%;
+			text-align: left;
+			font-size: 30px;
+			font-weight: normal;
+			@include mq($max-width: 550px) {
+				text-align: center;
+			}
+		}
+	}
+	
+	.option-delete{
+		background: #f7f7f7;
+		padding: 10px 5px;
+		font-size: 24px;
+		a{
+			color: #4a5b7a;
+		}
+		@include mq($max-width: 550px) {
+			text-align: center;
+		}
+	}
+	.option-wrap{
+		margin-top: 15px;
+	}
+.option-button{
+	text-align: right;
+	padding: 25px 0 40px 0;
+}
+.option-check{
+	.pull-right{
+		padding-right: 20px;
+		span{
+			font-size: 14px;
+			color: #2d4159;
+			padding-left: 5px;
+			@include mq($max-width: 450px) {
+				font-size:10px;
+			}
+		}
+	}
+}
+.panel-install .option-check .col-8{
+	background: none;
 }
