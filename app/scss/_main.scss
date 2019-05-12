@@ -288,6 +288,9 @@
 				max-width: 30px;
 			}
 		}
+		&.orange{
+			background: #f79219;
+		}
 	}
 	.panel-default > .panel-heading + .panel-collapse .panel-body{
 		border-top: none;
@@ -1712,4 +1715,12 @@
 }
 .panel-install .option-check .col-8{
 	background: none;
+}
+.router-row{
+	display: flex;
+	margin-left:-4px;
+	margin-right:-4px;
+	& > div{
+		margin:0 4px;
+	}
 }

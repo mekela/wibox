@@ -385,6 +385,8 @@
     background: #01ae88; }
     .install-accordion__ico.tripadvisor img {
       max-width: 30px; }
+  .install-accordion__ico.orange {
+    background: #f79219; }
 
 .install-accordion .panel-default > .panel-heading + .panel-collapse .panel-body {
   border-top: none; }
@@ -1630,6 +1632,13 @@ option.avatar {
 
 .panel-install .option-check .col-8 {
   background: none; }
+
+.router-row {
+  display: flex;
+  margin-left: -4px;
+  margin-right: -4px; }
+  .router-row > div {
+    margin: 0 4px; }
 
 @media only screen and (max-width: 600px) {
   .col-6-mobile {
