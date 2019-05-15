@@ -291,6 +291,9 @@
 		&.orange{
 			background: #f79219;
 		}
+		&.blue{
+			background: #3faedc;
+		}
 	}
 	.panel-default > .panel-heading + .panel-collapse .panel-body{
 		border-top: none;
@@ -1720,7 +1723,258 @@
 	display: flex;
 	margin-left:-4px;
 	margin-right:-4px;
+	@include mq($max-width: 767px) {
+		display: block;
+	}
 	& > div{
 		margin:0 4px;
+		width: 100%;
+	}
+	.install-accordion__ico{
+		margin-left: -3px;
+	}
+	.install-accordion__subtitle{
+		display: flex;
+		margin-left: -5px;
+		font-size: 14px;
+		span{
+			color: #ecab5c;
+			padding-right: 7px;
+			font-size: 1.5em;
+			vertical-align: middle;
+			line-height: 1em;
+			@include mq($max-width: 767px) {
+				font-size: 1em;
+				line-height: 1.4;
+			}
+		}
+	}
+}
+.space-between{
+	justify-content: space-between;
+}
+.align-center{
+	align-items: center;
+}
+.flex-end{
+	justify-content: flex-end;
+}
+.error-message{
+	text-align: center;
+	padding: 6px 15px;
+	background: #de5b64;
+	color: #ffffff;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.setup-router-row{
+	display: flex;
+	//justify-content: space-between;
+	margin-left: -2px;
+	margin-right: -2px;
+	margin-bottom: 15px;
+	@include mq($max-width: 767px) {
+		display: block;
+	}
+	.install-accordion__ico{
+		margin: 0;
+		height: 100%;
+		@include mq($max-width: 767px) {
+			width: 100%;
+			padding: 15px ;
+			margin-bottom: 4px;
+		}
+	}
+}
+	.setup-router-col{
+		margin: 0 2px;
+		.panel-install{
+			background: #f7f7f7;
+			.panel-heading{
+				text-align: center;
+			}
+			.panel-body{
+				padding: 0;
+			}
+		}
+	}
+.setup-router-list{
+	margin-left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	@include mq($max-width: 767px) {
+		margin-bottom: 4px;
+	}
+	.flex-row{
+		background: #f7f7f7;
+		margin-bottom: 5px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		.col{
+			padding-right: 0;
+			flex: 1;
+		}
+	}
+}
+.setup-router-list__title{
+	padding: 5px 0;
+	font-size: 16px;
+	color: #2d4159;
+	@include mq($max-width: 450px) {
+		font-size: 12px;
+	}
+}
+.setup-router-checkbox{
+	background: #f7f7f7;
+	padding: 10px;
+	text-align: center;
+	@include mq($max-width: 767px) {
+		display: flex;
+		text-align: left;
+		justify-content: space-between;
+		position: relative;
+		padding-right: 40px;
+		margin-bottom: 4px;
+		.install-accordion__info{
+			right: 10px;
+		}
+	}
+	h6{
+		font-size: 16px;
+		color: #2d4159;
+		position: relative;
+		padding: 0 30px;
+		margin-bottom: 15px;
+		margin-top: 5px;
+		@include mq($max-width: 767px) {
+			padding: 0 0 0 3px;
+			margin: 0;
+			position: static;
+		}
+		@include mq($max-width: 450px) {
+			font-size: 12px;
+		}
+	}
+	.install-accordion__change{
+		margin-right: 0;
+	}
+}
+.setup-router-button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background: #41afdc;
+	padding: 0 30px;
+	font-size: 20px;
+	color: #ffffff;
+	flex-direction: column;
+	text-decoration: none;
+	@include mq($max-width: 767px) {
+		flex-direction: row;
+		padding: 10px 15px;
+	}
+	i{
+		padding-bottom: 5px;
+		display:  block;
+		@include mq($max-width: 767px) {
+			padding-bottom: 0;
+			padding-right: 5px;
+		}
+	}
+	&:hover{
+		text-decoration: none;
+		color: #fff;
+		background: #2898c6;
+	}
+}
+.setup-router-select, .setup-router-checkbox, .setup-router-list{
+	flex: 1;
+}
+.setup-router-select{
+	.install-accordion__info{
+		right: 10px;
+	}
+	.panel{
+		margin-bottom: 0;
+		height: 100%;
+		background: #f1f1f1;
+		border-radius: 0;
+		@include mq($max-width: 767px) {
+			display: flex;
+			text-align: left;
+			justify-content: space-between;
+			position: relative;
+			padding-right: 40px;
+			text-align: left;
+			margin-bottom: 4px;
+			.install-accordion__info{
+				right: 10px;
+			}
+		}
+	}
+	.panel-heading{
+		background: #f7f7f7;
+		@include mq($max-width: 767px) {
+			flex: 1;
+			border-bottom: none;
+			text-align: left;
+		}
+	}
+	.panel-title{
+		@include mq($max-width: 767px) {
+			padding-left: 15px;
+			text-align: left;
+			font-size: 16px;
+		}
+		@include mq($max-width: 450px) {
+			font-size: 12px;
+		}
+	}
+}
+.fake-file{
+	position: relative;
+	display: inline-block;
+	input{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		z-index: 2;
+		opacity: 0;
+	}
+}
+.router-white{
+	display: flex;
+	@include mq($max-width: 767px) {
+		display: block;
+	}
+	.new-repeater{
+		padding: 0;
+		margin-bottom: 20px;
+		flex: 1;
+		&:first-child{
+			margin-right: 4px;
+		}
+	}
+	.new-repeater__text{
+		width: auto;
+	}
+	.new-repeater__input{
+		width: auto;
+		flex: 1;
+		input{
+			width: 100%;
+		}
+		@include mq($max-width: 767px) {
+		margin-top: 0;
+		margin-bottom: 0;
+		}
+	}
+	.new-repeater__icon{
+		background: #3aacb9;
 	}
 }
