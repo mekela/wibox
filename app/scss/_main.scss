@@ -174,7 +174,7 @@
 		border-radius: 0;
 		border: none;
 		box-shadow: none;
-		overflow: auto;
+		//overflow: auto;
 	}
 	.panel-body{
 		 .flex-row{
@@ -540,12 +540,24 @@
 	}
 }
 .install-preview{
-	max-width: 376px;
-	padding: 15% 0 20% 0;
+	width: 235px;
+	height: 449px;
+	box-sizing: border-box;
 	margin: 0 auto;
+	//padding: 17px 0 20px 0;
 	text-align: center;
-	background: url(../images/iphone.png) no-repeat center top;
-	background-size: contain;
+	position: relative;
+	overflow: hidden;
+	&:before{
+		background: url(../images/iphonex.png) no-repeat center top;
+		background-size: 100% auto;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		content: '';
+	}
 	@include mq($min-width: 1900px) {
 		background-size: auto;
 		padding: 87px 0 0 0;
@@ -554,8 +566,8 @@
 		box-sizing: border-box;
 	}
 	img{
-		max-width: 100%;
-		padding: 0 20%;
+		width: 100%;
+		min-height: 100%;
 		@include mq($min-width: 1900px) {
 			padding: 0;
 		}
@@ -1010,6 +1022,9 @@
 }
 .repeaters-table{
 	overflow-x: auto;
+	.fa-2x{
+		font-size: 1.5em;
+	}
 	table{
 		width: 100%;
 		td, th{
@@ -1452,6 +1467,14 @@
 				padding-right: 5px;
 				display: none;
 			}
+		}
+		.dropdown-header{
+			font-size: 1em;
+			font-weight: bold;
+			padding-bottom: 0.5em;
+		}
+		a.opt{
+			padding-left: 2em;
 		}
 	}
 	.selected{
@@ -1977,4 +2000,7 @@
 	.new-repeater__icon{
 		background: #3aacb9;
 	}
+}
+.content{
+	padding-bottom: 80px;
 }

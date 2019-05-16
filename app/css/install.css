@@ -7,7 +7,7 @@
 
 [class^="ag-icon-"], [class*=" ag-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon';
+  font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -17,6 +17,9 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.ag-icon-macaddress:before {
+  content: "\e92e"; }
 
 .ag-icon-googleplus:before {
   content: "\e91e"; }
@@ -298,8 +301,7 @@
   .panel-install .panel {
     border-radius: 0;
     border: none;
-    box-shadow: none;
-    overflow: auto; }
+    box-shadow: none; }
   .panel-install .panel-body .flex-row {
     background: #f7f7f7;
     border-bottom: 7px solid #fff; }
@@ -614,12 +616,22 @@
       display: none; } }
 
 .install-preview {
-  max-width: 376px;
-  padding: 15% 0 20% 0;
+  width: 235px;
+  height: 449px;
+  box-sizing: border-box;
   margin: 0 auto;
   text-align: center;
-  background: url(../images/iphone.png) no-repeat center top;
-  background-size: contain; }
+  position: relative;
+  overflow: hidden; }
+  .install-preview:before {
+    background: url(../images/iphonex.png) no-repeat center top;
+    background-size: 100% auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    content: ''; }
   @media only screen and (min-width: 1900px) {
     .install-preview {
       background-size: auto;
@@ -628,8 +640,8 @@
       width: 376px;
       box-sizing: border-box; } }
   .install-preview img {
-    max-width: 100%;
-    padding: 0 20%; }
+    width: 100%;
+    min-height: 100%; }
     @media only screen and (min-width: 1900px) {
       .install-preview img {
         padding: 0; } }
@@ -1045,6 +1057,8 @@ option.avatar {
 
 .repeaters-table {
   overflow-x: auto; }
+  .repeaters-table .fa-2x {
+    font-size: 1.5em; }
   .repeaters-table table {
     width: 100%; }
     .repeaters-table table td, .repeaters-table table th {
@@ -1407,6 +1421,12 @@ option.avatar {
       font-size: 0.8em;
       padding-right: 5px;
       display: none; }
+    .selectpicker-wrap .dropdown-menu .dropdown-header {
+      font-size: 1em;
+      font-weight: bold;
+      padding-bottom: 0.5em; }
+    .selectpicker-wrap .dropdown-menu a.opt {
+      padding-left: 2em; }
   .selectpicker-wrap .selected a {
     background: #4a5b7a;
     color: #fff; }
@@ -1866,6 +1886,9 @@ option.avatar {
         margin-bottom: 0; } }
   .router-white .new-repeater__icon {
     background: #3aacb9; }
+
+.content {
+  padding-bottom: 80px; }
 
 @media only screen and (max-width: 600px) {
   .col-6-mobile {
