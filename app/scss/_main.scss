@@ -246,6 +246,11 @@
 		box-shadow: none;
 		overflow: visible;
 	}
+	.install-row{
+		.pull-right{
+			display: flex;
+		}
+	}
 	&__ico{
 		height: calc(100% + 20px);
 		width: 50px;
@@ -302,11 +307,14 @@
 		color: #2d4159;
 		font-size: 16px;
 		font-weight: 400;
+		position: relative;
+		top: -3px;
 		@include mq($max-width: 992px) {
 			font-size:15px;
 		}
 		@include mq($max-width: 450px) {
 			font-size:11px;
+			
 		}
 	}
 	&__plus{
@@ -426,7 +434,8 @@
 			vertical-align: middle;
 		}
 		@include mq($max-width: 992px) {
-			padding-left:25px;
+			padding-left:40px;
+			//padding-left:25px;
 		}
 	}
 	&__subtitle{
@@ -523,6 +532,9 @@
 		color: #dbdbdb;
 		top: 50%;
 		transform: translateY(-50%);
+		@include mq($max-width: 992px) {
+			right: -5px;
+		}
 	}
 	&__tag{
 		padding-left: 10px;
@@ -540,34 +552,36 @@
 	}
 }
 .install-preview{
-	width: 235px;
-	height: 449px;
+	width: 371px;
+	height: 753px;
 	box-sizing: border-box;
 	margin: 0 auto;
 	//padding: 17px 0 20px 0;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
+	
 	&:before{
-		background: url(../images/iphonex.png) no-repeat center top;
-		background-size: 100% auto;
-		width: 100%;
+		background: url(../images/iphonex-white2.png) no-repeat center top; 
+		width: 371px;
 		position: absolute;
 		top: 0;
 		left: 0;
-		height: 100%;
+		height: 753px;
 		content: '';
 	}
 	@include mq($min-width: 1900px) {
-		background-size: auto;
-		padding: 87px 0 0 0;
-		height: 736px;
-		width: 376px;
-		box-sizing: border-box;
+		// background-size: auto;
+		// padding: 87px 0 0 0;
+		// height: 736px;
+		// width: 376px;
+		// box-sizing: border-box;
 	}
 	img{
-		width: 100%;
-		min-height: 100%;
+		width: calc(100% - 20px);
+		min-height: calc(100% - 20px);
+		border-radius: 45px;
+		margin:  10px;
 		@include mq($min-width: 1900px) {
 			padding: 0;
 		}
@@ -595,7 +609,11 @@
 				max-width: 100%;
 			}
 			.install-accordion__ico{
-				height: 50px;
+				height: 30px;
+				font-size: 15px;
+				width: 30px;
+				margin-left: -14px;
+				margin-bottom: -10px;
 			}
 		}
 	}
@@ -936,6 +954,9 @@
 		@include mq($max-width: 992px) {
 			font-size:25px;
 		}
+		@include mq($max-width: 575px) {
+			font-size:18px;
+		}
 	}
 	&__text, &__section{
 		padding: 10px 13px;
@@ -979,7 +1000,7 @@
 			}
 			@include mq($max-width: 530px) {
 			width: 100%;
-			padding: 15px;
+			padding: 10px;
 			}
 		}
 	}
@@ -1410,6 +1431,12 @@
 			color: #7c7c7c;
 			font-family: 'Open Sans';
 			font-size: 14px;
+			@include mq($max-width: 600px) {
+				font-size: 12px;
+			}
+		}
+		@include mq($max-width: 600px) {
+			font-size: 12px;
 		}
 	}
 	.btn-group{
@@ -1449,6 +1476,18 @@
 				padding-right: 20px;
 				font-size: 1.5em;
 				vertical-align: middle;
+				@include mq($max-width: 600px) {
+					padding-right: 4px;
+				}
+			}
+			@include mq($max-width: 600px) {
+				font-size: 10px;
+				padding-left: 5px;
+				padding-right: 5px;
+				width: 100%;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
 			}
 		}
 		.pull-left{
@@ -1469,12 +1508,13 @@
 			}
 		}
 		.dropdown-header{
-			font-size: 1em;
+			font-size: 1.2em;
 			font-weight: bold;
 			padding-bottom: 0.5em;
 		}
 		a.opt{
 			padding-left: 2em;
+			font-weight: bold;
 		}
 	}
 	.selected{
@@ -1575,6 +1615,9 @@
 		font-size: 16px;
 		padding: 15px 5px;
 		font-weight: normal;
+		@include mq($max-width: 600px) {
+			font-size: 14px;
+		}
 	}
 	&__red{
 		background: #e48380;
@@ -1582,6 +1625,9 @@
 		font-size: 16px;
 		padding: 15px 5px;
 		font-weight: normal;
+		@include mq($max-width: 600px) {
+			font-size: 14px;
+		}
 	}
 	&__time{
 		font-size: 14px;
@@ -1620,6 +1666,12 @@
 		background: #ededec;
 		line-height: 29px;
 		cursor: pointer;
+		@include mq($max-width: 600px) {
+			font-size: 14px;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+		}
 	}
 }
 .schedule-sync{
@@ -1767,8 +1819,8 @@
 			vertical-align: middle;
 			line-height: 1em;
 			@include mq($max-width: 767px) {
-				font-size: 1em;
-				line-height: 1.4;
+				font-size: 1.4em;
+				line-height: 1;
 			}
 		}
 	}
@@ -1820,6 +1872,9 @@
 				padding: 0;
 			}
 		}
+		@include mq($max-width: 767px) {
+			margin: 0;
+		}
 	}
 .setup-router-list{
 	margin-left: 0;
@@ -1860,6 +1915,7 @@
 		position: relative;
 		padding-right: 40px;
 		margin-bottom: 4px;
+		align-items: center;
 		.install-accordion__info{
 			right: 10px;
 		}
@@ -1982,6 +2038,9 @@
 		&:first-child{
 			margin-right: 4px;
 		}
+		@include mq($max-width: 767px) {
+			margin-bottom: 10px;
+		}
 	}
 	.new-repeater__text{
 		width: auto;
@@ -1989,6 +2048,9 @@
 	.new-repeater__input{
 		width: auto;
 		flex: 1;
+		@include mq($max-width: 767px) {
+			flex: 2;
+		}
 		input{
 			width: 100%;
 		}
@@ -2003,4 +2065,7 @@
 }
 .content{
 	padding-bottom: 80px;
+}
+.self-center{
+	align-self: center;
 }

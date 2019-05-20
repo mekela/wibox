@@ -3,8 +3,66 @@
 
 
 //styles for custom device width
-@include mq($max-width: 992px) {
-  
+@include mq($max-width: 1501px, $min-width: 992px) {
+	
+	.install-accordion__subtitle, .install-accordion__title, .install-content .panel-title, .install-accordion__section input, .setup-router-list__title,
+	.new-repeater__text, .new-repeater__section,
+	.new-repeater__input input,
+	.install-nav .btn,
+	.tripadvisor-progress__alert,
+	.tags-list__section li{
+		font-size: 0.9em;
+	}
+	.install-accordion__info, .setup-router-checkbox h6, .setup-router-button, .new-repeater__button button,
+	.repeaters-table table td, .repeaters-table table th,
+	.schedule-table__red, .schedule-table__green, 
+	.btn-primary-dark,
+	.option-numb{
+		font-size: 1em;
+	}
+	.install-accordion__subtitle{
+		// padding-top: 7px;
+		// padding-bottom: 7px;
+	}
+	.router-row .install-accordion__subtitle span{
+		font-size: 1em;
+		line-height: 1.4;
+	}
+	.selectpicker-wrap .caret{
+		border-width: 6px 4px 0 4px;
+	}
+	.repeaters-table table td, .repeaters-table table th{
+		padding: 10px;
+	}
+	.tripadvisor-progress__alert-ico{
+		font-size: 2em;
+	}
+	.radio-button span:before {
+		width: 18px;
+		height: 18px;
+		line-height: 18px;
+		font-size: 12px;
+	}
+	.radio-button span{
+		padding-left: 25px;
+	}
+	.schedule-table__red, .schedule-table__green{
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+	.option-numb strong{
+		font-size: 1.2em;
+	}
+	.panel-body{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.panel{
+		margin-bottom: 10px;
+	}
+
+
+	
 }
 
 .col-6-mobile{
@@ -12,4 +70,22 @@
 		flex: 0 0 50%;
         max-width: 50%;
 	}
+}
+
+@include mq($max-width: 992px) {
+	.col-4-mobile{
+		flex: 0 0 33.333333%;
+    	max-width: 33.333333%;
+	}
+	.col-8-mobile{
+		flex: 0 0 66.666667%;
+		max-width: 66.666667%;
+		background: #f1f1f1;
+	}
+
+	// .install-accordion__ico {
+	// 	height: calc(100% + 14px);
+	// 	margin: -7px 10px 0px -15px;
+	// }
+
 }

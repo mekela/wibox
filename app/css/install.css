@@ -355,6 +355,9 @@
   box-shadow: none;
   overflow: visible; }
 
+.install-accordion .install-row .pull-right {
+  display: flex; }
+
 .install-accordion__ico {
   height: calc(100% + 20px);
   width: 50px;
@@ -398,7 +401,9 @@
 .install-accordion__title {
   color: #2d4159;
   font-size: 16px;
-  font-weight: 400; }
+  font-weight: 400;
+  position: relative;
+  top: -3px; }
   @media only screen and (max-width: 992px) {
     .install-accordion__title {
       font-size: 15px; } }
@@ -517,7 +522,7 @@
     vertical-align: middle; }
   @media only screen and (max-width: 992px) {
     .install-accordion .panel-body {
-      padding-left: 25px; } }
+      padding-left: 40px; } }
 
 .install-accordion__subtitle {
   font-size: 16px;
@@ -601,6 +606,9 @@
   color: #dbdbdb;
   top: 50%;
   transform: translateY(-50%); }
+  @media only screen and (max-width: 992px) {
+    .install-accordion__info {
+      right: -5px; } }
 
 .install-accordion__tag {
   padding-left: 10px; }
@@ -616,32 +624,26 @@
       display: none; } }
 
 .install-preview {
-  width: 235px;
-  height: 449px;
+  width: 371px;
+  height: 753px;
   box-sizing: border-box;
   margin: 0 auto;
   text-align: center;
   position: relative;
   overflow: hidden; }
   .install-preview:before {
-    background: url(../images/iphonex.png) no-repeat center top;
-    background-size: 100% auto;
-    width: 100%;
+    background: url(../images/iphonex-white2.png) no-repeat center top;
+    width: 371px;
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 753px;
     content: ''; }
-  @media only screen and (min-width: 1900px) {
-    .install-preview {
-      background-size: auto;
-      padding: 87px 0 0 0;
-      height: 736px;
-      width: 376px;
-      box-sizing: border-box; } }
   .install-preview img {
-    width: 100%;
-    min-height: 100%; }
+    width: calc(100% - 20px);
+    min-height: calc(100% - 20px);
+    border-radius: 45px;
+    margin: 10px; }
     @media only screen and (min-width: 1900px) {
       .install-preview img {
         padding: 0; } }
@@ -663,7 +665,11 @@
         width: 100%;
         max-width: 100%; }
       .flex-row.mobile-block .install-accordion__ico {
-        height: 50px; } }
+        height: 30px;
+        font-size: 15px;
+        width: 30px;
+        margin-left: -14px;
+        margin-bottom: -10px; } }
 
 .col-6 {
   width: 50%; }
@@ -983,6 +989,9 @@ option.avatar {
     @media only screen and (max-width: 992px) {
       .new-repeater__icon {
         font-size: 25px; } }
+    @media only screen and (max-width: 575px) {
+      .new-repeater__icon {
+        font-size: 18px; } }
   .new-repeater__text, .new-repeater__section {
     padding: 10px 13px;
     font-size: 16px;
@@ -1022,7 +1031,7 @@ option.avatar {
     @media only screen and (max-width: 530px) {
       .new-repeater__input input {
         width: 100%;
-        padding: 15px; } }
+        padding: 10px; } }
   .new-repeater__button {
     display: flex; }
     .new-repeater__button button {
@@ -1377,6 +1386,12 @@ option.avatar {
       color: #7c7c7c;
       font-family: 'Open Sans';
       font-size: 14px; }
+      @media only screen and (max-width: 600px) {
+        .selectpicker-wrap .btn.bs-placeholder {
+          font-size: 12px; } }
+    @media only screen and (max-width: 600px) {
+      .selectpicker-wrap .btn {
+        font-size: 12px; } }
   .selectpicker-wrap .btn-group {
     height: 100%;
     display: block; }
@@ -1409,6 +1424,18 @@ option.avatar {
         padding-right: 20px;
         font-size: 1.5em;
         vertical-align: middle; }
+        @media only screen and (max-width: 600px) {
+          .selectpicker-wrap .dropdown-menu a:before, .selectpicker-wrap .dropdown-menu a .glyphicon {
+            padding-right: 4px; } }
+      @media only screen and (max-width: 600px) {
+        .selectpicker-wrap .dropdown-menu a {
+          font-size: 10px;
+          padding-left: 5px;
+          padding-right: 5px;
+          width: 100%;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden; } }
     .selectpicker-wrap .dropdown-menu .pull-left {
       color: #2d4159;
       font-size: 14px;
@@ -1422,11 +1449,12 @@ option.avatar {
       padding-right: 5px;
       display: none; }
     .selectpicker-wrap .dropdown-menu .dropdown-header {
-      font-size: 1em;
+      font-size: 1.2em;
       font-weight: bold;
       padding-bottom: 0.5em; }
     .selectpicker-wrap .dropdown-menu a.opt {
-      padding-left: 2em; }
+      padding-left: 2em;
+      font-weight: bold; }
   .selectpicker-wrap .selected a {
     background: #4a5b7a;
     color: #fff; }
@@ -1510,12 +1538,18 @@ option.avatar {
     font-size: 16px;
     padding: 15px 5px;
     font-weight: normal; }
+    @media only screen and (max-width: 600px) {
+      .schedule-table__green {
+        font-size: 14px; } }
   .schedule-table__red {
     background: #e48380;
     color: #ffffff;
     font-size: 16px;
     padding: 15px 5px;
     font-weight: normal; }
+    @media only screen and (max-width: 600px) {
+      .schedule-table__red {
+        font-size: 14px; } }
   .schedule-table__time {
     font-size: 14px;
     color: #2d4159;
@@ -1549,6 +1583,12 @@ option.avatar {
     background: #ededec;
     line-height: 29px;
     cursor: pointer; }
+    @media only screen and (max-width: 600px) {
+      .schedule-table__plus {
+        font-size: 14px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px; } }
 
 .schedule-sync {
   position: relative;
@@ -1679,8 +1719,8 @@ option.avatar {
       line-height: 1em; }
       @media only screen and (max-width: 767px) {
         .router-row .install-accordion__subtitle span {
-          font-size: 1em;
-          line-height: 1.4; } }
+          font-size: 1.4em;
+          line-height: 1; } }
 
 .space-between {
   justify-content: space-between; }
@@ -1724,6 +1764,9 @@ option.avatar {
       text-align: center; }
     .setup-router-col .panel-install .panel-body {
       padding: 0; }
+  @media only screen and (max-width: 767px) {
+    .setup-router-col {
+      margin: 0; } }
 
 .setup-router-list {
   margin-left: 0;
@@ -1761,7 +1804,8 @@ option.avatar {
       justify-content: space-between;
       position: relative;
       padding-right: 40px;
-      margin-bottom: 4px; }
+      margin-bottom: 4px;
+      align-items: center; }
       .setup-router-checkbox .install-accordion__info {
         right: 10px; } }
   .setup-router-checkbox h6 {
@@ -1873,11 +1917,17 @@ option.avatar {
     flex: 1; }
     .router-white .new-repeater:first-child {
       margin-right: 4px; }
+    @media only screen and (max-width: 767px) {
+      .router-white .new-repeater {
+        margin-bottom: 10px; } }
   .router-white .new-repeater__text {
     width: auto; }
   .router-white .new-repeater__input {
     width: auto;
     flex: 1; }
+    @media only screen and (max-width: 767px) {
+      .router-white .new-repeater__input {
+        flex: 2; } }
     .router-white .new-repeater__input input {
       width: 100%; }
     @media only screen and (max-width: 767px) {
@@ -1890,7 +1940,60 @@ option.avatar {
 .content {
   padding-bottom: 80px; }
 
+.self-center {
+  align-self: center; }
+
+@media only screen and (max-width: 1501px) and (min-width: 992px) {
+  .install-accordion__subtitle, .install-accordion__title, .install-content .panel-title, .install-accordion__section input, .setup-router-list__title,
+  .new-repeater__text, .new-repeater__section,
+  .new-repeater__input input,
+  .install-nav .btn,
+  .tripadvisor-progress__alert,
+  .tags-list__section li {
+    font-size: 0.9em; }
+  .install-accordion__info, .setup-router-checkbox h6, .setup-router-button, .new-repeater__button button,
+  .repeaters-table table td, .repeaters-table table th,
+  .schedule-table__red, .schedule-table__green,
+  .btn-primary-dark,
+  .option-numb {
+    font-size: 1em; }
+  .router-row .install-accordion__subtitle span {
+    font-size: 1em;
+    line-height: 1.4; }
+  .selectpicker-wrap .caret {
+    border-width: 6px 4px 0 4px; }
+  .repeaters-table table td, .repeaters-table table th {
+    padding: 10px; }
+  .tripadvisor-progress__alert-ico {
+    font-size: 2em; }
+  .radio-button span:before {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px; }
+  .radio-button span {
+    padding-left: 25px; }
+  .schedule-table__red, .schedule-table__green {
+    padding-top: 8px;
+    padding-bottom: 8px; }
+  .option-numb strong {
+    font-size: 1.2em; }
+  .panel-body {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .panel {
+    margin-bottom: 10px; } }
+
 @media only screen and (max-width: 600px) {
   .col-6-mobile {
     flex: 0 0 50%;
     max-width: 50%; } }
+
+@media only screen and (max-width: 992px) {
+  .col-4-mobile {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%; }
+  .col-8-mobile {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    background: #f1f1f1; } }
