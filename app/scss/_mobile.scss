@@ -10,14 +10,19 @@
 	.new-repeater__input input,
 	.install-nav .btn,
 	.tripadvisor-progress__alert,
-	.tags-list__section li{
+	.tags-list__section li,
+	.selectpicker-wrap .btn.bs-placeholder,
+	.selectpicker-wrap .btn,
+	.selectpicker-wrap .dropdown-menu a,
+	.router-row .install-accordion__subtitle{
 		font-size: 0.9em;
 	}
 	.install-accordion__info, .setup-router-checkbox h6, .setup-router-button, .new-repeater__button button,
 	.repeaters-table table td, .repeaters-table table th,
 	.schedule-table__red, .schedule-table__green, 
 	.btn-primary-dark,
-	.option-numb{
+	.option-numb,
+	.menu ul a{
 		font-size: 1em;
 	}
 	.install-accordion__subtitle{
@@ -60,8 +65,12 @@
 	.panel{
 		margin-bottom: 10px;
 	}
-
-
+	.menu ul a{
+		padding: 8px 5px;
+	}
+	.install-accordion__title{
+		top: -4px;
+	}
 	
 }
 
@@ -81,6 +90,12 @@
 		flex: 0 0 66.666667%;
 		max-width: 66.666667%;
 		background: #f1f1f1;
+	}
+	.mobile-flex{
+		display: flex;
+		.install-accordion__title{
+			top: 0;
+		}
 	}
 
 	// .install-accordion__ico {
