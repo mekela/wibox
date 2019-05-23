@@ -14,16 +14,18 @@
 	.selectpicker-wrap .btn.bs-placeholder,
 	.selectpicker-wrap .btn,
 	.selectpicker-wrap .dropdown-menu a,
-	.router-row .install-accordion__subtitle{
-		font-size: 0.9em;
+	.router-row .install-accordion__subtitle,
+	.install-preview-pc__center em{
+		font-size: 12px;
 	}
 	.install-accordion__info, .setup-router-checkbox h6, .setup-router-button, .new-repeater__button button,
 	.repeaters-table table td, .repeaters-table table th,
 	.schedule-table__red, .schedule-table__green, 
 	.btn-primary-dark,
 	.option-numb,
-	.menu ul a{
-		font-size: 1em;
+	.menu ul a,
+	.install-preview-pc .btn{
+		font-size: 14px;
 	}
 	.install-accordion__subtitle{
 		// padding-top: 7px;
@@ -61,6 +63,12 @@
 	.panel-body{
 		padding-top: 10px;
 		padding-bottom: 10px;
+		&.pt0 {
+			padding-top: 0;
+		}
+		&.pb0 {
+			padding-top: 0;
+		}
 	}
 	.panel{
 		margin-bottom: 10px;
@@ -71,7 +79,12 @@
 	.install-accordion__title{
 		top: -4px;
 	}
-	
+	.panel-install .panel-body .flex-row{
+		min-height: 47px;
+	}
+	.install-preview-pc{
+		padding-top: 3px;
+	}
 }
 
 .col-6-mobile{

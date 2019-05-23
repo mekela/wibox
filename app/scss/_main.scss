@@ -258,7 +258,7 @@
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
-		margin: -10px 10px 0px -19px;
+		margin: -10px 10px 0px -15px;
 		font-size: 20px;
 		color: #fff;
 		background: #4a5b7a;
@@ -268,7 +268,7 @@
 		}
 		&.mobile{
 			background: #63b284;
-			font-size: 25px;
+			//font-size: 25px;
 		}
 		&.fb{
 			background: #3a72b9;
@@ -314,7 +314,7 @@
 			font-size:15px;
 		}
 		@include mq($max-width: 450px) {
-			font-size:11px;
+			font-size:10px;
 			
 		}
 	}
@@ -611,11 +611,17 @@
 				max-width: 100%;
 			}
 			.install-accordion__ico{
-				height: 30px;
+				height: 40px;
 				font-size: 15px;
 				width: 30px;
 				margin-left: -14px;
 				margin-bottom: -10px;
+			}
+			.col-8{
+				min-height: 40px;
+				input{
+					min-height: 20px;
+				}
 			}
 		}
 	}
@@ -940,7 +946,7 @@
 
 .new-repeater{
 	display: flex;
-	padding-top: 25px;
+	padding-top: 15px;
 	padding-bottom: 25px;
 	@include mq($max-width: 530px) {
 		flex-wrap: wrap;
@@ -1108,6 +1114,7 @@
 }
 .install-preview-pc{
 	text-align: center;
+	padding-top: 8px;
 	.btn{
 		font-size: 16px;
 		text-transform: uppercase;
@@ -1179,6 +1186,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 }
 .pt15{
@@ -1307,6 +1316,23 @@
 				padding: 0 5px;
 			}
 		}
+		input{
+			height: 42px;
+			background: #f1f1f1;
+			border-radius: 0;
+			border: none;
+			display: inline-block;
+			padding: 0 5px;
+			text-align: center;
+			width: 50px;
+			-moz-appearance: none;
+				-webkit-appearance: none;
+				appearance: none;
+				@include mq($max-width: 767px) {
+					height: 30px;
+					padding: 0 10px;
+				}
+		}
 	}
 }
 .select-double-arrows{
@@ -1434,11 +1460,13 @@
 			font-family: 'Open Sans';
 			font-size: 14px;
 			@include mq($max-width: 600px) {
-				font-size: 12px;
+				//font-size: 12px;
+				font-size: 10px;
 			}
 		}
 		@include mq($max-width: 600px) {
-			font-size: 12px;
+			//font-size: 12px;
+			font-size: 10px;
 		}
 	}
 	.btn-group{
@@ -1820,6 +1848,13 @@
 		display: flex;
 		margin-left: -5px;
 		font-size: 14px;
+		@include mq($max-width: 992px) {
+			font-size:12px;
+		}
+		@include mq($max-width: 450px) {
+			font-size:10px;
+			
+		}
 		span{
 			color: #ecab5c;
 			padding-right: 7px;
@@ -2076,4 +2111,13 @@
 }
 .self-center{
 	align-self: center;
+}
+
+.error{
+	color: #f00 !important;
+}
+.install-row{
+	.install-accordion__ico{
+		margin-left: -18px;
+	}
 }

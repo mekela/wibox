@@ -365,7 +365,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: -10px 10px 0px -19px;
+  margin: -10px 10px 0px -15px;
   font-size: 20px;
   color: #fff;
   background: #4a5b7a; }
@@ -373,8 +373,7 @@
     .install-accordion__ico {
       width: 40px; } }
   .install-accordion__ico.mobile {
-    background: #63b284;
-    font-size: 25px; }
+    background: #63b284; }
   .install-accordion__ico.fb {
     background: #3a72b9; }
   .install-accordion__ico.mail {
@@ -410,7 +409,7 @@
       font-size: 15px; } }
   @media only screen and (max-width: 450px) {
     .install-accordion__title {
-      font-size: 11px; } }
+      font-size: 10px; } }
 
 .install-accordion__plus {
   line-height: 21px;
@@ -667,11 +666,15 @@
         width: 100%;
         max-width: 100%; }
       .flex-row.mobile-block .install-accordion__ico {
-        height: 30px;
+        height: 40px;
         font-size: 15px;
         width: 30px;
         margin-left: -14px;
-        margin-bottom: -10px; } }
+        margin-bottom: -10px; }
+      .flex-row.mobile-block .col-8 {
+        min-height: 40px; }
+        .flex-row.mobile-block .col-8 input {
+          min-height: 20px; } }
 
 .col-6 {
   width: 50%; }
@@ -975,7 +978,7 @@ option.avatar {
 
 .new-repeater {
   display: flex;
-  padding-top: 25px;
+  padding-top: 15px;
   padding-bottom: 25px; }
   @media only screen and (max-width: 530px) {
     .new-repeater {
@@ -1112,7 +1115,8 @@ option.avatar {
   max-width: 50%; }
 
 .install-preview-pc {
-  text-align: center; }
+  text-align: center;
+  padding-top: 8px; }
   .install-preview-pc .btn {
     font-size: 16px;
     text-transform: uppercase;
@@ -1170,7 +1174,9 @@ option.avatar {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0; }
 
 .pt15 {
   padding-top: 15px; }
@@ -1284,6 +1290,22 @@ option.avatar {
     @media only screen and (max-width: 992px) {
       .advisor-list__right span {
         padding: 0 5px; } }
+  .advisor-list__right input {
+    height: 42px;
+    background: #f1f1f1;
+    border-radius: 0;
+    border: none;
+    display: inline-block;
+    padding: 0 5px;
+    text-align: center;
+    width: 50px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none; }
+    @media only screen and (max-width: 767px) {
+      .advisor-list__right input {
+        height: 30px;
+        padding: 0 10px; } }
 
 .select-double-arrows {
   height: 42px;
@@ -1390,10 +1412,10 @@ option.avatar {
       font-size: 14px; }
       @media only screen and (max-width: 600px) {
         .selectpicker-wrap .btn.bs-placeholder {
-          font-size: 12px; } }
+          font-size: 10px; } }
     @media only screen and (max-width: 600px) {
       .selectpicker-wrap .btn {
-        font-size: 12px; } }
+        font-size: 10px; } }
   .selectpicker-wrap .btn-group {
     height: 100%;
     display: block; }
@@ -1717,6 +1739,12 @@ option.avatar {
     display: flex;
     margin-left: -5px;
     font-size: 14px; }
+    @media only screen and (max-width: 992px) {
+      .router-row .install-accordion__subtitle {
+        font-size: 12px; } }
+    @media only screen and (max-width: 450px) {
+      .router-row .install-accordion__subtitle {
+        font-size: 10px; } }
     .router-row .install-accordion__subtitle span {
       color: #ecab5c;
       padding-right: 7px;
@@ -1949,6 +1977,12 @@ option.avatar {
 .self-center {
   align-self: center; }
 
+.error {
+  color: #f00 !important; }
+
+.install-row .install-accordion__ico {
+  margin-left: -18px; }
+
 @media only screen and (max-width: 1501px) and (min-width: 992px) {
   .install-accordion__subtitle, .install-accordion__title, .install-content .panel-title, .install-accordion__section input, .setup-router-list__title,
   .new-repeater__text, .new-repeater__section,
@@ -1959,15 +1993,17 @@ option.avatar {
   .selectpicker-wrap .btn.bs-placeholder,
   .selectpicker-wrap .btn,
   .selectpicker-wrap .dropdown-menu a,
-  .router-row .install-accordion__subtitle {
-    font-size: 0.9em; }
+  .router-row .install-accordion__subtitle,
+  .install-preview-pc__center em {
+    font-size: 12px; }
   .install-accordion__info, .setup-router-checkbox h6, .setup-router-button, .new-repeater__button button,
   .repeaters-table table td, .repeaters-table table th,
   .schedule-table__red, .schedule-table__green,
   .btn-primary-dark,
   .option-numb,
-  .menu ul a {
-    font-size: 1em; }
+  .menu ul a,
+  .install-preview-pc .btn {
+    font-size: 14px; }
   .router-row .install-accordion__subtitle span {
     font-size: 1em;
     line-height: 1.4; }
@@ -1992,12 +2028,20 @@ option.avatar {
   .panel-body {
     padding-top: 10px;
     padding-bottom: 10px; }
+    .panel-body.pt0 {
+      padding-top: 0; }
+    .panel-body.pb0 {
+      padding-top: 0; }
   .panel {
     margin-bottom: 10px; }
   .menu ul a {
     padding: 8px 5px; }
   .install-accordion__title {
-    top: -4px; } }
+    top: -4px; }
+  .panel-install .panel-body .flex-row {
+    min-height: 47px; }
+  .install-preview-pc {
+    padding-top: 3px; } }
 
 @media only screen and (max-width: 600px) {
   .col-6-mobile {
@@ -2016,3 +2060,6 @@ option.avatar {
     display: flex; }
     .mobile-flex .install-accordion__title {
       top: 0; } }
+
+.mt0 {
+  margin-top: 0; }
