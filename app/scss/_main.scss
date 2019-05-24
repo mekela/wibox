@@ -615,7 +615,7 @@
 			.install-accordion__ico{
 				height: 40px;
 				font-size: 15px;
-				width: 30px;
+				//width: 30px;
 				margin-left: -14px;
 				margin-bottom: -10px;
 			}
@@ -653,10 +653,10 @@
 .pad-r0{
 	padding-right: 0;
 }
-.pt0{
+.pt0, .pad-t0{
 	padding-top: 0;
 }
-.pb0{
+.pb0, .pad-b0{
 	padding-bottom: 0;
 }
 .mar-r0{
