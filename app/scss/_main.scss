@@ -1,6 +1,7 @@
 .menu{
 	border-bottom: 4px solid #4a5b7a;
 	padding-bottom: 4px;
+	margin-bottom: 5px;
 	ul{
 		list-style: none;
 		padding: 0;
@@ -179,7 +180,7 @@
 	.panel-body{
 		 .flex-row{
 			background: #f7f7f7;
-			border-bottom:7px solid #fff;
+			border-bottom:5px solid #fff;
 		}
 		.col-8{
 			background: #f1f1f1;
@@ -618,6 +619,9 @@
 				margin-bottom: -10px;
 			}
 			.col-8{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
 				min-height: 40px;
 				input{
 					min-height: 20px;
@@ -1830,6 +1834,7 @@
 .panel-install .option-check .col-8{
 	background: none;
 }
+
 .router-row{
 	display: flex;
 	margin-left:-4px;
@@ -1841,7 +1846,7 @@
 		margin:0 4px;
 		width: 100%;
 	}
-	.install-accordion__ico{
+	.install-row .install-accordion__ico{
 		margin-left: -3px;
 	}
 	.install-accordion__subtitle{
