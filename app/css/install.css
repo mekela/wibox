@@ -294,7 +294,8 @@
   font-size: 16px; }
 
 .panel-install {
-  box-shadow: none; }
+  box-shadow: none;
+  border: none; }
   .panel-install .panel-heading {
     padding-left: 0;
     color: #2d4159;
@@ -516,7 +517,7 @@
   padding-right: 0; }
   .install-accordion .panel-body .row, .install-accordion .panel-body .flex-row {
     background: #f7f7f7;
-    border-bottom: 7px solid #fff; }
+    border-bottom: 5px solid #fff; }
   .install-accordion .panel-body .col-8 {
     background: #f1f1f1; }
   .install-accordion .panel-body .install-accordion__change {
@@ -1742,7 +1743,7 @@ option.avatar {
   .router-row .install-accordion__subtitle {
     display: flex;
     margin-left: -5px;
-    font-size: 14px; }
+    font-size: 14.6px; }
     @media only screen and (max-width: 992px) {
       .router-row .install-accordion__subtitle {
         font-size: 12px; } }
@@ -1816,12 +1817,16 @@ option.avatar {
       margin-bottom: 4px; } }
   .setup-router-list .flex-row {
     background: #f7f7f7;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    flex: 1; }
     .setup-router-list .flex-row:last-child {
       margin-bottom: 0; }
     .setup-router-list .flex-row .col {
       padding-right: 0;
       flex: 1; }
+      .setup-router-list .flex-row .col:first-child {
+        display: flex;
+        align-items: center; }
 
 .setup-router-list__title {
   padding: 5px 0;
@@ -2067,3 +2072,6 @@ option.avatar {
 
 .mt0 {
   margin-top: 0; }
+
+.pt5 {
+  padding-top: 5px; }

@@ -166,6 +166,7 @@
 }
 .panel-install{
 	box-shadow: none;
+	border: none;
 	.panel-heading{
 		padding-left: 0;
 		color: #2d4159;
@@ -427,7 +428,7 @@
 		padding-right: 0;
 		.row, .flex-row{
 			background: #f7f7f7;
-			border-bottom:7px solid #fff;
+			border-bottom:5px solid #fff;
 		}
 		.col-8{
 			background: #f1f1f1;
@@ -1852,7 +1853,7 @@
 	.install-accordion__subtitle{
 		display: flex;
 		margin-left: -5px;
-		font-size: 14px;
+		font-size: 14.6px;
 		@include mq($max-width: 992px) {
 			font-size:12px;
 		}
@@ -1935,12 +1936,17 @@
 	.flex-row{
 		background: #f7f7f7;
 		margin-bottom: 5px;
+		flex: 1;
 		&:last-child{
 			margin-bottom: 0;
 		}
 		.col{
 			padding-right: 0;
 			flex: 1;
+			&:first-child{
+				display: flex;
+				align-items: center;
+			}
 		}
 	}
 }
