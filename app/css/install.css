@@ -18,6 +18,219 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.ag-icon-menu_estadisticas-trafico:before {
+  content: "\e930"; }
+
+.ag-icon-menu_Configuracion-iusuarios-on:before {
+  content: "\e931"; }
+
+.ag-icon-menu_estadisticas:before {
+  content: "\e932"; }
+
+.ag-icon-menu_estadisticas-trafico-on:before {
+  content: "\e933"; }
+
+.ag-icon-menu_Encuestas-detalle-on:before {
+  content: "\e934"; }
+
+.ag-icon-menu_Accesos:before {
+  content: "\e935"; }
+
+.ag-icon-menu_Integraciones-importar:before {
+  content: "\e936"; }
+
+.ag-icon-menu_Encuestas-mantetinmiento-on:before {
+  content: "\e937"; }
+
+.ag-icon-menu_Encuestas:before {
+  content: "\e938"; }
+
+.ag-icon-menu_expand_menu:before {
+  content: "\e939"; }
+
+.ag-icon-menu_logout:before {
+  content: "\e93a"; }
+
+.ag-icon-menu_KPIs-rendimiento:before {
+  content: "\e93b"; }
+
+.ag-icon-menu_estadisticas-panel-de-cpntrol:before {
+  content: "\e93c"; }
+
+.ag-icon-menu_estadisticas-conexiones:before {
+  content: "\e93d"; }
+
+.ag-icon-menu_Anuncios-mantenimiento:before {
+  content: "\e93e"; }
+
+.ag-icon-menu_mobie_section:before {
+  content: "\e93f"; }
+
+.ag-icon-menu_Integraciones-importar-on:before {
+  content: "\e940"; }
+
+.ag-icon-menu_Mailing:before {
+  content: "\e941"; }
+
+.ag-icon-menu_Tripadvisor-estadisticas:before {
+  content: "\e942"; }
+
+.ag-icon-menu_Accesos-calibrador-on:before {
+  content: "\e943"; }
+
+.ag-icon-menu_Mailing-campaas:before {
+  content: "\e944"; }
+
+.ag-icon-menu_Mailing-excluidos:before {
+  content: "\e945"; }
+
+.ag-icon-menu_Mailing-excluidos-on:before {
+  content: "\e946"; }
+
+.ag-icon-menu_Mailing-plantillas-on:before {
+  content: "\e947"; }
+
+.ag-icon-menu_Integraciones:before {
+  content: "\e948"; }
+
+.ag-icon-menu_estadisticas-panel-de-cpntrol-on:before {
+  content: "\e949"; }
+
+.ag-icon-menu_Configuracion-instalacion-on:before {
+  content: "\e94a"; }
+
+.ag-icon-menu_account:before {
+  content: "\e94b"; }
+
+.ag-icon-menu_erase:before {
+  content: "\e94c"; }
+
+.ag-icon-menu_estadisticas-usuarios-wifi-on:before {
+  content: "\e94d"; }
+
+.ag-icon-menu_Mailing-enviados-on:before {
+  content: "\e94e"; }
+
+.ag-icon-menu_Mailing-campaas-on:before {
+  content: "\e94f"; }
+
+.ag-icon-menu_Mailing-campaas-globales-on:before {
+  content: "\e950"; }
+
+.ag-icon-menu_Configuracion-instalacion:before {
+  content: "\e951"; }
+
+.ag-icon-menu_pin-off:before {
+  content: "\e952"; }
+
+.ag-icon-menu_Encuestas-detalle:before {
+  content: "\e953"; }
+
+.ag-icon-menu_Anuncios-estadisticas-on:before {
+  content: "\e954"; }
+
+.ag-icon-menu_estadisticas-conexiones-on:before {
+  content: "\e955"; }
+
+.ag-icon-menu_KPIs-rendimiento-on:before {
+  content: "\e956"; }
+
+.ag-icon-menu_Configuracion:before {
+  content: "\e957"; }
+
+.ag-icon-menu_Configuracion-usuarios:before {
+  content: "\e958"; }
+
+.ag-icon-menu_Integraciones-exportar:before {
+  content: "\e959"; }
+
+.ag-icon-menu_Anuncios:before {
+  content: "\e95a"; }
+
+.ag-icon-menu_bell:before {
+  content: "\e95b"; }
+
+.ag-icon-menu_Configuracion-clientes:before {
+  content: "\e95c"; }
+
+.ag-icon-menu_Mailing-plantillas:before {
+  content: "\e95d"; }
+
+.ag-icon-menu_Mailing-campaas-globales:before {
+  content: "\e95e"; }
+
+.ag-icon-menu_Configuracion-clientes-on:before {
+  content: "\e95f"; }
+
+.ag-icon-menu_Encuestas-estadisticas-on:before {
+  content: "\e960"; }
+
+.ag-icon-menu_pin-on:before {
+  content: "\e961"; }
+
+.ag-icon-menu_Accesos-routers-on:before {
+  content: "\e962"; }
+
+.ag-icon-menu_Mailing-enviados:before {
+  content: "\e963"; }
+
+.ag-icon-menu_mobile:before {
+  content: "\e964"; }
+
+.ag-icon-menu_Accesos-estadisticas-on:before {
+  content: "\e965"; }
+
+.ag-icon-menu_Encuestas-estadisticas:before {
+  content: "\e966"; }
+
+.ag-icon-menu_KPIs:before {
+  content: "\e967"; }
+
+.ag-icon-menu_Tripadvisor-estadisticas-on:before {
+  content: "\e968"; }
+
+.ag-icon-menu_Mailing-estadisticas:before {
+  content: "\e969"; }
+
+.ag-icon-menu_Encuestas-mantetinmiento:before {
+  content: "\e96a"; }
+
+.ag-icon-menu_Accesos-routers:before {
+  content: "\e96b"; }
+
+.ag-icon-menu_Anuncios-mantenimiento-on:before {
+  content: "\e96c"; }
+
+.ag-icon-menu_Anuncios-estadisticas:before {
+  content: "\e96d"; }
+
+.ag-icon-menu_Tripadvisor-detalle:before {
+  content: "\e96e"; }
+
+.ag-icon-menu_Accesos-calibrador:before {
+  content: "\e96f"; }
+
+.ag-icon-menu_Mailing-estadisticas-on:before {
+  content: "\e970"; }
+
+.ag-icon-menu_estadisticas-usuarios-wifi:before {
+  content: "\e971"; }
+
+.ag-icon-menu_Integraciones-exportar-on:before {
+  content: "\e972"; }
+
+.ag-icon-menu_Tripadvisor-detalle-on:before {
+  content: "\e973"; }
+
+.ag-icon-menu_Tripadvisor:before {
+  content: "\e974"; }
+
+.ag-icon-menu_Accesos-estadisticas:before {
+  content: "\e975"; }
+
+.ag-icon-i:before {
+  content: "\e92f"; }
+
 .ag-icon-macaddress:before {
   content: "\e92e"; }
 
@@ -408,7 +621,7 @@
   top: -3px; }
   @media only screen and (max-width: 992px) {
     .install-accordion__title {
-      font-size: 15px; } }
+      font-size: 14px; } }
   @media only screen and (max-width: 450px) {
     .install-accordion__title {
       font-size: 10px; } }
@@ -1991,6 +2204,117 @@ option.avatar {
 .install-row .install-accordion__ico {
   margin-left: -18px; }
 
+.navbar {
+  margin-left: -21px;
+  height: 64px;
+  border: none;
+  box-shadow: 0 0 10px rgba(27, 37, 54, 0.18);
+  background-color: #26406f; }
+  .navbar .navbar-nav > li > a {
+    padding: 0px 15px 0 15px;
+    line-height: 56px;
+    font-size: 16px; }
+    .navbar .navbar-nav > li > a.dropdown-arrow {
+      padding-right: 30px; }
+  .navbar i {
+    font-size: 20px; }
+  .navbar .badge {
+    background: #53a1d2;
+    min-width: 5px;
+    height: 5px;
+    display: block;
+    border-radius: 50%;
+    padding: 0;
+    top: -2px;
+    right: 0px; }
+  .navbar .navbar-right {
+    padding-right: 15px; }
+  .navbar ul li {
+    padding-top: 4px; }
+    .navbar ul li:last-child .menu-item-user::before {
+      display: none; }
+  .navbar .open a.dropdown-toggle {
+    background: #36507f !important;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #4e6996;
+    border-bottom: none; }
+    .navbar .open a.dropdown-toggle:hover {
+      background: #36507f; }
+  .navbar .dropdown-menu {
+    padding: 5px 0;
+    background: #36507f;
+    box-shadow: 0 0 10px rgba(27, 37, 54, 0.18);
+    border-radius: 5px;
+    border: 1px solid #4e6996; }
+    .navbar .dropdown-menu.menu-item-box-width {
+      width: 100%; }
+    .navbar .dropdown-menu a {
+      color: #f7f7f7;
+      font-size: 16px;
+      font-weight: 300;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      .navbar .dropdown-menu a i {
+        padding-right: 15px;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        vertical-align: sub; }
+      .navbar .dropdown-menu a:hover {
+        background: #26406f;
+        color: #fff; }
+
+.site-holder.mini-sidebar .content {
+  padding-top: 0; }
+  .site-holder.mini-sidebar .content .navbar {
+    margin-left: -10px; }
+
+.menu-item-user {
+  position: relative; }
+  .menu-item-user:before {
+    content: '';
+    width: 1px;
+    height: 45px;
+    background: #4b6693;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -22.5px; }
+  .menu-item-user i {
+    padding-right: 10px;
+    vertical-align: middle; }
+  .menu-item-user.dropdown-arrow {
+    padding-right: 20px; }
+    .menu-item-user.dropdown-arrow:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -1px;
+      right: 10px;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 7px 4.5px 0 4.5px;
+      border-color: #fff transparent transparent transparent; }
+  .menu-item-user__name {
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #3aacb7;
+    color: #f3f5f6;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 15px; }
+
+.drag-menu ul {
+  display: flex;
+  color: #fff; }
+
 @media only screen and (max-width: 1501px) and (min-width: 992px) {
   .install-accordion__subtitle, .install-accordion__title, .install-content .panel-title, .install-accordion__section input, .setup-router-list__title,
   .new-repeater__text, .new-repeater__section,
@@ -2047,9 +2371,11 @@ option.avatar {
   .install-accordion__title {
     top: -4px; }
   .panel-install .panel-body .flex-row {
-    min-height: 47px; }
+    min-height: 45px; }
   .install-preview-pc {
-    padding-top: 3px; } }
+    padding-top: 3px; }
+  .new-repeater__icon {
+    min-height: 40px; } }
 
 @media only screen and (max-width: 600px) {
   .col-6-mobile {
@@ -2074,3 +2400,6 @@ option.avatar {
 
 .pt5 {
   padding-top: 5px; }
+
+.relative {
+  position: relative; }
