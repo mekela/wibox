@@ -23,3 +23,18 @@
 //     .iconselectmenu( "menuWidget" )
 //       .addClass( "ui-menu-icons" );
 // } );
+
+$( ".navbar__mobile-toggle" ).click(function() {
+    $( ".left-sidebar-menu" ).toggleClass( "open" );
+    $( ".left-sidebar-user" ).removeClass( "open" );
+  });
+$( ".nav-menu-hide" ).click(function() {
+$( ".left-sidebar-menu" ).removeClass( "open" );
+});
+$( ".menu-trigger-user" ).click(function() {
+    $( ".left-sidebar-user" ).toggleClass( "open" );
+    $( ".left-sidebar-menu" ).removeClass( "open" );
+  });
+$( ".nav-user-hide" ).click(function() {
+$( ".left-sidebar-user" ).removeClass( "open" );
+});
