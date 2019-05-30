@@ -187,7 +187,11 @@ a:focus {
     .left-sidebar .nav-toggle i, .left-sidebar .nav-toggle-hide i {
       display: block;
       position: relative;
-      line-height: 1; }
+      line-height: 1;
+      text-align: left;
+      padding-left: 5px;
+      position: relative;
+      z-index: 112121212122; }
     .left-sidebar .nav-toggle .btn.btn-nav-toggle, .left-sidebar .nav-toggle-hide .btn.btn-nav-toggle {
       display: block;
       background: #f3f5f6 !important;
@@ -206,7 +210,7 @@ a:focus {
     margin: 0 auto; }
     .left-sidebar .nav li:before {
       content: '';
-      width: 200px;
+      width: 170px;
       margin: 0 auto;
       background: #d7dae4;
       height: 1px;
@@ -253,7 +257,9 @@ a:focus {
   position: relative;
   z-index: 1000020; }
   .logo a {
-    text-decoration: none; }
+    text-decoration: none;
+    position: relative;
+    left: -3px; }
 
 .sidebar-holder .nav > li ul {
   background: none; }
@@ -386,6 +392,10 @@ a:focus {
   width: 90px !important; }
   .site-holder.mini-sidebar .left-sidebar .nav-toggle, .site-holder.mini-sidebar .left-sidebar .nav-toggle-hide {
     transform: rotate(0deg); }
+    .site-holder.mini-sidebar .left-sidebar .nav-toggle i, .site-holder.mini-sidebar .left-sidebar .nav-toggle-hide i {
+      padding-left: 0;
+      padding-right: 5px;
+      text-align: right; }
   .site-holder.mini-sidebar .left-sidebar .logo-big {
     display: none; }
   .site-holder.mini-sidebar .left-sidebar .logo-small {
@@ -496,6 +506,9 @@ a:focus {
 
 .navbar .dropdown-menu.notifications a i {
   vertical-align: middle; }
+
+.menu-trigger-user {
+  cursor: pointer; }
 
 @media (max-width: 1279px) {
   .content {
