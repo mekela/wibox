@@ -28,9 +28,9 @@ $('document').ready(function(){
 	
 	$('.left-sidebar .nav > li a span').hover(function(){
 		var icon=$(this).parent().find('i');
-		icon.removeClass('animated shake').addClass('animated shake');
+		icon.removeClass('animated ').addClass('animated ');
 		var wait = window.setTimeout( function(){
-			icon.removeClass('animated shake');
+			icon.removeClass('animated ');
 			
 		},
 			1300
