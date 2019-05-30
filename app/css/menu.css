@@ -126,11 +126,14 @@ a:focus {
 
 .drag-menu {
   padding-left: 15px; }
-  .drag-menu .ag-icon-menu_Mailing-excluidos {
+  .drag-menu .ag-icon-menu_Mailing-excluidos, .drag-menu .menu-list-close {
     position: absolute;
     right: -8px;
     top: -8px;
-    font-size: 12px; }
+    font-size: 12px;
+    cursor: pointer; }
+    .drag-menu .ag-icon-menu_Mailing-excluidos i, .drag-menu .menu-list-close i {
+      font-size: 12px; }
   .drag-menu ul {
     display: flex;
     color: #fff;
@@ -444,6 +447,8 @@ a:focus {
     padding-left: 0;
     padding-right: 0;
     margin: 0; }
+  .menu-list__section .menu-list-erase {
+    display: none; }
   .menu-list__item {
     padding-bottom: 40px; }
     .menu-list__item a {
@@ -510,6 +515,9 @@ a:focus {
 .menu-trigger-user {
   cursor: pointer; }
 
+.menu-list-erase {
+  cursor: pointer; }
+
 @media (max-width: 1279px) {
   .content {
     padding: 0 0 0 10px; }
@@ -553,3 +561,13 @@ a:focus {
     display: block; }
   .navbar__mobile {
     display: block; } }
+
+.tooltip-inner {
+  background: #e2e2e2; }
+
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #e2e2e2; }

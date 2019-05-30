@@ -38,3 +38,6 @@ $( ".menu-trigger-user" ).click(function() {
 $( ".nav-user-hide" ).click(function() {
 $( ".left-sidebar-user" ).removeClass( "open" );
 });
+  $('ul').on('click', '.menu-list-erase', function(){
+  $( this ).parent('li').detach();
+  });
