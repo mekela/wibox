@@ -41,3 +41,8 @@ $( ".left-sidebar-user" ).removeClass( "open" );
   $('ul').on('click', '.menu-list-erase', function(){
   $( this ).parent('li').detach();
   });
+$( ".drag-menu__trigger" ).click(function() {
+  $( ".menu-list" ).slideToggle( );
+  $( ".drag-menu__sortable" ).toggleClass( "active" );
+  $( ".drag-menu__static" ).toggleClass( "active" );
+});

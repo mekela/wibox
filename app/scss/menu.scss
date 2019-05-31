@@ -164,6 +164,18 @@
 		height: 64px;
 		margin: 0;
 		padding: 0;
+		&.drag-menu__sortable{
+			display: none;
+			&.active{
+				display: flex;
+			}
+		}
+		&.drag-menu__static{
+			display: none;
+			&.active{
+				display: flex;
+			}
+		}
 		li{
 			font-size: 16px;
 			font-weight: 300;
@@ -614,6 +626,12 @@ width: 210px;
 }
 .menu-list{
 	padding: 45px 0 0 40px;
+	position: absolute;
+	top: 100px;
+	left: 250px;
+	width: 800px;
+	border: 1px solid #4b5c7a;
+	display: none;
 	&__text{
 		color: #4b5c7a;
 		font-size: 16px;
@@ -638,6 +656,12 @@ width: 210px;
 			font-size: 16px;
 			font-weight: 300;
 			text-decoration: none;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.menu-list-small-text{
+			flex: 1;
 		}
 		& > li > a{
 			font-size: 19px;
@@ -816,4 +840,33 @@ width: 210px;
 	border-width: 5px 5px 5px 0;
 	border-right-color:  #e2e2e2;
 	
+}
+.drag-menu__trigger{
+	cursor: pointer;
+}
+.ui-state-highlight{
+	background: none;
+	border: none;
+	width: auto;
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+	&:after{
+		content: 'Arrastre aqui ';
+		font-size: 16px;
+		color: #879cb9;
+		white-space: nowrap;
+	}
+	&:before{
+		width: 20px !important;
+		border-radius: 50%;
+		height: 20px !important;
+		margin: 0 6px 0 0!important;
+		content: '';
+		position: static !important;
+		vertical-align: middle;
+		display: inline-block !important;
+		border: 1px dashed  #fff !important;
+		background: none !important;
+	}
 }

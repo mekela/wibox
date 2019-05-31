@@ -233,12 +233,19 @@
                   <!-- Brand and toggle get grouped for better mobile display -->
                   <div class="navbar-header">
                      <nav class="drag-menu">
-                        <ul id="sortable">
+                        <ul id="sortable" class="drag-menu__sortable">
                            <li><a href="#"><i class="ag-icon-menu_estadisticas-panel-de-cpntrol "></i><span>Panel de Control</span></a><span class="menu-list-close menu-list-erase"><i class="ag-icon-menu_erase"></i></span></li>
                            <li><a href="#"><i class="ag-icon-menu_estadisticas-conexiones "></i><span>Conexiones</span></a><span class="menu-list-close menu-list-erase"><i class="ag-icon-menu_erase"></i></span></li>
                            <li><a href="#"><i class="ag-icon-menu_KPIs-rendimiento "></i><span>Rendimiento SWB</span></a><span class="menu-list-close menu-list-erase"><i class="ag-icon-menu_erase"></i></span></li>
                            <li><a href="#"><i class="ag-icon-menu_Integraciones-importar "></i><span>Instalación</span></a><span class="menu-list-close menu-list-erase"><i class="ag-icon-menu_erase"></i></span></li>
-                           <li><a href="#"><i class="ag-icon-menu_pin-on"></i></a></li>
+                           <li class="ui-state-disabled"><a class="drag-menu__trigger"><i class="ag-icon-menu_pin-on"></i></a></li>
+                        </ul>
+                        <ul class="drag-menu__static active">
+                           <li><a href="#"><i class="ag-icon-menu_estadisticas-panel-de-cpntrol-on blue"></i><span>Panel de Control</span></a></li>
+                           <li><a href="#"><i class="ag-icon-menu_estadisticas-conexiones-on blue"></i><span>Conexiones</span></a></li>
+                           <li><a href="#"><i class="ag-icon-menu_KPIs-rendimiento-on violet"></i><span>Rendimiento SWB</span></a></li>
+                           <li><a href="#"><i class="ag-icon-menu_Integraciones-importar-on gray"></i><span>Instalación</span></a></li>
+                           <li><a  class="drag-menu__trigger"><i class="ag-icon-menu_pin-off"></i></a></li>
                         </ul>
                      </nav>
                   </div>
@@ -674,7 +681,9 @@
       <script>
          $( function() {
            $( "#sortable" ).sortable({
-             revert: true
+             revert: true,
+             placeholder: "ui-state-highlight",
+             items: "li:not(.ui-state-disabled)"
            });
            $( ".draggable" ).draggable({
              connectToSortable: "#sortable",
