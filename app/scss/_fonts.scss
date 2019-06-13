@@ -24,6 +24,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ag-icon-usuarios_Wifi__bloquear:before {
+  content: "\e976";
+}
+.ag-icon-usuarios_Wifi__desbloquear:before {
+  content: "\e977";
+}
+.ag-icon-usuarios_Wifi__expulsar:before {
+  content: "\e978";
+}
+.ag-icon-usuarios_Wifi__filter:before {
+  content: "\e979";
+}
+.ag-icon-usuarios_Wifi__flag:before {
+  content: "\e97a";
+}
+.ag-icon-usuarios_Wifi__flag-tiple:before {
+  content: "\e97b";
+}
+.ag-icon-usuarios_Wifi__flag-duo:before {
+  content: "\e97c";
+}
+.ag-icon-usuarios_Wifi__view-detail:before {
+  content: "\e97d";
+}
 .ag-icon-menu_estadisticas-trafico:before {
   content: "\e930";
 }
@@ -378,4 +402,3 @@
 .ag-icon-wifi:before {
   content: "\e91c";
 }
-

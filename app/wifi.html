@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>access</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Loading Bootstrap -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <!-- Loading Stylesheets -->    
+      <link href="css/font-awesome.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+      <link href="less/style.less" rel="stylesheet"  title="lessCss" id="lessCss">
+      <!-- Loading Custom Stylesheets -->    
+      <link href="css/custom.css" rel="stylesheet">
+      <link href="css/install.css" rel="stylesheet">
+      <link href="css/menu.css" rel="stylesheet">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+      <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <div class="site-holder">
+         <!-- this is a dummy text -->
+         
+         <!-- .box-holder -->
+         <div class="box-holder">
+            <!-- .left-sidebar -->
+            <div class="left-sidebar">
+               <div class="sidebar-holder">
+                  <div class="logo"><a href="/">
+                           <img src="images/logo_copia.png" alt="" class="logo-big">
+                           <img src="images/logo-small.png" alt="" class="logo-small">
+                        </a></div>
+                  <ul class="nav  nav-list">
+                     <!-- sidebar to mini Sidebar toggle -->
+                     <li class="nav-toggle">
+                        <button class="btn  btn-nav-toggle text-primary"><i class="ag-icon-menu_expand_menu"></i> </button>
+                     </li>
+                     <li class="estad">
+                        <a class="dropdown" href="#" data-original-title="Pages"><i class="ag-icon-menu_estadisticas"></i><span class="hidden-minibar">Estadísticas                              <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_estadisticas-panel-de-cpntrol-on"></i><i class="ag-icon-menu_estadisticas-panel-de-cpntrol"></i></span><span class="hidden-minibar"> Panel de control                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_estadisticas-conexiones-on"></i><i class="ag-icon-menu_estadisticas-conexiones"></i></span><span class="hidden-minibar"> conexiones                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_estadisticas-trafico-on"></i><i class="ag-icon-menu_estadisticas-trafico"></i></span><span class="hidden-minibar"> Tráfico                              </span></a></li>
+                           <li class="active"><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-detalle-on"></i><i class="ag-icon-menu_Encuestas-detalle"></i></span><span class="hidden-minibar"> Usuarios Wifi                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li class="mailing">
+                        <a class="dropdown" href="#" data-original-title="Pages"><i class="ag-icon-menu_Mailing"></i><span class="hidden-minibar">Mailing <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Mailing-plantillas-on"></i><i class="ag-icon-menu_Mailing-plantillas"></i></span><span class="hidden-minibar"> Plantillas</span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Mailing-campaas-on"></i><i class="ag-icon-menu_Mailing-campaas"></i></span><span class="hidden-minibar"> Campañas                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Mailing-campaas-globales-on"></i><i class="ag-icon-menu_Mailing-campaas-globales"></i></span><span class="hidden-minibar"> Campañas Globales                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-estadisticas-on"></i><i class="ag-icon-menu_Encuestas-estadisticas"></i></span><span class="hidden-minibar"> Estadisticas                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Mailing-enviados-on"></i><i class="ag-icon-menu_Mailing-enviados"></i></span><span class="hidden-minibar"> Enviados                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Mailing-excluidos-on"></i><i class="ag-icon-menu_Mailing-excluidos"></i></span><span class="hidden-minibar"> Excluidos                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li class="encuestas">
+                        <a class="dropdown" href="#" data-original-title="Pages"><i class="ag-icon-menu_Encuestas"></i><span class="hidden-minibar">Encuestas <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Anuncios-mantenimiento-on"></i><i class="ag-icon-menu_Anuncios-mantenimiento"></i></span><span class="hidden-minibar"> Mantenimiento</span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-estadisticas-on"></i><i class="ag-icon-menu_Encuestas-estadisticas"></i></span><span class="hidden-minibar"> Estadísticas                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-detalle-on"></i><i class="ag-icon-menu_Encuestas-detalle"></i></span><span class="hidden-minibar"> Detalle                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li class="TripAdvisor">
+                        <a class="dropdown" href="#" data-original-title="Pages"><i class="ag-icon-menu_Tripadvisor"></i><span class="hidden-minibar">TripAdvisor <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-estadisticas-on"></i><i class="ag-icon-menu_Encuestas-estadisticas"></i></span><span class="hidden-minibar"> Estadísticas                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-detalle-on"></i><i class="ag-icon-menu_Encuestas-detalle"></i></span><span class="hidden-minibar"> Detalle                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li class="anuncios">
+                        <a class="dropdown" href="#" data-original-title="Pages"><span class="new-item-menu"><img src="images/new.png" alt=""></span><i class="ag-icon-menu_Anuncios"></i><span class="hidden-minibar">Anuncios <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-estadisticas-on"></i><i class="ag-icon-menu_Encuestas-estadisticas"></i></span><span class="hidden-minibar"> Estadísticas                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-detalle-on"></i><i class="ag-icon-menu_Encuestas-detalle"></i></span><span class="hidden-minibar"> Detalle                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li class="KPI">
+                        <a class="dropdown" href="#" data-original-title="Pages"><i class="ag-icon-menu_KPIs"></i><span class="hidden-minibar">KPIs <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_KPIs-rendimiento-on"></i><i class="ag-icon-menu_KPIs-rendimiento"></i></span><span class="hidden-minibar"> Rendimiento SWB                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li class="integraciones">
+                        <a class="dropdown" href="#" data-original-title="Pages"><span class="new-item-menu"><img src="images/new.png" alt=""></span><i class="ag-icon-menu_Integraciones"></i><span class="hidden-minibar">Integraciones <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Integraciones-importar-on"></i><i class="ag-icon-menu_Integraciones-importar"></i></span><span class="hidden-minibar"> Importaciones                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Integraciones-exportar-on"></i><i class="ag-icon-menu_Integraciones-exportar"></i></span><span class="hidden-minibar"> Exportaciones                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li class="accesos">
+                        <a class="dropdown" href="#" data-original-title="Pages"><i class="ag-icon-menu_Accesos"></i><span class="hidden-minibar">Accesos <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Accesos-routers-on"></i><i class="ag-icon-menu_Accesos-routers"></i></span><span class="hidden-minibar"> Routers                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-estadisticas-on"></i><i class="ag-icon-menu_Encuestas-estadisticas"></i></span><span class="hidden-minibar"> Estadísticas                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Accesos-calibrador-on"></i><i class="ag-icon-menu_Accesos-calibrador"></i></span><span class="hidden-minibar"> Calibrador                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li class="configurac">
+                        <a class="dropdown" href="#" data-original-title="Pages"><i class="ag-icon-menu_Configuracion"></i><span class="hidden-minibar">Configuración <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Configuracion-clientes-on"></i><i class="ag-icon-menu_Configuracion-clientes"></i></span><span class="hidden-minibar"> Clientes                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Configuracion-instalacion-on"></i><i class="ag-icon-menu_Configuracion-instalacion"></i></span><span class="hidden-minibar"> Instalación                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-detalle-on"></i><i class="ag-icon-menu_Encuestas-detalle"></i></span><span class="hidden-minibar"> Usuarios                              </span></a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="left-sidebar left-sidebar-mobile left-sidebar-menu">
+                  <div class="sidebar-holder">
+                     <div class="logo"><a href="/">
+                              <img src="images/logo_copia.png" alt="" class="logo-big">
+                              <img src="images/logo-small.png" alt="" class="logo-small">
+                           </a></div>
+                     <ul class="nav  nav-list">
+                        <!-- sidebar to mini Sidebar toggle -->
+                        <li class="nav-toggle-hide nav-menu-hide">
+                           <button class="btn  btn-nav-toggle text-primary"><i class="ag-icon-menu_expand_menu"></i> </button>
+                        </li>
+                        <li class="estad">
+                        <a class="dropdown" href="#" data-original-title="Pages"><i class="ag-icon-menu_estadisticas"></i><span class="hidden-minibar">Estadísticas                              <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li class="active"><a href="#"  data-original-title="Pages"><span class="menu-sidebar__icon"><i class="ag-icon-menu_estadisticas-panel-de-cpntrol-on"></i><i class="ag-icon-menu_estadisticas-panel-de-cpntrol"></i></span><span class="hidden-minibar"> Panel de control                              </span></a></li>
+                           <li><a href="#"  data-original-title="Pages"><span class="menu-sidebar__icon"><i class="ag-icon-menu_estadisticas-conexiones-on"></i><i class="ag-icon-menu_estadisticas-conexiones"></i></span><span class="hidden-minibar"> conexiones                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_estadisticas-trafico-on"></i><i class="ag-icon-menu_estadisticas-trafico"></i></span><span class="hidden-minibar"> Tráfico                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-detalle-on"></i><i class="ag-icon-menu_Encuestas-detalle"></i></span><span class="hidden-minibar"> Usuarios Wifi                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li class="mailing">
+                        <a class="dropdown" href="#" data-original-title="Pages"><i class="ag-icon-menu_Mailing"></i><span class="hidden-minibar">Mailing <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Mailing-plantillas-on"></i><i class="ag-icon-menu_Mailing-plantillas"></i></span><span class="hidden-minibar"> Plantillas</span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Mailing-campaas-on"></i><i class="ag-icon-menu_Mailing-campaas"></i></span><span class="hidden-minibar"> Campañas                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Mailing-campaas-globales-on"></i><i class="ag-icon-menu_Mailing-campaas-globales"></i></span><span class="hidden-minibar"> Campañas Globales                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-estadisticas-on"></i><i class="ag-icon-menu_Encuestas-estadisticas"></i></span><span class="hidden-minibar"> Estadisticas                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Mailing-enviados-on"></i><i class="ag-icon-menu_Mailing-enviados"></i></span><span class="hidden-minibar"> Enviados                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Mailing-excluidos-on"></i><i class="ag-icon-menu_Mailing-excluidos"></i></span><span class="hidden-minibar"> Excluidos                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li class="encuestas">
+                        <a class="dropdown" href="#" data-original-title="Pages"><i class="ag-icon-menu_Encuestas"></i><span class="hidden-minibar">Encuestas <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Anuncios-mantenimiento-on"></i><i class="ag-icon-menu_Anuncios-mantenimiento"></i></span><span class="hidden-minibar"> Mantenimiento</span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-estadisticas-on"></i><i class="ag-icon-menu_Encuestas-estadisticas"></i></span><span class="hidden-minibar"> Estadísticas                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-detalle-on"></i><i class="ag-icon-menu_Encuestas-detalle"></i></span><span class="hidden-minibar"> Detalle                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li class="TripAdvisor">
+                        <a class="dropdown" href="#" data-original-title="Pages"><i class="ag-icon-menu_Tripadvisor"></i><span class="hidden-minibar">TripAdvisor <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-estadisticas-on"></i><i class="ag-icon-menu_Encuestas-estadisticas"></i></span><span class="hidden-minibar"> Estadísticas                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-detalle-on"></i><i class="ag-icon-menu_Encuestas-detalle"></i></span><span class="hidden-minibar"> Detalle                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li class="anuncios">
+                        <a class="dropdown" href="#" data-original-title="Pages"><span class="new-item-menu"><img src="images/new.png" alt=""></span><i class="ag-icon-menu_Anuncios"></i><span class="hidden-minibar">Anuncios <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-estadisticas-on"></i><i class="ag-icon-menu_Encuestas-estadisticas"></i></span><span class="hidden-minibar"> Estadísticas                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-detalle-on"></i><i class="ag-icon-menu_Encuestas-detalle"></i></span><span class="hidden-minibar"> Detalle                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li class="KPI">
+                        <a class="dropdown" href="#" data-original-title="Pages"><i class="ag-icon-menu_KPIs"></i><span class="hidden-minibar">KPIs <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_KPIs-rendimiento-on"></i><i class="ag-icon-menu_KPIs-rendimiento"></i></span><span class="hidden-minibar"> Rendimiento SWB                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li class="integraciones">
+                        <a class="dropdown" href="#" data-original-title="Pages"><span class="new-item-menu"><img src="images/new.png" alt=""></span><i class="ag-icon-menu_Integraciones"></i><span class="hidden-minibar">Integraciones <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Integraciones-importar-on"></i><i class="ag-icon-menu_Integraciones-importar"></i></span><span class="hidden-minibar"> Importaciones                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Integraciones-exportar-on"></i><i class="ag-icon-menu_Integraciones-exportar"></i></span><span class="hidden-minibar"> Exportaciones                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li class="accesos">
+                        <a class="dropdown" href="#" data-original-title="Pages"><i class="ag-icon-menu_Accesos"></i><span class="hidden-minibar">Accesos <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Accesos-routers-on"></i><i class="ag-icon-menu_Accesos-routers"></i></span><span class="hidden-minibar"> Routers                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-estadisticas-on"></i><i class="ag-icon-menu_Encuestas-estadisticas"></i></span><span class="hidden-minibar"> Estadísticas                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Accesos-calibrador-on"></i><i class="ag-icon-menu_Accesos-calibrador"></i></span><span class="hidden-minibar"> Calibrador                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li class="configurac">
+                        <a class="dropdown" href="#" data-original-title="Pages"><i class="ag-icon-menu_Configuracion"></i><span class="hidden-minibar">Configuración <span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Configuracion-clientes-on"></i><i class="ag-icon-menu_Configuracion-clientes"></i></span><span class="hidden-minibar"> Clientes                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Configuracion-instalacion-on"></i><i class="ag-icon-menu_Configuracion-instalacion"></i></span><span class="hidden-minibar"> Instalación                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_Encuestas-detalle-on"></i><i class="ag-icon-menu_Encuestas-detalle"></i></span><span class="hidden-minibar"> Usuarios                              </span></a></li>
+                        </ul>
+                     </li>
+                     </ul>
+                  </div>
+               </div>
+            <div class="left-sidebar left-sidebar-mobile left-sidebar-user">
+               <div class="sidebar-holder">
+                  <ul class="nav  nav-list">
+                     <!-- sidebar to mini Sidebar toggle -->
+                     <li class="nav-toggle-hide nav-user-hide">
+                        <button class="btn  btn-nav-toggle text-primary"><i class="ag-icon-menu_expand_menu"></i> </button>
+                     </li>
+                     <li>
+                        <a class="dropdown" href="#" data-original-title="Pages"><span class="menu-item-user__name">JP</span><span class="hidden-minibar">Joan Puig<span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_account"></i></span><span class="hidden-minibar"> Mi Cuenta                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-menu_logout"></i></span><span class="hidden-minibar"> Cerrar Sesión                              </span></a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a class="dropdown" href="#" data-original-title="Pages"><i class="ag-icon-idioma"></i><span class="hidden-minibar">español<span class="badge bg-primary pull-right"><i class="ag-icon-arrow_desplazar"></i></span></a>
+                        <ul>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-idioma"></i></span><span class="hidden-minibar"> español                              </span></a></li>
+                           <li><a href="#"><span class="menu-sidebar__icon"><i class="ag-icon-idioma"></i></span><span class="hidden-minibar"> english                              </span></a></li>
+                        </ul>
+                     </li>
+                        <li>
+                        <a class="dropdown" href="#" data-original-title="Pages"><i class="ag-icon-menu_bell"></i><span class="hidden-minibar">Notificaciones</a>
+                        
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <!-- /.left-sidebar -->
+            <!-- .content -->
+            <div class="content">
+               <!-- .navbar -->
+               <nav class="navbar" role="navigation">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                     <nav class="drag-menu">
+                        <ul>
+                           <li><a href="#"><i class="ag-icon-menu_estadisticas-panel-de-cpntrol-on blue"></i><span>Panel de Control</span></a></li>
+                           <li><a href="#"><i class="ag-icon-menu_estadisticas-conexiones-on blue"></i><span>Conexiones</span></a></li>
+                           <li><a href="#"><i class="ag-icon-menu_KPIs-rendimiento-on violet"></i><span>Rendimiento SWB</span></a></li>
+                           <li><a href="#"><i class="ag-icon-menu_Integraciones-importar-on gray"></i><span>Instalación</span></a></li>
+                           <li><a href="#"><i class="ag-icon-menu_pin-off"></i></a></li>
+                        </ul>
+                     </nav>
+                  </div>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse">
+                     <ul class="nav navbar-nav  navbar-right ">
+                        <li>
+                           <a href="#" class="dropdown-arrow dropdown-toggle menu-item-user" data-toggle="dropdown"><span class="menu-item-user__name">JP</span>Joan Puig </a>
+                           <ul class="dropdown-menu menu-item-box-width">
+                              <li><a href="#"><i class="ag-icon-menu_account"></i> Mi Cuenta</a></li>
+                              <li><a href="#"><i class="ag-icon-menu_logout"></i> Cerrar Sesión</a></li>
+                           </ul>
+                        </li>
+                        <li>
+                              <a href="#" class="dropdown-arrow dropdown-toggle menu-item-user" data-toggle="dropdown"><i class="ag-icon-idioma"></i>español</a>
+                              <ul class="dropdown-menu">
+                                 <li><a href="#"><i class="ag-icon-idioma"></i>español</a></li>
+                                 <li><a href="#"><i class="ag-icon-idioma"></i>english</a></li>
+                              </ul>
+                           </li>
+                        <li>
+                           <a href="#" class=" dropdown-toggle menu-item-user" data-toggle="dropdown"><span class="relative"><span class="badge"></span><i class="ag-icon-menu_bell"></i></span></a>
+                           <ul class="dropdown-menu notifications">
+                                 <li>
+                                    <a href="#">
+                                    <i class="fa fa-user noty-icon "></i> 
+                                    <span class="description">10 Users are registered</span>
+                                    <span class="time"> <i class="fa fa-clock-o"></i> 06:58 PM</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="text-danger">
+                                    <i class="fa fa-inbox noty-icon "></i> 
+                                    <span class="description">Your disk space has been exceeeded</span>
+                                    <span class="time"> <i class="fa fa-clock-o"></i> 06:58 PM</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="text-info">
+                                    <i class="fa fa-comment noty-icon "></i> 
+                                    <span class="description">58 new comments</span>
+                                    <span class="time"> <i class="fa fa-clock-o"></i> 06:58 PM</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="text-warning">
+                                    <i class="fa fa-user noty-icon "></i> 
+                                    <span class="description">User deleted</span>
+                                    <span class="time"> <i class="fa fa-clock-o"></i> 06:58 PM</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="text-success">
+                                    <i class="fa fa-bookmark-o noty-icon "></i> 
+                                    <span class="description">You have a new badge</span>
+                                    <span class="time"> <i class="fa fa-clock-o"></i> 06:58 PM</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="text-info">
+                                    <i class="fa fa-envelope noty-icon "></i> 
+                                    <span class="description">24 Unread mails</span>
+                                    <span class="time"> <i class="fa fa-clock-o"></i> 06:58 PM</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="text-success">
+                                    <i class="fa fa-link noty-icon "></i> 
+                                    <span class="description">Urls forwarding activated</span>
+                                    <span class="time"> <i class="fa fa-clock-o"></i> 06:58 PM</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="text-warning">
+                                    <i class="fa fa-clock-o noty-icon"></i> 
+                                    <span class="description">Action</span>
+                                    <span class="time"> <i class="fa fa-clock-o"></i> 06:58 PM</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="text-danger">
+                                    <i class="fa fa-exclamation noty-icon "></i> 
+                                    <span class="description">3 domains expired</span>
+                                    <span class="time"> <i class="fa fa-clock-o"></i> 06:58 PM</span>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="text-success">
+                                    <i class="fa fa-clock-o noty-icon "></i> 
+                                    <span class="description">Your have $950 as outstanding amount</span>
+                                    <span class="time"> <i class="fa fa-clock-o"></i> 06:58 PM</span>
+                                    </a>
+                                 </li>
+                                 <li><a href="#" class="btn bg-primary">View All</a></li>
+                              </ul>
+                        </li>
+                     </ul>
+                  </div>
+                  <!-- /.navbar-collapse -->
+                  <div class="navbar__mobile">
+                     <div class="row">
+                        <div class="col-xs-6">
+                           <div class="navbar__mobile-logo">
+                              <a href="/"><img src="images/logo-mobile.png" alt=""></a>
+                           </div>
+                        </div>
+                        <div class="col-xs-6">
+                           <div class="navbar__mobile-right">
+                              <div class="navbar__mobile-toggle"><i class="ag-icon-menu_mobile"></i></div>
+                              <a href="#" class="menu-trigger-user dropdown-toggle menu-item-user" ><span class="menu-item-user__name">JP</span><span class="badge"></span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </nav>
+               <!-- /.navbar -->
+               <div class="row">
+                  <div class="col-md-12">
+                     <ul class="breadcrumb">
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="#">Utility</a></li>
+                        <li class="active">Wifi</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="header-title">
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <h6>Identificación de Usuarios - Nombre_comercio</h6>
+                     </div>
+                     <div class="col-lg-6 text-right">
+                        <div class="view">
+                           Vista:
+                           <a href="#" class="active"><i class="ag-icon-usuarios_Wifi__view-detail"></i></a>
+                           <a href="#"><i class="ag-icon-menu_mobie_section"></i></a>
+                        </div>
+                        <div class="header-title__select">
+                           <select >
+                              <option>Aloha - socialwibox</option>
+                              <option>2Aloha - socialwibox</option>
+                              <option>3Aloha - socialwibox</option>
+                           </select>
+                        </div>
+                        <a href="#" class="i"><i class="fa fa-info-circle"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <!-- filter -->
+               <div class="filter">
+                  <div class="row">
+                     <div class="col-lg-4">
+                        <div class="filter__title"><i class="ag-icon-usuarios_Wifi__filter"></i>Filtros actuales:</div>
+                     </div>
+                     <div class="col-lg-8">
+                        <div class="filter__right">
+                           <div class="filter__search">
+                              <input type="search" placeholder="Buscar...">
+                              <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                           </div>
+                           <div class="filter__trigger">
+                              <i class="ag-icon-usuarios_Wifi__filter"></i>Filtros 
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="filter__drop">
+                     <div class="filter__trigger">
+                        <span><i class="ag-icon-usuarios_Wifi__filter"></i>Filtros </span>
+                        <i class="fa fa-times"></i>
+                     </div>
+                     <div class="filter__drop-section">
+                        <div class="filter__drop-item">
+                           <div class="flex-row space-between">
+                              <div class="col"><div class="filter__drop-title">Mostrar únicamente usiarios Online</div></div>
+                              <div class="col">
+                                 <div class="pull-right">
+                                    <label class="install-accordion__change">
+                                       <input type="checkbox">
+                                       <div class="install-accordion__change-inner">
+                                       <i class="fa" aria-hidden="true"></i> 
+                                       </div>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="filter__drop-item">
+                           <div class="filter__drop-title">Filtrar por tipo de Acceso</div>
+                           <div class="selectpicker-wrap">
+                              <select  class="selectpicker"  title="Seleccione tipo de acceso">        
+                                 <option  data-icon="fa fa-facebook" class="selectpicker_icon multiple-option" value="sel2" >Facebook</option>   
+                                 <option  data-icon="fa fa-envelope" class="selectpicker_icon multiple-option" value="sel2" >eMail	</option>   
+                                 <option  data-icon="fa fa-user" class="selectpicker_icon multiple-option" value="sel2" >Externo</option>   
+                                 <option  data-icon="ag-icon-login" class="selectpicker_icon multiple-option" value="sel2" >Directo</option>   
+                                 <option  data-icon="fa fa-instagram" class="selectpicker_icon multiple-option" value="sel2" >Instagram	</option>   
+                                 <option  data-icon="ag-icon-login" class="selectpicker_icon multiple-option" value="sel2" >PMS	</option>   
+                                 <option  data-icon="ag-icon-pms" class="selectpicker_icon multiple-option" value="sel2" >Google	</option>   
+                                 <option  data-icon="fa  fa-mobile" class="selectpicker_icon multiple-option" value="sel2" >App-SDK</option>      
+                              </select>   
+                           </div>
+                        </div>
+                        <div class="filter__drop-item">
+                          <div class="filter__drop-title">Filtrar por Sexo</div>
+                          <div class="filter__drop-radios">
+                             <label class="filter__drop-radio"><input type="radio" name="a" ><span>Hombre</span></label>
+                             <label class="filter__drop-radio"><input type="radio" name="a" ><span>Mujer</span></label>
+                             <label class="filter__drop-radio"><input type="radio" name="a" ><span>Todos</span></label>
+                          </div>
+                        </div>
+                        <div class="filter__drop-item">
+                           <div class="filter__drop-title">Última Visita</div>
+                           <div class="filter__drop-range">
+                              entre:
+                              <input type="date" >
+                              y
+                              <input type="date" >
+                           </div>
+                        </div>
+                        <div class="filter__drop-item">
+                           <div class="filter__drop-title">Filtrar por número de visitas</div>
+                           <div class="filter__drop-range">
+                              entre:
+                              <input type="text" value="5" class="filter__drop-range-input">
+                              y
+                              <input type="text"  value="20" class="filter__drop-range-input">
+                           </div>
+                         </div>
+                         <div class="filter__drop-item">
+                           <div class="filter__drop-title">Filtrar por bloqueados</div>
+                           <div class="filter__drop-radios">
+                              <label class="filter__drop-radio"><input type="radio" name="b" ><span>Bloqueados</span></label>
+                              <label class="filter__drop-radio"><input type="radio" name="b" ><span>No bloqueados</span></label>
+                              <label class="filter__drop-radio"><input type="radio" name="b" ><span>Todos</span></label>
+                           </div>
+                         </div>
+                         <div class="filter__drop-buttons">
+                           <button class="btn btn-empty">CANCELAR</button>
+                            <button class="btn btn-primary">FILTRAR</button>
+                         </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- /filter -->
+               <!-- table -->
+               <div class="row">
+                  <div class="col-lg-12">
+                     <div class="wifi-table">
+                        <table>
+                           <tr>
+                              <th class="text-left">
+                                 <div class="wifi-table__sort">
+                                    Usuario
+                                    <i class="fa fa-chevron-down"></i>
+                                 </div>
+                              </th>
+                              <th class="text-left">
+                                 Email
+                              </th>
+                              <th>
+                                 Nº Visitas
+                              </th>
+                              <th>
+                                 Primera Conexión
+                              </th>
+                              <th>
+                                 Última Conexión
+                              </th>
+                              <th>
+                                 Fecha de Nacimiento
+                              </th>
+                              <th>
+                                 Sexo
+                              </th>
+                              <th>
+                                 Idioma
+                              </th>
+                              <th>
+                                 Opciones
+                              </th>
+                           </tr>
+                           <tr>
+                              <td class="text-left">
+                                 <div class="wifi-table__user">
+                                    <div class="wifi-table__user-img blue">
+                                       <figure><img src="images/user-wifi.png" alt=""></figure>
+                                       <div class="wifi-table__user-ico insta"><i class="fa fa-instagram"></i></div>
+                                       <div class="wifi-table__user-info">online</div>
+                                    </div>
+                                    <div class="wifi-table__user-text">
+                                       User_Name_Lastname
+                                    </div>
+                                 </div>
+                              </td>
+                              <td class="text-left">
+                                 name@email.com
+                              </td>
+                              <td>
+                                 4 <span class="wifi-table__visit green"><i class="ag-icon-usuarios_Wifi__flag"></i></span>
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 <div class="wifi-table__sex"><i class="fa fa-male" aria-hidden="true"></i>                                 </div>
+                              </td>
+                              <td>
+                                 Español
+                              </td>
+                              <td>
+                                 <div class="wifi-table__options">
+                                    <figure class="red first">
+                                       <i class="ag-icon-usuarios_Wifi__bloquear"></i>
+                                       <figcaption>bloquear</figcaption>
+                                    </figure>
+                                    <figure class="orange">
+                                       <i class="ag-icon-usuarios_Wifi__expulsar"></i>
+                                       <figcaption>expulsar</figcaption>
+                                    </figure>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="text-left">
+                                 <div class="wifi-table__user">
+                                    <div class="wifi-table__user-img">
+                                       <figure><img src="images/user-wifi.png" alt=""></figure>
+                                       <div class="wifi-table__user-ico fb"><i class="fa fa-facebook"></i></div>
+                                    </div>
+                                    <div class="wifi-table__user-text">
+                                       User_Name_Lastname
+                                    </div>
+                                 </div>
+                              </td>
+                              <td class="text-left">
+                                 name@email.com
+                              </td>
+                              <td>
+                                 2 <span class="wifi-table__visit"><i class="ag-icon-usuarios_Wifi__flag"></i></span>
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 <div class="wifi-table__sex"><i class="fa fa-female" aria-hidden="true"></i>                                 </div>
+                              </td>
+                              <td>
+                                 Español
+                              </td>
+                              <td>
+                                 <div class="wifi-table__options">
+                                    <figure class="red">
+                                       <i class="ag-icon-usuarios_Wifi__bloquear"></i>
+                                       <figcaption>bloquear</figcaption>
+                                    </figure>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="text-left">
+                                 <div class="wifi-table__user">
+                                    <div class="wifi-table__user-img">
+                                       <figure><img src="images/user-wifi.png" alt=""></figure>
+                                       <div class="wifi-table__user-ico "><i class="fa fa-envelope-o"></i></div>
+                                    </div>
+                                    <div class="wifi-table__user-text">
+                                       User_Name_Lastname
+                                    </div>
+                                 </div>
+                              </td>
+                              <td class="text-left">
+                                 name@email.com
+                              </td>
+                              <td>
+                                 12 <span class="wifi-table__visit orange"><i class="ag-icon-usuarios_Wifi__flag-duo"></i></span>
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 <div class="wifi-table__sex"><i class="fa fa-male" aria-hidden="true"></i>                                 </div>
+                              </td>
+                              <td>
+                                 Español
+                              </td>
+                              <td>
+                                 <div class="wifi-table__options">
+                                    <figure class="red">
+                                       <i class="ag-icon-usuarios_Wifi__bloquear"></i>
+                                       <figcaption>bloquear</figcaption>
+                                    </figure>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr class="active">
+                              <td class="text-left">
+                                 <div class="wifi-table__user">
+                                    <div class="wifi-table__user-img red">
+                                       <figure><img src="images/user-female.png" alt=""></figure>
+                                       <div class="wifi-table__user-ico insta"><i class="fa fa-instagram"></i></div>
+                                       <div class="wifi-table__user-info red">bloqueado</div>
+                                    </div>
+                                    <div class="wifi-table__user-text">
+                                       User_Name_Lastname
+                                    </div>
+                                 </div>
+                              </td>
+                              <td class="text-left">
+                                 name@email.com
+                              </td>
+                              <td>
+                                 12 <span class="wifi-table__visit yellow"><i class="ag-icon-usuarios_Wifi__flag-tiple"></i></span>
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 <div class="wifi-table__sex"><i class="fa fa-male" aria-hidden="true"></i>                                 </div>
+                              </td>
+                              <td>
+                                 Español
+                              </td>
+                              <td>
+                                 <div class="wifi-table__options">
+                                    <figure>
+                                       <i class="ag-icon-usuarios_Wifi__desbloquear"></i>
+                                       <figcaption>desbloquear</figcaption>
+                                    </figure>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="text-left">
+                                 <div class="wifi-table__user">
+                                    <div class="wifi-table__user-img">
+                                       <figure><img src="images/user.png" alt=""></figure>
+                                       <div class="wifi-table__user-ico fb"><i class="fa fa-facebook"></i></div>
+                                    </div>
+                                    <div class="wifi-table__user-text">
+                                       User_Name_Lastname
+                                    </div>
+                                 </div>
+                              </td>
+                              <td class="text-left">
+                                 name@email.com
+                              </td>
+                              <td>
+                                 12 <span class="wifi-table__visit yellow"><i class="ag-icon-usuarios_Wifi__flag-tiple"></i></span>
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 <div class="wifi-table__sex"><i class="fa fa-female" aria-hidden="true"></i>                                 </div>
+                              </td>
+                              <td>
+                                 Español
+                              </td>
+                              <td>
+                                 <div class="wifi-table__options">
+                                    <figure class="red">
+                                       <i class="ag-icon-usuarios_Wifi__bloquear"></i>
+                                       <figcaption>bloquear</figcaption>
+                                    </figure>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="text-left">
+                                 <div class="wifi-table__user">
+                                    <div class="wifi-table__user-img">
+                                       <figure><img src="images/user-wifi.png" alt=""></figure>
+                                       <div class="wifi-table__user-ico "><i class="fa fa-envelope-o"></i></div>
+                                    </div>
+                                    <div class="wifi-table__user-text">
+                                       User_Name_Lastname
+                                    </div>
+                                 </div>
+                              </td>
+                              <td class="text-left">
+                                 name@email.com
+                              </td>
+                              <td>
+                                 12 <span class="wifi-table__visit orange"><i class="ag-icon-usuarios_Wifi__flag-duo"></i></span>
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 <div class="wifi-table__sex"><i class="fa fa-male" aria-hidden="true"></i>                                 </div>
+                              </td>
+                              <td>
+                                 Español
+                              </td>
+                              <td>
+                                 <div class="wifi-table__options">
+                                    <figure class="red">
+                                       <i class="ag-icon-usuarios_Wifi__bloquear"></i>
+                                       <figcaption>bloquear</figcaption>
+                                    </figure>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="text-left">
+                                 <div class="wifi-table__user">
+                                    <div class="wifi-table__user-img">
+                                       <figure><img src="images/user-wifi.png" alt=""></figure>
+                                       <div class="wifi-table__user-ico fb"><i class="fa fa-facebook"></i></div>
+                                    </div>
+                                    <div class="wifi-table__user-text">
+                                       User_Name_Lastname
+                                    </div>
+                                 </div>
+                              </td>
+                              <td class="text-left">
+                                 name@email.com
+                              </td>
+                              <td>
+                                 2 <span class="wifi-table__visit"><i class="ag-icon-usuarios_Wifi__flag"></i></span>
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 <div class="wifi-table__sex"><i class="fa fa-female" aria-hidden="true"></i>                                 </div>
+                              </td>
+                              <td>
+                                 Español
+                              </td>
+                              <td>
+                                 <div class="wifi-table__options">
+                                    <figure class="red">
+                                       <i class="ag-icon-usuarios_Wifi__bloquear"></i>
+                                       <figcaption>bloquear</figcaption>
+                                    </figure>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="text-left">
+                                 <div class="wifi-table__user">
+                                    <div class="wifi-table__user-img blue">
+                                       <figure><img src="images/user-wifi.png" alt=""></figure>
+                                       <div class="wifi-table__user-ico insta"><i class="fa fa-instagram"></i></div>
+                                       <div class="wifi-table__user-info">online</div>
+                                    </div>
+                                    <div class="wifi-table__user-text">
+                                       User_Name_Lastname
+                                    </div>
+                                 </div>
+                              </td>
+                              <td class="text-left">
+                                 name@email.com
+                              </td>
+                              <td>
+                                 4 <span class="wifi-table__visit green"><i class="ag-icon-usuarios_Wifi__flag"></i></span>
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 <div class="wifi-table__sex"><i class="fa fa-male" aria-hidden="true"></i>                                 </div>
+                              </td>
+                              <td>
+                                 Español
+                              </td>
+                              <td>
+                                 <div class="wifi-table__options">
+                                    <figure class="red first">
+                                       <i class="ag-icon-usuarios_Wifi__bloquear"></i>
+                                       <figcaption>bloquear</figcaption>
+                                    </figure>
+                                    <figure class="orange">
+                                       <i class="ag-icon-usuarios_Wifi__expulsar"></i>
+                                       <figcaption>expulsar</figcaption>
+                                    </figure>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="text-left">
+                                 <div class="wifi-table__user">
+                                    <div class="wifi-table__user-img">
+                                       <figure><img src="images/user.png" alt=""></figure>
+                                       <div class="wifi-table__user-ico fb"><i class="fa fa-facebook"></i></div>
+                                    </div>
+                                    <div class="wifi-table__user-text">
+                                       User_Name_Lastname
+                                    </div>
+                                 </div>
+                              </td>
+                              <td class="text-left">
+                                 name@email.com
+                              </td>
+                              <td>
+                                 12 <span class="wifi-table__visit yellow"><i class="ag-icon-usuarios_Wifi__flag-tiple"></i></span>
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 <div class="wifi-table__sex"><i class="fa fa-female" aria-hidden="true"></i>                                 </div>
+                              </td>
+                              <td>
+                                 Español
+                              </td>
+                              <td>
+                                 <div class="wifi-table__options">
+                                    <figure class="red">
+                                       <i class="ag-icon-usuarios_Wifi__bloquear"></i>
+                                       <figcaption>bloquear</figcaption>
+                                    </figure>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="text-left">
+                                 <div class="wifi-table__user">
+                                    <div class="wifi-table__user-img blue">
+                                       <figure><img src="images/user-wifi.png" alt=""></figure>
+                                       <div class="wifi-table__user-ico insta"><i class="fa fa-instagram"></i></div>
+                                       <div class="wifi-table__user-info">online</div>
+                                    </div>
+                                    <div class="wifi-table__user-text">
+                                       User_Name_Lastname
+                                    </div>
+                                 </div>
+                              </td>
+                              <td class="text-left">
+                                 name@email.com
+                              </td>
+                              <td>
+                                 4 <span class="wifi-table__visit blue"><i class="ag-icon-usuarios_Wifi__flag"></i></span>
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 <div class="wifi-table__sex"><i class="fa fa-male" aria-hidden="true"></i>                                 </div>
+                              </td>
+                              <td>
+                                 Español
+                              </td>
+                              <td>
+                                 <div class="wifi-table__options">
+                                    <figure class="red first">
+                                       <i class="ag-icon-usuarios_Wifi__bloquear"></i>
+                                       <figcaption>bloquear</figcaption>
+                                    </figure>
+                                    <figure class="orange">
+                                       <i class="ag-icon-usuarios_Wifi__expulsar"></i>
+                                       <figcaption>expulsar</figcaption>
+                                    </figure>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="text-left">
+                                 <div class="wifi-table__user">
+                                    <div class="wifi-table__user-img">
+                                       <figure><img src="images/user.png" alt=""></figure>
+                                       <div class="wifi-table__user-ico fb"><i class="fa fa-facebook"></i></div>
+                                    </div>
+                                    <div class="wifi-table__user-text">
+                                       User_Name_Lastname
+                                    </div>
+                                 </div>
+                              </td>
+                              <td class="text-left">
+                                 name@email.com
+                              </td>
+                              <td>
+                                 12 <span class="wifi-table__visit yellow"><i class="ag-icon-usuarios_Wifi__flag-tiple"></i></span>
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 24-06-2018
+                              </td>
+                              <td>
+                                 <div class="wifi-table__sex"><i class="fa fa-female" aria-hidden="true"></i>                                 </div>
+                              </td>
+                              <td>
+                                 Español
+                              </td>
+                              <td>
+                                 <div class="wifi-table__options">
+                                    <figure class="red">
+                                       <i class="ag-icon-usuarios_Wifi__bloquear"></i>
+                                       <figcaption>bloquear</figcaption>
+                                    </figure>
+                                 </div>
+                              </td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <!-- /table -->
+               <div class="row">
+                  <div class="col-lg-8">
+                     <div class="pagination-center">
+                        <ul class="pagination">
+                           <li><a href="#">«</a></li>
+                           <li><a href="#">1</a></li>
+                           <li><a href="#">2</a></li>
+                           <li><a href="#">3</a></li>
+                           <li><a href="#">4</a></li>
+                           <li><a href="#">5</a></li>
+                           <li><a href="#">...</a></li>
+                           <li><a href="#">20</a></li>
+                           <li><a href="#">»</a></li>
+                         </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="wifi-table__download">
+                        <a href="#" class="btn btn-primary btn-primary-dark"><i class="ag-icon-menu_Integraciones-importar"></i> descargar</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- /.content -->
+            <!-- .right-sidebar -->
+            <div class="right-sidebar right-sidebar-hidden">
+               <div class="right-sidebar-holder">
+                  <!-- @Demo part only The part from here can be removed till end of the @demo  -->
+                  <a href="screens.html" class="btn btn-danger btn-block">Logout </a>
+                  <h4 class="page-header text-primary text-center">
+                     Theme Options
+                     <a  href="#"  class="theme-panel-close text-primary pull-right"><strong><i class="fa fa-times"></i></strong></a>
+                  </h4>
+                  <ul class="list-group theme-options">
+                     <li class="list-group-item" href="#">
+                        <div class="checkbox">
+                           <label>
+                           <input type="checkbox" id="fixedNavbar" value=""> Fixed Top Navbar
+                           </label>
+                        </div>
+                        <div class="checkbox">
+                           <label>
+                           <input type="checkbox" id="fixedNavbarBottom" value=""> Fixed Bottom Navbar
+                           </label>
+                        </div>
+                        <div class="checkbox">
+                           <label>
+                           <input type="checkbox" id="boxed" value=""> Boxed Version
+                           </label>
+                        </div>
+                        <div class="form-group backgroundImage hidden" >
+                           <label class="control-label">Paste Image Url and then hit enter</label>
+                           <input type="text" class="form-control" id="backgroundImageUrl" />
+                        </div>
+                        <!-- 
+                           <div class="checkbox">
+                           	<label>
+                           		<input type="checkbox" id="responsive" value=""> Disable Responsiveness
+                           	</label>
+                           </div> 
+                           -->			
+                     </li>
+                     <li class="list-group-item" href="#">
+                        Predefined Themes
+                        <ul class="list-inline predefined-themes">
+                           <li><a class="badge" style="background-color:#54b5df" data-color-primary="#54b5df" data-color-secondary="#2f4051" data-color-link="#FFFFFF"> &nbsp; </a></li>
+                           <li><a class="badge" style="background-color:#d85f5c" data-color-primary="#d85f5c" data-color-secondary="#f0f0f0" data-color-link="#474747"> &nbsp; </a></li>
+                           <li><a class="badge" style="background-color:#3d4a5d" data-color-primary="#3d4a5d" data-color-secondary="#edf0f1" data-color-link="#777e88"> &nbsp; </a></li>
+                           <li><a class="badge" style="background-color:#A0B448" data-color-primary="#A0B448" data-color-secondary="#485257" data-color-link="#AFB5AA"> &nbsp; </a></li>
+                           <li><a class="badge" style="background-color:#2FA2D1" data-color-primary="#2FA2D1" data-color-secondary="#484D51" data-color-link="#A5B1B7"> &nbsp; </a></li>
+                           <li><a class="badge" style="background-color:#2f343b" data-color-primary="#2f343b" data-color-secondary="#525a65" data-color-link="#FFFFFF"> &nbsp; </a></li>
+                        </ul>
+                     </li>
+                     <li class="list-group-item" href="#">
+                        Change Primary Color
+                        <div class="input-group colorpicker-component bscp" data-color="#54728c" data-color-format="hex" id="colr">
+                           <span class="input-group-addon"><i style="background-color: #54728c"></i></span>
+                           <input type="text" value="#54728c" id="primaryColor" readonly class="form-control" />
+                        </div>
+                     </li>
+                     <li class="list-group-item" href="#">
+                        Change LeftSidebar Background
+                        <div class="input-group colorpicker-component bscp" data-color="#f9f9f9" data-color-format="hex" id="Scolr">
+                           <span class="input-group-addon"><i style="background-color: #f9f9f9"></i></span>
+                           <input type="text" value="#f9f9f9" id="secondaryColor" readonly class="form-control" />
+                        </div>
+                     </li>
+                     <li class="list-group-item" href="#">
+                        Change Leftsidebar Link Color
+                        <div class="input-group colorpicker-component bscp" data-color="#54728c" data-color-format="hex" id="Lcolr">
+                           <span class="input-group-addon"><i style="background-color: #54728c"></i></span>
+                           <input type="text" value="#54728c" id="linkColor" readonly class="form-control" />
+                        </div>
+                     </li>
+                     <li class="list-group-item" href="#">
+                        Change RightSidebar Background
+                        <div class="input-group colorpicker-component bscp" data-color="#f9f9f9" data-color-format="hex" id="Rcolr">
+                           <span class="input-group-addon"><i style="background-color: #f9f9f9"></i></span>
+                           <input type="text" value="#f9f9f9" id="rightsidebarColor" readonly class="form-control" />
+                        </div>
+                     </li>
+                     </li>
+                  </ul>
+                  <!-- /.@Demo part only The part to here can be removed   -->
+                  <div id="bic_calendar_right" class="bg-white"></div>
+                  <h4 class="page-header text-primary">Current Projects </h4>
+                  <div class="list-group projects">
+                     <a class="list-group-item" href="#">
+                        <p> Archon <span class="pull-right label bg-success">90%</span></p>
+                        <div class="progress progress-mini">
+                           <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                              <span class="sr-only">90% Complete</span>
+                           </div>
+                        </div>
+                     </a>
+                     <a class="list-group-item" href="#">
+                        <p> Banshee <span class="pull-right label bg-warning">40%</span></p>
+                        <div class="progress progress-mini">
+                           <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                              <span class="sr-only">40% Complete</span>
+                           </div>
+                        </div>
+                     </a>
+                     <a class="list-group-item" href="#">
+                        <p> Cascade <span class="pull-right label bg-primary">40%</span></p>
+                        <div class="progress progress-mini">
+                           <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                              <span class="sr-only">75% Complete</span>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <h4 class="page-header">Contacts</h4>
+                  <div class="list-group contact-list">
+                     <a class="list-group-item">
+                     <img src="images/profiles/one.png" class="chat-user-avatar" alt="">
+                     Jane Doe
+                     <i class="fa fa-circle"></i>
+                     </a>
+                     <a class="list-group-item contact">
+                     <img src="images/profiles/two.png" class="chat-user-avatar" alt="">
+                     Jenny
+                     <i class="fa fa-circle online"></i>
+                     </a>
+                     <a class="list-group-item contact">
+                     <img src="images/profiles/three.png" class="chat-user-avatar" alt="">
+                     Vijay
+                     <i class="fa fa-circle busy"></i>
+                     </a>
+                     <a class="list-group-item">
+                     <img src="images/profiles/four.png" class="chat-user-avatar" alt="">
+                     Nikky
+                     <i class="fa fa-circle offline"></i>
+                     </a>
+                     <a class="list-group-item contact">
+                     <img src="images/profiles/five.png" class="chat-user-avatar" alt="">
+                     John
+                     <i class="fa fa-circle"></i>
+                     </a>
+                     <a class="list-group-item contact">
+                     <img src="images/profiles/six.png" class="chat-user-avatar" alt="">
+                     Anusha
+                     <i class="fa fa-circle"></i>
+                     </a>
+                     <a class="list-group-item">
+                     <img src="images/profiles/seven.png" class="chat-user-avatar" alt="">
+                     Antony
+                     <i class="fa fa-circle offline"></i>
+                     </a>
+                     <a class="list-group-item contact">
+                     <img src="images/profiles/eight.png" class="chat-user-avatar" alt="">
+                     Fana
+                     <i class="fa fa-circle busy"></i>
+                     </a>
+                     <a class="list-group-item contact">
+                     <img src="images/profiles/nine.png" class="chat-user-avatar" alt="">
+                     Chris
+                     <i class="fa fa-circle offline"></i>
+                     </a>
+                     <a class="list-group-item">
+                     <img src="images/profiles/ten.png" class="chat-user-avatar" alt="">
+                     Sandy
+                     <i class="fa fa-circle online"></i>
+                     </a>
+                     <a class="list-group-item contact">
+                     <img src="images/profiles/eleven.png" class="chat-user-avatar" alt="">
+                     Ajay
+                     <i class="fa fa-circle"></i>
+                     </a>
+                     <a class="list-group-item contact">
+                     <img src="images/profiles/twelve.png" class="chat-user-avatar" alt="">
+                     Sanju
+                     <i class="fa fa-circle"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <!-- /.right-sidebar-holder -->
+         </div>
+         <!-- /.right-sidebar -->
+      </div>
+      <!-- /.box-holder -->
+      </div><!-- /.site-holder -->
+      <!-- Load JS here for Faster site load =============================-->
+      <script src="js/jquery-1.10.2.min.js"></script>
+      <script src="js/jquery-ui.min.js"></script>
+      <script src="js/less-1.5.0.min.js"></script>
+      <script src="js/jquery.ui.touch-punch.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/bootstrap-select.js"></script>
+      <script src="js/bootstrap-switch.js"></script>
+      <script src="js/jquery.tagsinput.js"></script>
+      <script src="js/jquery.placeholder.js"></script>
+      <script src="js/bootstrap-typeahead.js"></script>
+      <script src="js/application.js"></script>
+      <script src="js/moment.min.js"></script>
+      <script src="js/jquery.dataTables.min.js"></script>
+      <script src="js/jquery.sortable.js"></script>
+      <script type="text/javascript" src="js/jquery.gritter.js"></script>
+      <script src="js/jquery.nicescroll.min.js"></script>
+      <script src="js/skylo.js"></script>
+      <script src="js/prettify.min.js"></script>
+      <script src="js/jquery.noty.js"></script>
+      <script src="js/bic_calendar.js"></script>
+      <script src="js/jquery.accordion.js"></script>
+      <script src="js/theme-options.js"></script>
+      <script src="js/bootstrap-progressbar.js"></script>
+      <script src="js/bootstrap-progressbar-custom.js"></script>
+      <script src="js/bootstrap-colorpicker.min.js"></script>
+      <script src="js/bootstrap-colorpicker-custom.js"></script>
+      <!-- Core Jquery File  =============================-->
+      <script src="js/core.js"></script>
+      <!-- common -->
+      <script src="js/common.js"></script>
+   </body>
+</html>

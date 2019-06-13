@@ -46,3 +46,6 @@ $( ".drag-menu__trigger" ).click(function() {
   $( ".drag-menu__sortable" ).toggleClass( "active" );
   $( ".drag-menu__static" ).toggleClass( "active" );
 });
+$( ".filter__trigger" ).click(function() {
+  $( ".filter__drop" ).toggleClass( "active" );
+});
