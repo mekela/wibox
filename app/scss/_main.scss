@@ -2151,14 +2151,58 @@
 		color: #4b5c7a;
 		font-size: 16px;
 		font-weight: 400;
+		@include mq($max-width: 1200px) {	
+			font-size: 14px;
+		}
 	}
 	.row{
 		margin-right: -15px;
+		@include mq($max-width: 1200px) {	
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		.text-right{
+			@include mq($max-width: 1200px) {	
+				text-align: left !important;
+				display: flex;
+				flex-direction: row-reverse;
+				justify-content: space-between;
+				padding-bottom: 12px;
+			}
+		}
 	}
 	.view, .header-title__select, .i{
 		display: inline-block;
 		padding-left: 20px;
 		vertical-align: middle;
+		@include mq($max-width: 1200px) {	
+			padding-left: 0;
+		}
+	}
+	.view{
+		@include mq($max-width: 1200px) {	
+			padding-left: 0;
+		}
+		@include mq($max-width: 767px) {	
+			padding-left: 0;
+			font-size: 14px;
+		}
+	}
+	.i{
+		@include mq($max-width: 1200px) {	
+			display: none;
+		}
+	}
+	select{
+		border: 1px solid #cbcbcb;
+		color: #525252;
+		padding: 0 10px;
+		background: #ffffff;
+		background: -moz-linear-gradient(top,  #ffffff 0%, #f8f7f7 50%, #f0f0f0 51%, #f6f6f6 100%);
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#f8f7f7 50%,#f0f0f0 51%,#f6f6f6 100%);
+		background: linear-gradient(to bottom,  #ffffff 0%,#f8f7f7 50%,#f0f0f0 51%,#f6f6f6 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 );
+		
 	}
 }
 	.view{
@@ -2174,6 +2218,9 @@
 			&.active{
 				color: #e3e3e3;
 			}
+			@include mq($max-width: 767px) {	
+				padding-left: 5px;
+			}
 		}
 	}
 	.i{
@@ -2183,6 +2230,45 @@
 .filter{
 	padding-bottom: 30px;
 	position: relative;
+	&__top{
+		@include mq($max-width: 1200px) {	
+			display: flex;
+			flex-direction: column-reverse;
+		}
+		.col-lg-8{
+			@include mq($max-width: 1200px) {	
+				padding-bottom: 10px;
+			}
+		}
+	}
+	&__title-wrap{
+		display: flex;
+		align-items: center;
+		min-height: 42px;
+	}
+	&__tag{
+		font-size: 14px;
+		color: #fff;
+		padding: 7px 12px;
+		background: #28a4da;
+		display: flex;
+		align-items: center;
+		border-radius: 14px;
+		margin-left: 25px;
+		i{
+			padding-left: 15px;
+			color: #055b80;
+			cursor: pointer;
+		}
+		@include mq($max-width: 992px) {	
+			font-size: 12px;
+			padding: 5px 8px;
+			i{
+				font-size: 16px;
+				padding-left: 5px;
+			}
+		}
+	}
 	&__title{
 		color: #7c7c7c;
 		font-size: 16px;
@@ -2193,16 +2279,30 @@
 			vertical-align: middle;
 			color: #28a4da;
 		}
+		@include mq($max-width: 992px) {	
+			font-size: 14px;
+			i{
+				font-size: 16px;
+				padding-right: 5px;
+			}
+		}
 	}
 	&__right{
 		display: flex;
 		justify-content: flex-end;
+		
 	}
 	&__search{
 		width: 501px;
 		height: 42px;
 		background-color: #f7f7f7;
 		display: flex;
+		@include mq($max-width: 1200px) {	
+			flex: 1;
+		}
+		@include mq($max-width: 767px) {
+			height: 33px;
+		}
 		input{
 			width: 100%;
 			flex: 1;
@@ -2213,6 +2313,11 @@
 			color: #7c7c7c;
 			font-size: 16px;
 			font-weight: 400;
+			@include mq($max-width: 767px) {
+				height: 33px;
+				padding: 0 10px;
+				font-size: 11px;
+			}
 		}
 		button{
 			border: none;
@@ -2223,6 +2328,11 @@
 			background-color: #28a4da;
 			color: #fff;
 			font-size: 24px;
+			@include mq($max-width: 767px) {
+				height: 33px;
+				width: 33px;
+				font-size: 11px;
+			}
 		}
 	}
 	&__trigger{
@@ -2232,16 +2342,30 @@
 		font-size: 16px;
 		font-weight: 400;
 		vertical-align: middle;
-		padding: 9px 25px 9px 9px;
+		padding: 9px 35px 9px 9px;
 		margin-right: -15px;
 		cursor: pointer;
+		position: relative;
 		i{
 			padding: 0 18px 0 0;
+		}
+		@include mq($max-width: 1200px) {	
+			margin-right: 0;
+		}
+		@include mq($max-width: 767px) {
+			padding: 8px 20px 8px 8px;
+			font-size: 12px;
+			i{
+				padding-right: 8px;
+			}
 		}
 	}
 }
 .wifi-table{
 	margin-bottom: 20px;
+	@include mq($max-width: 1200px) {	
+		overflow-x: auto;
+	}
 	table{
 		width: 100%;
 		text-align: center;
@@ -2251,6 +2375,10 @@
 			color: #2d4159;
 			font-size: 14px;
 			font-weight: 400;
+			@include mq($max-width: 767px) {	
+				font-size: 10px;
+				padding: 5px 10px;
+			}
 		}
 		th{
 			border-left: 1px solid #f2f2f2;
@@ -2264,6 +2392,10 @@
 			}
 			&.text-left{
 				text-align: left;
+			}
+			@include mq($max-width: 767px) {	
+				font-size: 10px;
+				padding: 5px 10px;
 			}
 		}
 		tr{
@@ -2288,18 +2420,24 @@
 			border-radius: 50%;
 			border: 2px solid transparent;
 			background-color: #f9f9f9;
+			@include mq($max-width: 767px) {	
+				border-width: 1px;
+			}
 			img{
 				display: block;
+				@include mq($max-width: 767px) {	
+					width: 40px;
+				}
 			}
 		}
 		&.blue{
 			figure{
-				border: 2px solid #33a8dc;	
+				border-color:  #33a8dc;	
 			}
 		}
 		&.red{
 			figure{
-				border: 2px solid #da5753;	
+				border-color:  #da5753;	
 			}
 		}
 	}
@@ -2316,6 +2454,11 @@
 		bottom: 0;
 		right: -7px;
 		background: #4a5b7a;
+		@include mq($max-width: 767px) {	
+			width: 20px;
+			height: 20px;
+			font-size: 10px;
+		}
 		&.insta{
 			background-image: linear-gradient(40deg, #f6ac58 0%, #df4e5d 27%, #c93580 65%, #5c6cb3 100%);
 		}
@@ -2340,6 +2483,10 @@
 			height: 12px;
 			background-color: #28a4da;
 			margin-right: 5px;
+			@include mq($max-width: 767px) {	
+				width: 6px;
+				height: 6px;
+			}
 		}
 		&.red{
 			color: #da5753;
@@ -2347,12 +2494,19 @@
 				opacity: 0;
 			}
 		}
+		@include mq($max-width: 767px) {	
+			left: 35px;
+			font-size: 9px;
+		}
 	}
 	&__visit{
 		font-size: 20px;
 		vertical-align: middle;
 		color: #e1e1e1;
 		padding-left: 3px;
+		@include mq($max-width: 767px) {
+			font-size: 10px;
+		}
 		&.green{
 			color: #93c759;
 		}
@@ -2369,6 +2523,9 @@
 	&__sex{
 		font-size: 24px;
 		color: #87cbed;
+		@include mq($max-width: 767px) {
+			font-size: 12px;
+		}
 	}
 	&__options{
 		display: flex;
@@ -2377,11 +2534,17 @@
 			font-size: 24px;
 			display: block;
 			padding-bottom: 5px;
+			@include mq($max-width: 767px) {
+				font-size: 12px;
+			}
 		}
 		figure{
 			color: #28a4da;
 			font-size: 12px;
 			font-weight: 300;
+			@include mq($max-width: 767px) {
+				font-size: 9px;
+			}
 			figcaption{
 				position: relative;
 				padding: 0 6px;
@@ -2409,6 +2572,10 @@
 	}
 	&__download{
 		text-align: right;
+		@include mq($max-width: 1200px) {	
+			text-align: center;
+			padding-top: 14px;
+		}
 		.btn-primary{
 			background: #4ebeef;
 			padding: 14px 25px;
@@ -2420,12 +2587,38 @@
 			}
 		}
 	}
+	
+}
+.filter__trigger-numb{
+	position: absolute;
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	color: #28a4da;
+	background: #fff; 
+	text-align: center;
+	line-height: 18px; 
+	right: 10px;
+	top: 50%;
+	margin-top: -9px;
+	font-size: 14px;
+	@include mq($max-width: 767px) {
+		width: 10px;
+		height: 10px;
+		font-size: 8px;
+		line-height: 10px;
+		margin-top: -5px;
+		right: 5px;
+	}
 }
 .pagination-center{
 	display: flex;
 	justify-content: flex-end;
 	.pagination{
 		margin: 5px 0 0 0;
+	}
+	@include mq($max-width: 1200px) {
+		justify-content: center;
 	}
 }
 
@@ -2446,10 +2639,18 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@include mq($max-width: 767px) {
+			max-width: 90vw;
+			padding-right: 0;
+			font-size: 11px;
+		}
 	}
 	&.active{
 		right: 0;
 		opacity: 1;
+	}
+	@include mq($max-width: 767px) {
+		max-width: 90vw;
 	}
 }
 .filter__drop-section{
@@ -2457,6 +2658,9 @@
 	color: #7c7c7c;
 	font-size: 16px;
 	font-weight: 400;
+	@include mq($max-width: 767px) {
+		font-size: 11px;
+	}
 	.col{
 		padding-left: 0;
 		padding-right: 0;
@@ -2471,9 +2675,16 @@
 		background: #fff;
 		height: 42px;
 		font-size: 16px;
+		@include mq($max-width: 767px) {
+			height: 30px;
+			font-size: 11px;
+		}
 	}
 	.selectpicker-wrap .btn.bs-placeholder, .selectpicker-wrap .btn{
 		font-size: 14px;
+		@include mq($max-width: 767px) {
+			font-size: 11px;
+		}
 	}
 	.selectpicker-wrap .dropdown-menu a .glyphicon{
 		width: 30px;
@@ -2493,12 +2704,19 @@
 	.filter__drop-item{
 		padding: 22px 3px;
 		border-bottom: 1px solid #d5d5d5;
+		@include mq($max-width: 767px) {
+			padding: 10px 0;
+		}
 	}
 	.filter__drop-title{
 		color: #7c7c7c;
 		font-size: 16px;
 		font-weight: 600;
 		padding-bottom: 15px;
+		@include mq($max-width: 767px) {
+			font-size: 11px;
+			padding-bottom: 6px;
+		}
 	}
 	.filter__drop-radios{
 		display: flex;
@@ -2515,6 +2733,10 @@
 			font-size: 16px;
 			line-height: 1;
 			font-weight: 400;
+			@include mq($max-width: 767px) {
+				padding: 10px 12px;
+				font-size: 11px;
+			}
 		}
 		input{
 			position: absolute;
@@ -2552,12 +2774,22 @@
 				width: 100%;
 				text-align: right;
 			}
+			@include mq($max-width: 767px) {
+				height: 30px;
+				padding: 0 10px;
+				margin: 0 10px;
+				font-size: 11px;
+			}
 		}
 	}
 	.filter__drop-buttons{
 		padding-top: 50px;
 		padding-bottom: 10px;
 		text-align: right;
+		@include mq($max-width: 767px) {
+			text-align: center;
+			padding-top: 40px;
+		}
 		.btn{
 			border-radius: 0;
 			margin-left: 15px;
@@ -2566,6 +2798,11 @@
 			font-size: 14px;
 			font-weight: 400;
 			text-transform: uppercase;
+			@include mq($max-width: 767px) {
+				font-size: 11px;
+				padding: 9px 14px;
+				margin: 0 5px;
+			}
 			&.btn-empty{
 				background: none;
 				color: #868686;

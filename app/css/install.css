@@ -2242,12 +2242,48 @@ option.avatar {
     color: #4b5c7a;
     font-size: 16px;
     font-weight: 400; }
+    @media only screen and (max-width: 1200px) {
+      .header-title h6 {
+        font-size: 14px; } }
   .header-title .row {
     margin-right: -15px; }
+    @media only screen and (max-width: 1200px) {
+      .header-title .row {
+        display: flex;
+        flex-direction: column-reverse; } }
+    @media only screen and (max-width: 1200px) {
+      .header-title .row .text-right {
+        text-align: left !important;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-bottom: 12px; } }
   .header-title .view, .header-title .header-title__select, .header-title .i {
     display: inline-block;
     padding-left: 20px;
     vertical-align: middle; }
+    @media only screen and (max-width: 1200px) {
+      .header-title .view, .header-title .header-title__select, .header-title .i {
+        padding-left: 0; } }
+  @media only screen and (max-width: 1200px) {
+    .header-title .view {
+      padding-left: 0; } }
+  @media only screen and (max-width: 767px) {
+    .header-title .view {
+      padding-left: 0;
+      font-size: 14px; } }
+  @media only screen and (max-width: 1200px) {
+    .header-title .i {
+      display: none; } }
+  .header-title select {
+    border: 1px solid #cbcbcb;
+    color: #525252;
+    padding: 0 10px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f8f7f7 50%, #f0f0f0 51%, #f6f6f6 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f8f7f7 50%, #f0f0f0 51%, #f6f6f6 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #f8f7f7 50%, #f0f0f0 51%, #f6f6f6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); }
 
 .view {
   vertical-align: middle; }
@@ -2260,6 +2296,9 @@ option.avatar {
     text-decoration: none; }
     .view a.active {
       color: #e3e3e3; }
+    @media only screen and (max-width: 767px) {
+      .view a {
+        padding-left: 5px; } }
 
 .i {
   color: #dbdbdb;
@@ -2268,6 +2307,37 @@ option.avatar {
 .filter {
   padding-bottom: 30px;
   position: relative; }
+  @media only screen and (max-width: 1200px) {
+    .filter__top {
+      display: flex;
+      flex-direction: column-reverse; } }
+  @media only screen and (max-width: 1200px) {
+    .filter__top .col-lg-8 {
+      padding-bottom: 10px; } }
+  .filter__title-wrap {
+    display: flex;
+    align-items: center;
+    min-height: 42px; }
+  .filter__tag {
+    font-size: 14px;
+    color: #fff;
+    padding: 7px 12px;
+    background: #28a4da;
+    display: flex;
+    align-items: center;
+    border-radius: 14px;
+    margin-left: 25px; }
+    .filter__tag i {
+      padding-left: 15px;
+      color: #055b80;
+      cursor: pointer; }
+    @media only screen and (max-width: 992px) {
+      .filter__tag {
+        font-size: 12px;
+        padding: 5px 8px; }
+        .filter__tag i {
+          font-size: 16px;
+          padding-left: 5px; } }
   .filter__title {
     color: #7c7c7c;
     font-size: 16px;
@@ -2277,6 +2347,12 @@ option.avatar {
       font-size: 24px;
       vertical-align: middle;
       color: #28a4da; }
+    @media only screen and (max-width: 992px) {
+      .filter__title {
+        font-size: 14px; }
+        .filter__title i {
+          font-size: 16px;
+          padding-right: 5px; } }
   .filter__right {
     display: flex;
     justify-content: flex-end; }
@@ -2285,6 +2361,12 @@ option.avatar {
     height: 42px;
     background-color: #f7f7f7;
     display: flex; }
+    @media only screen and (max-width: 1200px) {
+      .filter__search {
+        flex: 1; } }
+    @media only screen and (max-width: 767px) {
+      .filter__search {
+        height: 33px; } }
     .filter__search input {
       width: 100%;
       flex: 1;
@@ -2295,6 +2377,11 @@ option.avatar {
       color: #7c7c7c;
       font-size: 16px;
       font-weight: 400; }
+      @media only screen and (max-width: 767px) {
+        .filter__search input {
+          height: 33px;
+          padding: 0 10px;
+          font-size: 11px; } }
     .filter__search button {
       border: none;
       right: 0;
@@ -2304,6 +2391,11 @@ option.avatar {
       background-color: #28a4da;
       color: #fff;
       font-size: 24px; }
+      @media only screen and (max-width: 767px) {
+        .filter__search button {
+          height: 33px;
+          width: 33px;
+          font-size: 11px; } }
   .filter__trigger {
     margin-left: 10px;
     background-color: #28a4da;
@@ -2311,14 +2403,27 @@ option.avatar {
     font-size: 16px;
     font-weight: 400;
     vertical-align: middle;
-    padding: 9px 25px 9px 9px;
+    padding: 9px 35px 9px 9px;
     margin-right: -15px;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .filter__trigger i {
       padding: 0 18px 0 0; }
+    @media only screen and (max-width: 1200px) {
+      .filter__trigger {
+        margin-right: 0; } }
+    @media only screen and (max-width: 767px) {
+      .filter__trigger {
+        padding: 8px 20px 8px 8px;
+        font-size: 12px; }
+        .filter__trigger i {
+          padding-right: 8px; } }
 
 .wifi-table {
   margin-bottom: 20px; }
+  @media only screen and (max-width: 1200px) {
+    .wifi-table {
+      overflow-x: auto; } }
   .wifi-table table {
     width: 100%;
     text-align: center; }
@@ -2328,6 +2433,10 @@ option.avatar {
       color: #2d4159;
       font-size: 14px;
       font-weight: 400; }
+      @media only screen and (max-width: 767px) {
+        .wifi-table table td {
+          font-size: 10px;
+          padding: 5px 10px; } }
     .wifi-table table th {
       border-left: 1px solid #f2f2f2;
       text-align: center;
@@ -2339,6 +2448,10 @@ option.avatar {
         border-left: none; }
       .wifi-table table th.text-left {
         text-align: left; }
+      @media only screen and (max-width: 767px) {
+        .wifi-table table th {
+          font-size: 10px;
+          padding: 5px 10px; } }
     .wifi-table table tr:hover td, .wifi-table table tr.active td {
       background: #f9f0ef; }
   .wifi-table__user {
@@ -2354,12 +2467,18 @@ option.avatar {
       border-radius: 50%;
       border: 2px solid transparent;
       background-color: #f9f9f9; }
+      @media only screen and (max-width: 767px) {
+        .wifi-table__user-img figure {
+          border-width: 1px; } }
       .wifi-table__user-img figure img {
         display: block; }
+        @media only screen and (max-width: 767px) {
+          .wifi-table__user-img figure img {
+            width: 40px; } }
     .wifi-table__user-img.blue figure {
-      border: 2px solid #33a8dc; }
+      border-color: #33a8dc; }
     .wifi-table__user-img.red figure {
-      border: 2px solid #da5753; }
+      border-color: #da5753; }
   .wifi-table__user-ico {
     position: absolute;
     width: 27px;
@@ -2373,6 +2492,11 @@ option.avatar {
     bottom: 0;
     right: -7px;
     background: #4a5b7a; }
+    @media only screen and (max-width: 767px) {
+      .wifi-table__user-ico {
+        width: 20px;
+        height: 20px;
+        font-size: 10px; } }
     .wifi-table__user-ico.insta {
       background-image: linear-gradient(40deg, #f6ac58 0%, #df4e5d 27%, #c93580 65%, #5c6cb3 100%); }
     .wifi-table__user-ico.fb {
@@ -2394,15 +2518,26 @@ option.avatar {
       height: 12px;
       background-color: #28a4da;
       margin-right: 5px; }
+      @media only screen and (max-width: 767px) {
+        .wifi-table__user-info:before {
+          width: 6px;
+          height: 6px; } }
     .wifi-table__user-info.red {
       color: #da5753; }
       .wifi-table__user-info.red:before {
         opacity: 0; }
+    @media only screen and (max-width: 767px) {
+      .wifi-table__user-info {
+        left: 35px;
+        font-size: 9px; } }
   .wifi-table__visit {
     font-size: 20px;
     vertical-align: middle;
     color: #e1e1e1;
     padding-left: 3px; }
+    @media only screen and (max-width: 767px) {
+      .wifi-table__visit {
+        font-size: 10px; } }
     .wifi-table__visit.green {
       color: #93c759; }
     .wifi-table__visit.orange {
@@ -2414,6 +2549,9 @@ option.avatar {
   .wifi-table__sex {
     font-size: 24px;
     color: #87cbed; }
+    @media only screen and (max-width: 767px) {
+      .wifi-table__sex {
+        font-size: 12px; } }
   .wifi-table__options {
     display: flex;
     justify-content: space-between; }
@@ -2421,10 +2559,16 @@ option.avatar {
       font-size: 24px;
       display: block;
       padding-bottom: 5px; }
+      @media only screen and (max-width: 767px) {
+        .wifi-table__options i {
+          font-size: 12px; } }
     .wifi-table__options figure {
       color: #28a4da;
       font-size: 12px;
       font-weight: 300; }
+      @media only screen and (max-width: 767px) {
+        .wifi-table__options figure {
+          font-size: 9px; } }
       .wifi-table__options figure figcaption {
         position: relative;
         padding: 0 6px; }
@@ -2442,6 +2586,10 @@ option.avatar {
         color: #db5c58; }
   .wifi-table__download {
     text-align: right; }
+    @media only screen and (max-width: 1200px) {
+      .wifi-table__download {
+        text-align: center;
+        padding-top: 14px; } }
     .wifi-table__download .btn-primary {
       background: #4ebeef;
       padding: 14px 25px; }
@@ -2450,11 +2598,36 @@ option.avatar {
       .wifi-table__download .btn-primary:hover {
         background: #28a4da; }
 
+.filter__trigger-numb {
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  color: #28a4da;
+  background: #fff;
+  text-align: center;
+  line-height: 18px;
+  right: 10px;
+  top: 50%;
+  margin-top: -9px;
+  font-size: 14px; }
+  @media only screen and (max-width: 767px) {
+    .filter__trigger-numb {
+      width: 10px;
+      height: 10px;
+      font-size: 8px;
+      line-height: 10px;
+      margin-top: -5px;
+      right: 5px; } }
+
 .pagination-center {
   display: flex;
   justify-content: flex-end; }
   .pagination-center .pagination {
     margin: 5px 0 0 0; }
+  @media only screen and (max-width: 1200px) {
+    .pagination-center {
+      justify-content: center; } }
 
 .filter__drop {
   position: absolute;
@@ -2476,15 +2649,26 @@ option.avatar {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (max-width: 767px) {
+      .filter__drop .filter__trigger {
+        max-width: 90vw;
+        padding-right: 0;
+        font-size: 11px; } }
   .filter__drop.active {
     right: 0;
     opacity: 1; }
+  @media only screen and (max-width: 767px) {
+    .filter__drop {
+      max-width: 90vw; } }
 
 .filter__drop-section {
   padding: 10px;
   color: #7c7c7c;
   font-size: 16px;
   font-weight: 400; }
+  @media only screen and (max-width: 767px) {
+    .filter__drop-section {
+      font-size: 11px; } }
   .filter__drop-section .col {
     padding-left: 0;
     padding-right: 0; }
@@ -2496,8 +2680,15 @@ option.avatar {
     background: #fff;
     height: 42px;
     font-size: 16px; }
+    @media only screen and (max-width: 767px) {
+      .filter__drop-section .selectpicker-wrap .btn {
+        height: 30px;
+        font-size: 11px; } }
   .filter__drop-section .selectpicker-wrap .btn.bs-placeholder, .filter__drop-section .selectpicker-wrap .btn {
     font-size: 14px; }
+    @media only screen and (max-width: 767px) {
+      .filter__drop-section .selectpicker-wrap .btn.bs-placeholder, .filter__drop-section .selectpicker-wrap .btn {
+        font-size: 11px; } }
   .filter__drop-section .selectpicker-wrap .dropdown-menu a .glyphicon {
     width: 30px;
     text-align: center;
@@ -2513,12 +2704,19 @@ option.avatar {
 .filter__drop-item {
   padding: 22px 3px;
   border-bottom: 1px solid #d5d5d5; }
+  @media only screen and (max-width: 767px) {
+    .filter__drop-item {
+      padding: 10px 0; } }
 
 .filter__drop-title {
   color: #7c7c7c;
   font-size: 16px;
   font-weight: 600;
   padding-bottom: 15px; }
+  @media only screen and (max-width: 767px) {
+    .filter__drop-title {
+      font-size: 11px;
+      padding-bottom: 6px; } }
 
 .filter__drop-radios {
   display: flex; }
@@ -2535,6 +2733,10 @@ option.avatar {
     font-size: 16px;
     line-height: 1;
     font-weight: 400; }
+    @media only screen and (max-width: 767px) {
+      .filter__drop-radio span {
+        padding: 10px 12px;
+        font-size: 11px; } }
   .filter__drop-radio input {
     position: absolute;
     top: 0;
@@ -2567,11 +2769,21 @@ option.avatar {
       color: #28a4da;
       width: 100%;
       text-align: right; }
+    @media only screen and (max-width: 767px) {
+      .filter__drop-range input {
+        height: 30px;
+        padding: 0 10px;
+        margin: 0 10px;
+        font-size: 11px; } }
 
 .filter__drop-buttons {
   padding-top: 50px;
   padding-bottom: 10px;
   text-align: right; }
+  @media only screen and (max-width: 767px) {
+    .filter__drop-buttons {
+      text-align: center;
+      padding-top: 40px; } }
   .filter__drop-buttons .btn {
     border-radius: 0;
     margin-left: 15px;
@@ -2580,6 +2792,11 @@ option.avatar {
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase; }
+    @media only screen and (max-width: 767px) {
+      .filter__drop-buttons .btn {
+        font-size: 11px;
+        padding: 9px 14px;
+        margin: 0 5px; } }
     .filter__drop-buttons .btn.btn-empty {
       background: none;
       color: #868686; }
