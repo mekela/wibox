@@ -2331,6 +2331,9 @@ option.avatar {
       padding-left: 15px;
       color: #055b80;
       cursor: pointer; }
+    @media only screen and (max-width: 1400px) and (min-width: 992px) {
+      .filter__tag {
+        font-size: 12px; } }
     @media only screen and (max-width: 992px) {
       .filter__tag {
         font-size: 12px;
@@ -2347,6 +2350,9 @@ option.avatar {
       font-size: 24px;
       vertical-align: middle;
       color: #28a4da; }
+    @media only screen and (max-width: 1400px) and (min-width: 992px) {
+      .filter__title {
+        font-size: 14px; } }
     @media only screen and (max-width: 992px) {
       .filter__title {
         font-size: 14px; }
@@ -2404,7 +2410,7 @@ option.avatar {
     font-weight: 400;
     vertical-align: middle;
     padding: 9px 35px 9px 9px;
-    margin-right: -15px;
+    margin-right: 0px;
     cursor: pointer;
     position: relative; }
     .filter__trigger i {
@@ -2429,7 +2435,7 @@ option.avatar {
     text-align: center; }
     .wifi-table table td {
       border: 1px solid #f2f2f2;
-      padding: 10px 20px;
+      padding: 5px 20px;
       color: #2d4159;
       font-size: 14px;
       font-weight: 400; }
@@ -2471,7 +2477,8 @@ option.avatar {
         .wifi-table__user-img figure {
           border-width: 1px; } }
       .wifi-table__user-img figure img {
-        display: block; }
+        display: block;
+        max-width: 50px; }
         @media only screen and (max-width: 767px) {
           .wifi-table__user-img figure img {
             width: 40px; } }
@@ -2530,6 +2537,18 @@ option.avatar {
       .wifi-table__user-info {
         left: 35px;
         font-size: 9px; } }
+  .wifi-table__sort {
+    position: relative;
+    display: block;
+    padding-right: 15px; }
+    .wifi-table__sort i {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      font-size: 10px;
+      color: #d3d3d3;
+      margin-top: -5px;
+      cursor: pointer; }
   .wifi-table__visit {
     font-size: 20px;
     vertical-align: middle;
@@ -2592,7 +2611,7 @@ option.avatar {
         padding-top: 14px; } }
     .wifi-table__download .btn-primary {
       background: #4ebeef;
-      padding: 14px 25px; }
+      padding: 11px 19px; }
       .wifi-table__download .btn-primary i {
         padding: 0 7px 0 0; }
       .wifi-table__download .btn-primary:hover {
@@ -2762,7 +2781,8 @@ option.avatar {
     font-size: 16px;
     font-weight: 400;
     padding: 0 15px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    border: none; }
     .filter__drop-range input:focus {
       color: #7c7c7c; }
     .filter__drop-range input.filter__drop-range-input {

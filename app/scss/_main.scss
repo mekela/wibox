@@ -2260,6 +2260,9 @@
 			color: #055b80;
 			cursor: pointer;
 		}
+		@include mq($max-width: 1400px, $min-width: 992px) {	
+			font-size: 12px;
+		}
 		@include mq($max-width: 992px) {	
 			font-size: 12px;
 			padding: 5px 8px;
@@ -2278,6 +2281,9 @@
 			font-size: 24px;
 			vertical-align: middle;
 			color: #28a4da;
+		}
+		@include mq($max-width: 1400px, $min-width: 992px) {	
+			font-size: 14px;
 		}
 		@include mq($max-width: 992px) {	
 			font-size: 14px;
@@ -2343,7 +2349,7 @@
 		font-weight: 400;
 		vertical-align: middle;
 		padding: 9px 35px 9px 9px;
-		margin-right: -15px;
+		margin-right: 0px;
 		cursor: pointer;
 		position: relative;
 		i{
@@ -2371,7 +2377,7 @@
 		text-align: center;
 		td{
 			border: 1px solid #f2f2f2;
-			padding: 10px 20px;
+			padding: 5px 20px;
 			color: #2d4159;
 			font-size: 14px;
 			font-weight: 400;
@@ -2425,6 +2431,7 @@
 			}
 			img{
 				display: block;
+				max-width: 50px;
 				@include mq($max-width: 767px) {	
 					width: 40px;
 				}
@@ -2497,6 +2504,20 @@
 		@include mq($max-width: 767px) {	
 			left: 35px;
 			font-size: 9px;
+		}
+	}
+	&__sort{
+		position: relative;
+		display: block;
+		padding-right: 15px;
+		i{
+			position: absolute;
+			top: 50%;
+			right: 0;
+			font-size: 10px;
+			color: #d3d3d3;
+			margin-top: -5px;
+			cursor: pointer;
 		}
 	}
 	&__visit{
@@ -2578,7 +2599,7 @@
 		}
 		.btn-primary{
 			background: #4ebeef;
-			padding: 14px 25px;
+			padding: 11px 19px;
 			i{
 				padding: 0 7px 0 0;
 			}
@@ -2766,6 +2787,7 @@
 			font-weight: 400;
 			padding: 0 15px;
 			text-transform: uppercase;
+			border: none;
 			&:focus{
 				color: rgba(124,124,124, 1);
 			}
