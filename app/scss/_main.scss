@@ -2381,6 +2381,10 @@
 			color: #2d4159;
 			font-size: 14px;
 			font-weight: 400;
+			@include mq($max-width: 1600px, $min-width: 992px) {	
+				padding-left: 10px;
+				padding-right: 10px;
+			}
 			@include mq($max-width: 767px) {	
 				font-size: 10px;
 				padding: 5px 10px;
@@ -2393,6 +2397,10 @@
 			color: #2d4159;
 			font-size: 14px;
 			font-weight: 600;
+			@include mq($max-width: 1600px, $min-width: 992px) {	
+				padding-left: 10px;
+				padding-right: 10px;
+			}
 			&:first-child{
 				border-left: none;
 			}
