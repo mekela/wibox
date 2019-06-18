@@ -18,6 +18,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.ag-icon-close-thin:before {
+  content: "\e97e"; }
+
+.ag-icon-search:before {
+  content: "\e97f"; }
+
+.ag-icon-close-bold:before {
+  content: "\e980"; }
+
+.ag-icon-usuarios_Wifi__descargar:before {
+  content: "\e981"; }
+
+.ag-icon-usuarios_Wifi__hombre:before {
+  content: "\e982"; }
+
+.ag-icon-usuarios_Wifi__mujer:before {
+  content: "\e983"; }
+
 .ag-icon-usuarios_Wifi__bloquear:before {
   content: "\e976"; }
 
@@ -2339,8 +2357,9 @@ option.avatar {
         font-size: 12px;
         padding: 5px 8px; }
         .filter__tag i {
-          font-size: 16px;
-          padding-left: 5px; } }
+          font-size: 10px;
+          padding-left: 5px;
+          vertical-align: middle; } }
   .filter__title {
     color: #7c7c7c;
     font-size: 16px;
@@ -2366,7 +2385,8 @@ option.avatar {
     width: 501px;
     height: 42px;
     background-color: #f7f7f7;
-    display: flex; }
+    display: flex;
+    position: relative; }
     @media only screen and (max-width: 1200px) {
       .filter__search {
         flex: 1; } }
@@ -2379,7 +2399,7 @@ option.avatar {
       height: 42px;
       background: none;
       border: none;
-      padding: 0 17px;
+      padding: 0 25px 0 17px;
       color: #7c7c7c;
       font-size: 16px;
       font-weight: 400; }
@@ -2402,6 +2422,14 @@ option.avatar {
           height: 33px;
           width: 33px;
           font-size: 11px; } }
+      .filter__search button.filter__search-reset {
+        position: absolute;
+        border: none;
+        background: none;
+        right: 50px;
+        color: #bdbdbd;
+        font-size: 12px;
+        width: auto; }
   .filter__trigger {
     margin-left: 10px;
     background-color: #28a4da;
@@ -2409,21 +2437,33 @@ option.avatar {
     font-size: 16px;
     font-weight: 400;
     vertical-align: middle;
-    padding: 9px 35px 9px 9px;
+    padding: 9px 35px 9px 45px;
     margin-right: 0px;
     cursor: pointer;
     position: relative; }
     .filter__trigger i {
-      padding: 0 18px 0 0; }
+      padding: 0 18px 0 0;
+      font-size: 18px;
+      vertical-align: middle; }
+      .filter__trigger i.ag-icon-usuarios_Wifi__filter {
+        position: absolute;
+        left: 9px;
+        font-size: 24px;
+        top: 50%;
+        transform: translateY(-50%); }
     @media only screen and (max-width: 1200px) {
       .filter__trigger {
         margin-right: 0; } }
     @media only screen and (max-width: 767px) {
       .filter__trigger {
-        padding: 8px 20px 8px 8px;
+        padding: 8px 20px 8px 25px;
         font-size: 12px; }
         .filter__trigger i {
-          padding-right: 8px; } }
+          padding-right: 8px;
+          font-size: 12px; }
+          .filter__trigger i.ag-icon-usuarios_Wifi__filter {
+            left: 5px;
+            font-size: 14px; } }
 
 .wifi-table {
   margin-bottom: 20px; }
@@ -2675,7 +2715,8 @@ option.avatar {
     margin-left: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    padding-right: 0; }
     @media only screen and (max-width: 767px) {
       .filter__drop .filter__trigger {
         max-width: 90vw;
@@ -2727,9 +2768,15 @@ option.avatar {
     background: #fff; }
   .filter__drop-section .selectpicker-wrap .dropdown-menu {
     background: #fff; }
+  .filter__drop-section .selectpicker-wrap .dropdown-menu a:hover, .filter__drop-section .selectpicker-wrap .selected a {
+    background: #28a4da; }
+    .filter__drop-section .selectpicker-wrap .dropdown-menu a:hover .glyphicon, .filter__drop-section .selectpicker-wrap .selected a .glyphicon {
+      color: #fff; }
+  .filter__drop-section .selectpicker-wrap .btn .glyphicon {
+    vertical-align: baseline; }
 
 .filter__drop-item {
-  padding: 22px 3px;
+  padding: 15px 3px;
   border-bottom: 1px solid #d5d5d5; }
   @media only screen and (max-width: 767px) {
     .filter__drop-item {

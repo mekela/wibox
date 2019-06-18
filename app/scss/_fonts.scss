@@ -24,6 +24,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ag-icon-close-thin:before {
+  content: "\e97e";
+}
+.ag-icon-search:before {
+  content: "\e97f";
+}
+.ag-icon-close-bold:before {
+  content: "\e980";
+}
+.ag-icon-usuarios_Wifi__descargar:before {
+  content: "\e981";
+}
+.ag-icon-usuarios_Wifi__hombre:before {
+  content: "\e982";
+}
+.ag-icon-usuarios_Wifi__mujer:before {
+  content: "\e983";
+}
 .ag-icon-usuarios_Wifi__bloquear:before {
   content: "\e976";
 }
