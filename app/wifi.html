@@ -437,12 +437,12 @@
                            <div class="selectpicker-wrap">
                               <select  class="selectpicker"  title="Seleccione tipo de acceso">        
                                  <option  data-icon="fa fa-facebook" class="selectpicker_icon multiple-option" value="sel2" >Facebook</option>   
-                                 <option  data-icon="fa fa-envelope" class="selectpicker_icon multiple-option" value="sel2" >eMail	</option>   
+                                 <option  data-icon="ag-icon-menu_Mailing" class="selectpicker_icon multiple-option" value="sel2" >eMail	</option>   
                                  <option  data-icon="fa fa-user" class="selectpicker_icon multiple-option" value="sel2" >Externo</option>   
                                  <option  data-icon="ag-icon-login" class="selectpicker_icon multiple-option" value="sel2" >Directo</option>   
                                  <option  data-icon="fa fa-instagram" class="selectpicker_icon multiple-option" value="sel2" >Instagram	</option>   
-                                 <option  data-icon="ag-icon-login" class="selectpicker_icon multiple-option" value="sel2" >PMS	</option>   
-                                 <option  data-icon="ag-icon-pms" class="selectpicker_icon multiple-option" value="sel2" >Google	</option>   
+                                 <option  data-icon="ag-icon-pms" class="selectpicker_icon multiple-option" value="sel2" >PMS	</option>   
+                                 <option  data-icon="fa fa-google-plus" class="selectpicker_icon multiple-option" value="sel2" >Google	</option>   
                                  <option  data-icon="fa  fa-mobile" class="selectpicker_icon multiple-option" value="sel2" >App-SDK</option>      
                               </select>   
                            </div>
@@ -726,9 +726,17 @@
                               </td>
                               <td>
                                  <div class="wifi-table__options">
-                                    <figure>
+                                    <figure class="show-wifi-table__options">
                                        <i class="ag-icon-usuarios_Wifi__desbloquear"></i>
                                        <figcaption>desbloquear</figcaption>
+                                    </figure>
+                                    <figure class="red first hide-wifi-table__options hidden-option">
+                                       <i class="ag-icon-usuarios_Wifi__bloquear"></i>
+                                       <figcaption>bloquear</figcaption>
+                                    </figure>
+                                    <figure class="orange  hidden-option">
+                                       <i class="ag-icon-usuarios_Wifi__expulsar"></i>
+                                       <figcaption>expulsar</figcaption>
                                     </figure>
                                  </div>
                               </td>
@@ -1057,7 +1065,7 @@
                   </div>
                   <div class="col-lg-4">
                      <div class="wifi-table__download">
-                        <a href="#" class="btn btn-primary btn-primary-dark"><i class="ag-icon-menu_Integraciones-importar"></i> descargar</a>
+                        <a href="#" class="btn btn-primary btn-primary-dark"><i class="ag-icon-usuarios_Wifi__descargar"></i> descargar</a>
                      </div>
                   </div>
                </div>

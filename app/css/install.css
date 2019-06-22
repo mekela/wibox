@@ -2621,7 +2621,7 @@ option.avatar {
         font-size: 12px; } }
   .wifi-table__options {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-around; }
     .wifi-table__options i {
       font-size: 24px;
       display: block;
@@ -2632,13 +2632,16 @@ option.avatar {
     .wifi-table__options figure {
       color: #28a4da;
       font-size: 12px;
-      font-weight: 300; }
+      font-weight: 300;
+      cursor: pointer; }
       @media only screen and (max-width: 767px) {
         .wifi-table__options figure {
           font-size: 9px; } }
       .wifi-table__options figure figcaption {
         position: relative;
         padding: 0 6px; }
+      .wifi-table__options figure.hidden-option {
+        display: none; }
       .wifi-table__options figure.first figcaption:before {
         content: '';
         right: 0;
@@ -2689,7 +2692,7 @@ option.avatar {
 
 .pagination-center {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-start; }
   .pagination-center .pagination {
     margin: 5px 0 0 0; }
   @media only screen and (max-width: 1200px) {
@@ -2758,22 +2761,26 @@ option.avatar {
       .filter__drop-section .selectpicker-wrap .btn.bs-placeholder, .filter__drop-section .selectpicker-wrap .btn {
         font-size: 11px; } }
   .filter__drop-section .selectpicker-wrap .dropdown-menu a .glyphicon {
-    width: 30px;
+    width: 15px;
     text-align: center;
     color: #28a4da;
     display: inline-block;
     box-sizing: content-box;
-    padding-right: 7px; }
+    padding-right: 7px;
+    font-size: 1em; }
   .filter__drop-section .selectpicker-wrap .open .dropdown-toggle.btn-default {
     background: #fff; }
   .filter__drop-section .selectpicker-wrap .dropdown-menu {
     background: #fff; }
   .filter__drop-section .selectpicker-wrap .dropdown-menu a:hover, .filter__drop-section .selectpicker-wrap .selected a {
-    background: #28a4da; }
+    background: #28a4da;
+    color: #fff; }
     .filter__drop-section .selectpicker-wrap .dropdown-menu a:hover .glyphicon, .filter__drop-section .selectpicker-wrap .selected a .glyphicon {
       color: #fff; }
   .filter__drop-section .selectpicker-wrap .btn .glyphicon {
     vertical-align: baseline; }
+  .filter__drop-section .selectpicker-wrap .dropdown-menu a {
+    color: #7c7c7c; }
 
 .filter__drop-item {
   padding: 15px 3px;

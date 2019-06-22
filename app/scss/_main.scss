@@ -2583,7 +2583,7 @@
 	}
 	&__options{
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		i{
 			font-size: 24px;
 			display: block;
@@ -2596,12 +2596,16 @@
 			color: #28a4da;
 			font-size: 12px;
 			font-weight: 300;
+			cursor: pointer;
 			@include mq($max-width: 767px) {
 				font-size: 9px;
 			}
 			figcaption{
 				position: relative;
 				padding: 0 6px;
+			}
+			&.hidden-option{
+				display: none;
 			}
 			&.first{
 				figcaption{
@@ -2667,7 +2671,7 @@
 }
 .pagination-center{
 	display: flex;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	.pagination{
 		margin: 5px 0 0 0;
 	}
@@ -2742,12 +2746,13 @@
 		}
 	}
 	.selectpicker-wrap .dropdown-menu a .glyphicon{
-		width: 30px;
+		width: 15px;
 		text-align: center;
 		color: #28a4da;
 		display: inline-block;
 		box-sizing: content-box;
 		padding-right: 7px;
+		font-size: 1em;
 	}
 	.selectpicker-wrap .open .dropdown-toggle.btn-default{
 		background: #fff;
@@ -2760,9 +2765,13 @@
 		.glyphicon{
 			color: #fff;
 		}
+		color: #fff;
 	}
 	.selectpicker-wrap .btn .glyphicon{
 		vertical-align: baseline;
+	}
+	.selectpicker-wrap .dropdown-menu a{
+		color: #7c7c7c;
 	}
 }
 	.filter__drop-item{

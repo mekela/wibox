@@ -49,3 +49,12 @@ $( ".drag-menu__trigger" ).click(function() {
 $( ".filter__trigger" ).click(function() {
   $( ".filter__drop" ).toggleClass( "active" );
 });
+//show option
+$( ".show-wifi-table__options" ).click(function() {
+  $( this ).parent().children(".hidden-option").show(  );
+  $( this ).hide(  );
+});
+$( ".hide-wifi-table__options" ).click(function() {
+  $( this ).parent().children(".show-wifi-table__options").show(  );
+  $( this ).parent().children(".hidden-option").hide(  );
+});
