@@ -2402,7 +2402,7 @@
 		text-align: center;
 		td{
 			border: 1px solid #f2f2f2;
-			padding: 5px 20px;
+			padding: 3.5px 15px;
 			color: #2d4159;
 			font-size: 14px;
 			font-weight: 400;
@@ -2753,6 +2753,7 @@
 		box-sizing: content-box;
 		padding-right: 7px;
 		font-size: 1em;
+		top: -1px;
 	}
 	.selectpicker-wrap .open .dropdown-toggle.btn-default{
 		background: #fff;

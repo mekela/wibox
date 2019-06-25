@@ -2475,7 +2475,7 @@ option.avatar {
     text-align: center; }
     .wifi-table table td {
       border: 1px solid #f2f2f2;
-      padding: 5px 20px;
+      padding: 3.5px 15px;
       color: #2d4159;
       font-size: 14px;
       font-weight: 400; }
@@ -2767,7 +2767,8 @@ option.avatar {
     display: inline-block;
     box-sizing: content-box;
     padding-right: 7px;
-    font-size: 1em; }
+    font-size: 1em;
+    top: -1px; }
   .filter__drop-section .selectpicker-wrap .open .dropdown-toggle.btn-default {
     background: #fff; }
   .filter__drop-section .selectpicker-wrap .dropdown-menu {
